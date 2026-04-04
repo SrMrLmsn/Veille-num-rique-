@@ -1,103 +1,93 @@
-const RSSParser = require('rss-parser');
-const fs = require('fs');
+const RSSParser = require("rss-parser");
+const fs = require("fs");
 const parser = new RSSParser({ timeout: 10000 });
 
 const SOURCES = [
-// DROIT
-{ name: 'CNIL', url: 'https://www.cnil.fr/fr/rss.xml', category: 'droit', tag: 'Donnees personnelles' },
-{ name: 'ANSSI', url: 'https://www.ssi.gouv.fr/feed/', category: 'droit', tag: 'Cybersecurite' },
-{ name: 'ARCEP', url: 'https://www.arcep.fr/rss/actualites.xml', category: 'droit', tag: 'Plateformes' },
-{ name: 'EDPB', url: 'https://www.edpb.europa.eu/rss/edpb_news_rss_en.xml', category: 'droit', tag: 'Donnees personnelles' },
-{ name: 'Commission UE', url: 'https://ec.europa.eu/newsroom/dae/rss.cfm?item_type=1131', category: 'droit', tag: 'Plateformes' },
-{ name: 'EUR-Lex', url: 'https://eur-lex.europa.eu/rss/rss.xml?type=whatsNew&search=OJ_L&lang=fr', category: 'droit', tag: 'Contrats IT' },
-{ name: 'ENISA', url: 'https://www.enisa.europa.eu/rss.xml', category: 'droit', tag: 'Cybersecurite' },
-{ name: 'Legalis', url: 'https://www.legalis.net/feed/', category: 'droit', tag: 'Donnees personnelles' },
-{ name: 'Vie Publique', url: 'https://www.vie-publique.fr/rss.xml', category: 'droit', tag: 'Plateformes' },
-{ name: 'ICO UK', url: 'https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/', category: 'droit', tag: 'Donnees personnelles' },
-{ name: 'FTC', url: 'https://www.ftc.gov/feeds/press-release.xml', category: 'droit', tag: 'Plateformes' },
-{ name: 'OCDE IA', url: 'https://oecd.ai/en/wonk/rss', category: 'droit', tag: 'IA' },
-{ name: 'The Block', url: 'https://www.theblockcrypto.com/rss.xml', category: 'droit', tag: 'Blockchain' },
-{ name: 'CoinDesk', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', category: 'droit', tag: 'Blockchain' },
-
-// TECH
-{ name: 'Numerama', url: 'https://www.numerama.com/feed/', category: 'tech', tag: 'Tech FR' },
-{ name: 'Next INpact', url: 'https://www.nextinpact.com/rss/news.xml', category: 'tech', tag: 'Tech FR' },
-{ name: 'The Verge', url: 'https://www.theverge.com/rss/index.xml', category: 'tech', tag: 'Big Tech' },
-{ name: 'Wired', url: 'https://www.wired.com/feed/rss', category: 'tech', tag: 'Big Tech' },
-{ name: 'MIT Tech Review', url: 'https://www.technologyreview.com/feed/', category: 'tech', tag: 'IA & Innovation' },
-{ name: 'TechCrunch', url: 'https://techcrunch.com/feed/', category: 'tech', tag: 'Startups' },
-
-// ARBITRAGE
-{ name: 'Kluwer Arbitration', url: 'https://arbitrationblog.kluwerarbitration.com/feed/', category: 'arbitrage', tag: 'Arbitrage international' },
-{ name: 'GAR', url: 'https://globalarbitrationreview.com/rss', category: 'arbitrage', tag: 'Arbitrage international' },
-{ name: 'OMPI Arbitrage', url: 'https://www.wipo.int/amc/en/news/rss/', category: 'arbitrage', tag: 'PI & numerique' },
+  { name: "CNIL", url: "https://www.cnil.fr/fr/rss.xml", category: "droit", tag: "Donnees personnelles" },
+  { name: "ANSSI", url: "https://www.ssi.gouv.fr/feed/", category: "droit", tag: "Cybersecurite" },
+  { name: "ARCEP", url: "https://www.arcep.fr/rss/actualites.xml", category: "droit", tag: "Plateformes" },
+  { name: "EDPB", url: "https://www.edpb.europa.eu/rss/edpb_news_rss_en.xml", category: "droit", tag: "Donnees personnelles" },
+  { name: "Commission UE", url: "https://ec.europa.eu/newsroom/dae/rss.cfm?item_type=1131", category: "droit", tag: "Plateformes" },
+  { name: "EUR-Lex", url: "https://eur-lex.europa.eu/rss/rss.xml?type=whatsNew&search=OJ_L&lang=fr", category: "droit", tag: "Contrats IT" },
+  { name: "ENISA", url: "https://www.enisa.europa.eu/rss.xml", category: "droit", tag: "Cybersecurite" },
+  { name: "Legalis", url: "https://www.legalis.net/feed/", category: "droit", tag: "Donnees personnelles" },
+  { name: "Vie Publique", url: "https://www.vie-publique.fr/rss.xml", category: "droit", tag: "Plateformes" },
+  { name: "ICO UK", url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/", category: "droit", tag: "Donnees personnelles" },
+  { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
+  { name: "OCDE IA", url: "https://oecd.ai/en/wonk/rss", category: "droit", tag: "IA" },
+  { name: "The Block", url: "https://www.theblockcrypto.com/rss.xml", category: "droit", tag: "Blockchain" },
+  { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/", category: "droit", tag: "Blockchain" },
+  { name: "Numerama", url: "https://www.numerama.com/feed/", category: "tech", tag: "Tech FR" },
+  { name: "Next INpact", url: "https://www.nextinpact.com/rss/news.xml", category: "tech", tag: "Tech FR" },
+  { name: "The Verge", url: "https://www.theverge.com/rss/index.xml", category: "tech", tag: "Big Tech" },
+  { name: "Wired", url: "https://www.wired.com/feed/rss", category: "tech", tag: "Big Tech" },
+  { name: "MIT Tech Review", url: "https://www.technologyreview.com/feed/", category: "tech", tag: "IA Innovation" },
+  { name: "TechCrunch", url: "https://techcrunch.com/feed/", category: "tech", tag: "Startups" },
+  { name: "Kluwer Arbitration", url: "https://arbitrationblog.kluwerarbitration.com/feed/", category: "arbitrage", tag: "Arbitrage" },
+  { name: "GAR", url: "https://globalarbitrationreview.com/rss", category: "arbitrage", tag: "Arbitrage" },
+  { name: "OMPI", url: "https://www.wipo.int/amc/en/news/rss/", category: "arbitrage", tag: "PI numerique" },
 ];
 
 async function collect() {
-var articles = [];
-console.log('Collecte RSS - ' + new Date().toISOString() + '\n');
+  var articles = [];
 
-for (var i = 0; i < SOURCES.length; i++) {
-var source = SOURCES[i];
-process.stdout.write('  -> ' + source.name + ' ');
-try {
-var feed = await parser.parseURL(source.url);
-var items = (feed.items || []).slice(0, 15);
-for (var j = 0; j < items.length; j++) {
-var item = items[j];
-articles.push({
-source: source.name,
-category: source.category,
-tag: source.tag,
-title: (item.title || '').replace(/<[^>]+>/g, '').trim(),
-description: (item.contentSnippet || item.summary || '').replace(/<[^>]+>/g, ‘’).trim().slice(0, 280),
-link: item.link || item.guid || '',
-date: item.isoDate || null,
-});
-}
-console.log('OK (' + items.length + ')');
-} catch(e) {
-console.log('ERREUR: ' + e.message);
-}
-}
+  for (var i = 0; i < SOURCES.length; i++) {
+    var source = SOURCES[i];
+    try {
+      var feed = await parser.parseURL(source.url);
+      var items = (feed.items || []).slice(0, 15);
+      for (var j = 0; j < items.length; j++) {
+        var item = items[j];
+        var desc = item.contentSnippet || item.summary || "";
+        articles.push({
+          source: source.name,
+          category: source.category,
+          tag: source.tag,
+          title: (item.title || "").replace(/<[^>]+>/g, "").trim(),
+          description: desc.replace(/<[^>]+>/g, "").trim().slice(0, 280),
+          link: item.link || item.guid || "",
+          date: item.isoDate || null,
+        });
+      }
+      console.log("OK " + source.name + " (" + items.length + ")");
+    } catch(e) {
+      console.log("ERREUR " + source.name + ": " + e.message);
+    }
+  }
 
-// Fusion avec les anciens articles
-var existing = [];
-var dataPath = 'data/articles.json';
-if (fs.existsSync(dataPath)) {
-try {
-var raw = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-existing = raw.articles || [];
-console.log('\nArticles existants : ' + existing.length);
-} catch(e) {
-console.log('\nImpossible de lire ancien fichier, on repart de zero.');
-}
-}
+  var existing = [];
+  var dataPath = "data/articles.json";
+  if (fs.existsSync(dataPath)) {
+    try {
+      var raw = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+      existing = raw.articles || [];
+    } catch(e) {
+      console.log("Impossible de lire ancien fichier.");
+    }
+  }
 
-// Dedoublonnage par lien
-var existingLinks = {};
-existing.forEach(function(a) { if (a.link) existingLinks[a.link] = true; });
-var newOnes = articles.filter(function(a) { return a.link && !existingLinks[a.link]; });
-console.log('Nouveaux articles : ' + newOnes.length);
+  var existingLinks = {};
+  existing.forEach(function(a) { if (a.link) existingLinks[a.link] = true; });
+  var newOnes = articles.filter(function(a) { return a.link && !existingLinks[a.link]; });
 
-var merged = existing.concat(newOnes);
-merged.sort(function(a, b) {
-if (!a.date) return 1;
-if (!b.date) return -1;
-return new Date(b.date) - new Date(a.date);
-});
+  var merged = existing.concat(newOnes);
+  merged.sort(function(a, b) {
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    return new Date(b.date) - new Date(a.date);
+  });
 
-if (!fs.existsSync('data')) fs.mkdirSync('data');
-fs.writeFileSync(dataPath, JSON.stringify({
-lastUpdate: new Date().toISOString(),
-totalArticles: merged.length,
-articles: merged,
-}, null, 2));
+  if (!fs.existsSync("data")) fs.mkdirSync("data");
+  fs.writeFileSync(dataPath, JSON.stringify({
+    lastUpdate: new Date().toISOString(),
+    totalArticles: merged.length,
+    articles: merged,
+  }, null, 2));
 
-console.log('Total cumule : ' + merged.length + ' articles.');
+  console.log("Total : " + merged.length + " articles.");
 }
 
 collect().catch(function(e) {
-console.error(e);
-process.exit(1);
+  console.error(e);
+  process.exit(1);
 });
