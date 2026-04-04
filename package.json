@@ -1,0 +1,13 @@
+{
+  "name": "veille-juridique",
+  "version": "1.0.0",
+  "description": "Veille juridique automatisée — Droit du Numérique",
+  "scripts": {
+    "collect": "node collect.js",
+    "collect:dry": "node collect.js --dry-run",
+    "serve": "npx serve ."
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
