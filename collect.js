@@ -11,9 +11,9 @@ const SOURCES = [
   { name: "Parlement EU", url: "https://www.europarl.europa.eu/rss/doc/top-stories/fr.xml", category: "droit", tag: "Contrats IT" },
   { name: "ENISA", url: "https://www.enisa.europa.eu/rss.xml", category: "droit", tag: "Cybersecurite" },
   { name: "Legalis", url: "https://www.legalis.net/feed/", category: "droit", tag: "Donnees personnelles" },
-  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/rss", category: "droit", tag: "Donnees personnelles" },
+  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/news-media/rss", category: "droit", tag: "Donnees personnelles" },
   { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
-  { name: "OCDE IA", url: "https://oecd.ai/en/wonk/rss", category: "droit", tag: "IA" },
+  { name: "OCDE", url: "https://www.oecd.org/newsroom/rss/", category: "droit", tag: "IA" },
   { name: "The Block", url: "https://www.theblockcrypto.com/rss.xml", category: "droit", tag: "Blockchain" },
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/", category: "droit", tag: "Blockchain" },
 
@@ -39,7 +39,8 @@ const SOURCES = [
 
   // ARBITRAGE
   { name: "GAR", url: "https://globalarbitrationreview.com/rss", category: "arbitrage", tag: "Arbitrage" },
-  { name: "OMPI", url: "https://www.wipo.int/amc/en/news/rss/", category: "arbitrage", tag: "PI numerique" },
+  { name: "CIArb", url: "https://www.ciarb.org/news/rss/", category: "arbitrage", tag: "Arbitrage" },
+  { name: "OMPI", url: "https://www.wipo.int/pressroom/en/rss/", category: "arbitrage", tag: "PI numerique" },
   { name: "Google: arbitrage numerique", url: "https://news.google.com/rss/search?q=arbitrage+international+numerique&hl=fr&gl=FR&ceid=FR:fr", category: "arbitrage", tag: "Arbitrage" },
 ];
 
