@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Installation des dépendances
-        run: npm ci
+        run: npm install
 
       - name: Collecte des flux RSS
         run: node collect.js
