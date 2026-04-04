@@ -4,19 +4,19 @@ const parser = new RSSParser({ timeout: 8000 });
 
 const SOURCES = [
   { name: "CNIL", url: "https://www.cnil.fr/fr/rss.xml", category: "droit", tag: "Donnees personnelles" },
-  { name: "ANSSI", url: "https://www.ssi.gouv.fr/feed/", category: "droit", tag: "Cybersecurite" },
-  { name: "ARCEP", url: "https://www.arcep.fr/rss/actualites.xml", category: "droit", tag: "Plateformes" },
-  { name: "EDPB", url: "https://www.edpb.europa.eu/rss/edpb_news_rss_en.xml", category: "droit", tag: "Donnees personnelles" },
-  { name: "EUR-Lex", url: "https://eur-lex.europa.eu/rss/rss.xml?type=whatsNew&search=OJ_L&lang=fr", category: "droit", tag: "Contrats IT" },
+  { name: "ANSSI", url: "https://www.cert.ssi.gouv.fr/feed/", category: "droit", tag: "Cybersecurite" },
+  { name: "ARCEP", url: "https://en.arcep.fr/news/follow-regulatory-news/newswire/rss.xml", category: "droit", tag: "Plateformes" },
+  { name: "EDPB", url: "https://www.edpb.europa.eu/feed/news_en", category: "droit", tag: "Donnees personnelles" },
+  { name: "Parlement EU", url: "https://www.europarl.europa.eu/rss/doc/top-stories/fr.xml", category: "droit", tag: "Contrats IT" },
   { name: "ENISA", url: "https://www.enisa.europa.eu/rss.xml", category: "droit", tag: "Cybersecurite" },
   { name: "Legalis", url: "https://www.legalis.net/feed/", category: "droit", tag: "Donnees personnelles" },
-  { name: "ICO UK", url: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/rss/", category: "droit", tag: "Donnees personnelles" },
+  { name: "ICO UK", url: "https://ico.org.uk/about-the-ico/newsroom/rss/", category: "droit", tag: "Donnees personnelles" },
   { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
   { name: "Numerama", url: "https://www.numerama.com/feed/", category: "tech", tag: "Tech FR" },
   { name: "The Verge", url: "https://www.theverge.com/rss/index.xml", category: "tech", tag: "Big Tech" },
   { name: "Wired", url: "https://www.wired.com/feed/rss", category: "tech", tag: "Big Tech" },
   { name: "TechCrunch", url: "https://techcrunch.com/feed/", category: "tech", tag: "Startups" },
-  { name: "Kluwer Arbitration", url: "https://arbitrationblog.kluwerarbitration.com/feed/", category: "arbitrage", tag: "Arbitrage" },
+  { name: "GAR", url: "https://globalarbitrationreview.com/rss", category: "arbitrage", tag: "Arbitrage" },
 ];
 
 function fetchWithTimeout(url) {
