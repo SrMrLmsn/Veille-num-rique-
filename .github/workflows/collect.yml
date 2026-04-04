@@ -21,8 +21,7 @@ jobs:
           node-version: '20'
 
       - name: Installation des dépendances
-        run: npm install --legacy-peer-deps
-
+        run: npm install
 
       - name: Collecte des flux RSS
         run: node collect.js
