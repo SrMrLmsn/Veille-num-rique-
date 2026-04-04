@@ -31,5 +31,5 @@ jobs:
           git config user.name "veille-bot"
           git config user.email "bot@veille-juridique"
           git add data/articles.json
-          git diff --staged --quiet || git commit -m "chore: collecte RSS $(date +'%Y-%m-%d %H:%M')"
+          git diff --staged --quiet || git commit -m "collecte RSS"
           git push
