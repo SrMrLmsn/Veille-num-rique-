@@ -1,7 +1,88 @@
 {
-  "lastUpdate": "2026-04-04T11:25:29.518Z",
-  "totalArticles": 35,
+  "lastUpdate": "2026-04-04T13:56:05.347Z",
+  "totalArticles": 100,
   "articles": [
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech FR",
+      "title": "10 animés du printemps 2026 à suivre absolument",
+      "description": "Le printemps 2026 s'annonce chargé au niveau des animés. Des suites aux nouveautés, Numerama vous propose une sélection des meilleurs productions à suivre cette saison.",
+      "link": "https://www.numerama.com/pop-culture/2218457-10-animes-du-printemps-2026-a-suivre-absolument.html",
+      "date": "2026-04-04T13:31:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Really, you made this without AI? Prove it",
+      "description": "\"This looks like AI.\"\nIt's a phrase I dread seeing as a writer who dabbles in illustration and amateur photography. In a world where generative AI technology is increasingly adept at mimicking the work of humans, people are naturally skeptical when online platforms refuse to labe",
+      "link": "https://www.theverge.com/tech/906453/human-made-ai-free-logo-creative-content",
+      "date": "2026-04-04T13:00:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Sonos Play Review: Performance Meets Convenience",
+      "description": "With great sound and versatility, this new speaker may be Sonos’ best.",
+      "link": "https://www.wired.com/review/sonos-play/",
+      "date": "2026-04-04T13:00:00.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "After fighting malware for decades, this cybersecurity veteran is now hacking drones",
+      "description": "Mikko Hyppönen is one of the most recognizable faces of the cybersecurity industry. After fighting computer viruses, worms, and malware, for more than 35 years, he tells TechCrunch why he is now working on systems to stop killer drones.",
+      "link": "https://techcrunch.com/2026/04/04/after-fighting-malware-for-decades-this-cybersecurity-veteran-is-now-hacking-drones/",
+      "date": "2026-04-04T13:00:00.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech FR",
+      "title": "Comment les armées françaises planchent pour abattre les drones Shahed",
+      "description": "Pas cher, le drone kamikaze iranien oblige les armées à revoir leur stratégie de défense pour ne pas gaspiller leurs onéreux missiles.",
+      "link": "https://www.numerama.com/tech/2217711-comment-les-armees-francaises-planchent-pour-contrer-les-drones-shahed.html",
+      "date": "2026-04-04T12:02:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Super Meat Boy 3D makes suffering fun",
+      "description": "The original Super Meat Boy is one of the best-known indie games of all time. Released in 2010, it's a brutally difficult 2D platformer, but so fun to play: The short levels almost feel like speedrunning puzzles, and even though they're filled with traps and buzzsaws, dying isn't",
+      "link": "https://www.theverge.com/games/904202/super-meat-boy-3d-review",
+      "date": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "The app for tracking TV, movies, podcasts, and everything",
+      "description": "Hi, friends! Welcome to Installer No. 122, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, go 'Zona, and also you can read all the old editions at the Installer homepage.) \nThis week, I've been reading about early Apple employees and weathe",
+      "link": "https://www.theverge.com/tech/906873/sofa-app-track-tv-movies-installer",
+      "date": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Best Ski Clothes (2026): Patagonia, Arc’teryx, Burton, and More",
+      "description": "From weatherproof jackets and pants to puffers, gloves, and socks, WIRED’s winter sports experts have you covered.",
+      "link": "https://www.wired.com/gallery/best-ski-clothes/",
+      "date": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Aiper IrriSense 2 Smart Irrigation System Review: Clever Yet Uneven",
+      "description": "This hose-attached smart sprinkler maps your yard, rotates on command, and measures water use. Despite these clever features, the results are a little uneven.",
+      "link": "https://www.wired.com/review/aiper-irrisense-2-smart-irrigation-system/",
+      "date": "2026-04-04T11:01:00.000Z"
+    },
     {
       "source": "Numerama",
       "category": "tech",
@@ -12,6 +93,24 @@
       "date": "2026-04-04T10:47:56.000Z"
     },
     {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Hackers Are Posting the Claude Code Leak With Bonus Malware",
+      "description": "Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.",
+      "link": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
+      "date": "2026-04-04T10:30:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "How to Get Reliable Wi-Fi in Your Backyard",
+      "description": "There are several ways to extend your Wi-Fi network into your backyard and out onto the deck or patio. Here’s how.",
+      "link": "https://www.wired.com/story/how-to-get-wifi-in-your-backyard/",
+      "date": "2026-04-04T10:00:00.000Z"
+    },
+    {
       "source": "Numerama",
       "category": "tech",
       "tag": "Tech",
@@ -19,6 +118,15 @@
       "description": "Les premières photos prises depuis la capsule Orion qui se dirige vers la Lune montrent la Terre d'un point de vue humain. Difficile de ne pas être stupéfait par sa beauté.",
       "link": "https://www.numerama.com/sciences/2226885-artemis-ii-la-nasa-publie-des-photos-epoustouflantes-de-la-terre-prises-par-les-astronautes.html",
       "date": "2026-04-04T09:50:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "The Trajectory of the Artemis II Moon Mission Is a Feat of Engineering",
+      "description": "The astronauts will arrive about 10,300 kilometers beyond our satellite, breaking all previous records for distance from Earth. But how was their route chosen?",
+      "link": "https://www.wired.com/story/the-trajectory-of-the-artemis-ii-moon-mission-is-a-feat-of-engineering/",
+      "date": "2026-04-04T09:30:00.000Z"
     },
     {
       "source": "Numerama",
@@ -66,6 +174,33 @@
       "date": "2026-04-04T07:00:00.000Z"
     },
     {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Maytag Promo Codes and Deals: Appliances Under $300",
+      "description": "Upgrade your home for less with these verified Maytag discount codes, military savings, and limited-time closeout offers on washers, dryers, and more.",
+      "link": "https://www.wired.com/story/maytag-promo-code/",
+      "date": "2026-04-04T05:00:00.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Anthropic is having a moment in the private markets; SpaceX could spoil the party",
+      "description": "Glen Anderson, president of Rainmaker Securities, says the secondary market for private shares has never been more active — with Anthropic the hottest trade around, OpenAI losing ground, and SpaceX's looming IPO poised to reshape the landscape for everyone.",
+      "link": "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/",
+      "date": "2026-04-04T01:31:00.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Lucid blames dip in Q1 sales on seat supplier issue",
+      "description": "Lucid said it has resolved the problem and is not changing its guidance for 2026.",
+      "link": "https://techcrunch.com/2026/04/03/lucid-blames-dip-in-q1-sales-on-seat-supplier-issue/",
+      "date": "2026-04-04T01:03:13.000Z"
+    },
+    {
       "source": "The Verge",
       "category": "tech",
       "tag": "Big Tech",
@@ -73,6 +208,33 @@
       "description": "Using OpenClaw with Claude AI is about to get a lot more expensive, thanks to Anthropic's new policy changes. Beginning April 4th at 3PM ET, users will \"no longer be able to use your Claude subscription limits for third-party harnesses including OpenClaw,\" according to an email s",
       "link": "https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban",
       "date": "2026-04-03T23:52:49.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "The anonymous social app that thinks it can work in Saudi Arabia",
+      "description": "When Fizz quietly debuted in Saudi Arabia, founder and CEO Teddy Solomon wasn’t expecting the app to catch on like it did.",
+      "link": "https://techcrunch.com/2026/04/03/the-anonymous-social-app-that-thinks-it-can-work-in-saudi-arabia/",
+      "date": "2026-04-03T22:24:57.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk",
+      "description": "Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.",
+      "link": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+      "date": "2026-04-03T21:28:14.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Scientists Have Made a French Fry Breakthrough",
+      "description": "Researchers have developed a method of making french fries that results in a healthier bite without sacrificing crispiness.",
+      "link": "https://www.wired.com/story/scientists-have-made-french-fry-breakthrough/",
+      "date": "2026-04-03T21:23:33.000Z"
     },
     {
       "source": "The Verge",
@@ -84,6 +246,33 @@
       "date": "2026-04-03T20:53:48.000Z"
     },
     {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Tesla’s Texas factory workforce reportedly shrunk 22% in 2025",
+      "description": "Tesla's headcount fell from 21,191 workers to 16,506 workers in 2025, according to a report, as it grappled with its second straight year of declining sales.",
+      "link": "https://techcrunch.com/2026/04/03/teslas-texas-factory-workforce-reportedly-shrunk-22-in-2025/",
+      "date": "2026-04-03T20:43:25.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "OpenAI executive shuffle includes new role for COO Brad Lightcap to lead ‘special projects’",
+      "description": "In addition to Lightcap's new role, OpenAI CMO Kate Rouch will be stepping away from the company to focus on cancer recovery, with a plan to return when her health allows.",
+      "link": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+      "date": "2026-04-03T20:35:34.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports",
+      "description": "Anthropic has purchased the stealth biotech AI startup Coefficient Bio in a $400 million stock deal, according to The Information and Eric Newcomer.",
+      "link": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+      "date": "2026-04-03T20:28:40.000Z"
+    },
+    {
       "source": "The Verge",
       "category": "tech",
       "tag": "Big Tech",
@@ -91,6 +280,69 @@
       "description": "OpenAI is undergoing another round of C-suite changes, according to an internal memo viewed by The Verge. \nFidji Simo, OpenAI's CEO of AGI deployment - who was until recently the company's CEO of applications - says in the memo that she will be stepping away on medical leave \"for",
       "link": "https://www.theverge.com/ai-artificial-intelligence/906965/openais-agi-boss-is-taking-a-leave-of-absence",
       "date": "2026-04-03T20:22:59.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Anthropic ramps up its political activities with a new PAC",
+      "description": "With the midterms right around the corner, the new group is positioned to back candidates who support the AI company's policy agenda.",
+      "link": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
+      "date": "2026-04-03T20:22:18.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Our Favorite iPad Is $50 Off",
+      "description": "Score an 11th-generation A16-powered iPad for just $300.",
+      "link": "https://www.wired.com/story/ipad-a16-deal-426/",
+      "date": "2026-04-03T20:06:20.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Best iPad apps to boost productivity and make your life easier",
+      "description": "There are many iPad apps to help you organize recipes, sync tasks across devices, be more productive, and manage your notes.",
+      "link": "https://techcrunch.com/2026/04/03/best-ipad-apps-to-boost-productivity-make-your-life-easier/",
+      "date": "2026-04-03T19:56:49.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "AI companies are building huge natural gas plants to power data centers. What could go wrong?",
+      "description": "Meta, Microsoft, and Google are all betting big on new natural gas power plants to run their AI data centers. They may regret it.",
+      "link": "https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/",
+      "date": "2026-04-03T19:48:22.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "OpenAI’s Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up",
+      "description": "The company is undergoing major leadership restructuring as its CEO of AGI deployment goes on leave for “several weeks.”",
+      "link": "https://www.wired.com/story/openais-fidji-simo-is-taking-a-leave-of-absence/",
+      "date": "2026-04-03T19:38:35.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Edward ‘Big Balls’ Coristine Is Helping Out on Viral Fraud Videos Now",
+      "description": "The DOGE engineer appeared on influencer Nick Shirley's podcast this week to talk corruption and government work—and how they collaborated on Shirley's recent ‘investigation.’",
+      "link": "https://www.wired.com/story/edward-coristine-nick-shirley-fraud-videos/",
+      "date": "2026-04-03T19:36:59.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "People would rather have an Amazon warehouse in their backyard than a data center",
+      "description": "A new poll shows that the debate over data centers is far from settled.",
+      "link": "https://techcrunch.com/2026/04/03/people-would-rather-have-an-amazon-warehouse-in-their-backyard-than-a-data-center/",
+      "date": "2026-04-03T19:20:36.000Z"
     },
     {
       "source": "The Verge",
@@ -120,6 +372,15 @@
       "date": "2026-04-03T16:58:00.000Z"
     },
     {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "The final days of the Tesla Model X and S are here. All bets are on the Cybercab.",
+      "description": "It's a new era for Tesla — and one that will rely on its ability to launch the Cybercab and mass-produce the Optimus robot.",
+      "link": "https://techcrunch.com/2026/04/03/the-final-days-of-the-tesla-model-x-and-s-are-here-all-bets-are-on-the-cybercab/",
+      "date": "2026-04-03T16:48:09.000Z"
+    },
+    {
       "source": "Numerama",
       "category": "tech",
       "tag": "Tech",
@@ -145,6 +406,15 @@
       "description": "Le retour en Terre du Milieu se précise, mais il ne se fera pas sans quelques bouleversements majeurs. Alors que la production de The Hunt for Gollum passe à la vitesse supérieure, une décision cruciale vient d'être officialisée par Andy Serkis. Elle concerne l'un des piliers de ",
       "link": "https://www.numerama.com/pop-culture/2226539-le-seigneur-des-anneaux-ca-sera-un-nouvel-acteur-pour-aragorn-dans-the-hunt-for-gollum-cest-acte.html",
       "date": "2026-04-03T15:51:40.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Europe’s cyber agency blames hacking gangs for massive data breach and leak",
+      "description": "CERT-EU blamed the cybercrime group TeamPCP for the recent hack on the European Commission, and said the notorious ShinyHunters gang was responsible for leaking the stolen data online.",
+      "link": "https://techcrunch.com/2026/04/03/europes-cyber-agency-blames-hacking-gangs-for-massive-data-breach-and-leak/",
+      "date": "2026-04-03T15:50:43.000Z"
     },
     {
       "source": "Numerama",
@@ -183,6 +453,15 @@
       "date": "2026-04-03T15:00:00.000Z"
     },
     {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "John Perry Barlow, JFK Jr., and a Night of Grief I Can’t Forget",
+      "description": "Watching Love Story brought back a surreal evening in 1994.",
+      "link": "https://www.wired.com/story/jfk-jr-john-perry-barlow-friendship-love-story/",
+      "date": "2026-04-03T15:00:00.000Z"
+    },
+    {
       "source": "Numerama",
       "category": "tech",
       "tag": "Tech",
@@ -210,6 +489,15 @@
       "date": "2026-04-03T14:31:17.000Z"
     },
     {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "The Facebook insider building content moderation for the AI era",
+      "description": "Moonbounce has raised $12 million to grow its AI control engine that converts content moderation policies into consistent, predictable AI behavior.",
+      "link": "https://techcrunch.com/2026/04/03/moonbounce-fundraise-content-moderation-for-the-ai-era/",
+      "date": "2026-04-03T14:00:15.000Z"
+    },
+    {
       "source": "The Verge",
       "category": "tech",
       "tag": "Big Tech",
@@ -226,6 +514,15 @@
       "description": "Le 2 avril 2026, Anthropic a affirmé avoir identifié, au cœur de son modèle Claude, des « représentations internes » proches d’émotions. Une découverte qui éclaire pourquoi les IA semblent parfois empathiques… et comment ces états influencent réellement leurs décisions.",
       "link": "https://www.numerama.com/tech/2225793-pourquoi-votre-ia-semble-parfois-triste-ou-agacee-anthropic-a-enfin-trouve-la-reponse.html",
       "date": "2026-04-03T13:50:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "The Best Samsung Galaxy S26 Cases (2026): S26, S26+, and S26 Ultra",
+      "description": "Protect your new Samsung phone with the help of these cases and screen protectors.",
+      "link": "https://www.wired.com/gallery/best-samsung-s26-cases-and-accessories/",
+      "date": "2026-04-03T12:07:00.000Z"
     },
     {
       "source": "CNIL",
@@ -255,6 +552,42 @@
       "date": "2026-04-03T12:00:00.000Z"
     },
     {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Submits Annual Budget Request to Congress",
+      "description": "The Federal Trade Commission submitted to Congress its Fiscal Year 2027 budget request, in support of the President’s FY 2027 budget for the federal government.\nView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-submits-annual-budget-request-congress",
+      "date": "2026-04-03T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Publishes New Strategic Plan",
+      "description": "The Federal Trade Commission has published its FY 2026-2030 Strategic Plan, which will guide the agency over the next five years.\nView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-publishes-new-strategic-plan",
+      "date": "2026-04-03T12:00:00.000Z"
+    },
+    {
+      "source": "Wired",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "The Best iPad to Buy (and Some to Avoid) in 2026: Compare the Air, Pro, Mini",
+      "description": "We break down the current iPad lineup to help you figure out which of Apple’s tablets is best for you.",
+      "link": "https://www.wired.com/gallery/the-best-ipad/",
+      "date": "2026-04-03T11:30:00.000Z"
+    },
+    {
+      "source": "TechCrunch",
+      "category": "tech",
+      "tag": "Startups",
+      "title": "Amazon hits sellers with ‘fuel surcharge’ as Iran war roils global energy markets",
+      "description": "The e-commerce giant called the surcharge \"temporary\" but couldn't give a date for when the policy would be retired.",
+      "link": "https://techcrunch.com/2026/04/02/amazon-hits-sellers-with-fuel-surcharge-as-iran-war-roils-global-energy-markets/",
+      "date": "2026-04-02T22:56:29.000Z"
+    },
+    {
       "source": "CNIL",
       "category": "veille",
       "tag": "Donnees personnelles",
@@ -282,12 +615,48 @@
       "date": "2026-04-02T12:00:00.000Z"
     },
     {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Staff Warn Tennessee Legislature of Risks to Patients if Ballad Health COPA Expires and Support Proposed Repeal of Certificate of Need Requirements",
+      "description": "Federal Trade Commission staff warned Tennessee legislators of the potential harm to patients if it passes proposed legislation that would terminate a Certificate of Public Advantage (COPA) that providesView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-staff-warn-tennessee-legislature-risks-patients-if-ballad-health-copa-expires-support-proposed",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC, Maryland Attorney General Secure Full Refunds and Additional Penalties Against Lindsay Auto Group for Deceptive Pricing Practices and Unwanted Add-ons",
+      "description": "More than $75 million in charges may be eligible for refunds\nThe Federal Trade Commission and Maryland Attorney General today announced Lindsay Automotive Group and its executives will return money to resolve allegations that they deceived consumers for years with falsely adverti",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-maryland-attorney-general-secure-full-refunds-additional-penalties-against-lindsay-auto-group",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Seeks Public Comment on Petition to Modify Northrop Grumman Final Order",
+      "description": "The Federal Trade Commission is seeking public comment on a petition filed by Northrop Grumman Corporation requesting that the Commission reopen and set aside a finaView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-seeks-public-comment-petition-modify-northrop-grumman-final-order",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
       "source": "CNIL",
       "category": "veille",
       "tag": "Donnees personnelles",
       "title": "Données post mortem : publication du cahier air2025 sur l’éthique des traces numériques",
       "description": "Dans le cadre de sa mission éthique, la CNIL publie son cahier air2025 à la suite du colloque du 15 octobre 2025 sur le thème des données post mortem, organisé en partenariat avec la Bibliothèque nationale de France.",
       "link": "https://www.cnil.fr/fr/cahier-air2025",
+      "date": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Endorses Florida Supreme Court Action  Eliminating the ABA’s Bar Admission Monopoly",
+      "description": "Federal Trade Commission staff on Tuesday endorsed the Florida Supreme Court’s decision to eliminate the American Bar Association’s (ABA) status as the sole accrediting agency dictating the educational requirements to take the bar exam and become a licensed attorney in Florida.\nV",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-endorses-florida-supreme-court-action-eliminating-abas-bar-admission-monopoly",
       "date": "2026-03-31T12:00:00.000Z"
     },
     {
@@ -300,12 +669,30 @@
       "date": "2026-03-30T12:00:00.000Z"
     },
     {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Takes Action Against Match and OkCupid for Deceiving Users by Sharing Personal Data with Third Party",
+      "description": "Order follows FTC success in enforcing Civil Investigative Demand in federal court\nThe Federal Trade Commission is taking action against OkCupid and its affiliate Match Group Americas over allegations OkCupid deceived users of its dating app by sharing their personal information,",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-takes-action-against-match-okcupid-deceiving-users-sharing-personal-data-third-party",
+      "date": "2026-03-30T12:00:00.000Z"
+    },
+    {
       "source": "CNIL",
       "category": "veille",
       "tag": "Donnees personnelles",
       "title": "Ordre du jour de la séance plénière du 26 mars 2026",
       "description": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 26 mars 2026 à 9&nbsp;h&nbsp;30 avec l’ordre du jour suivant&nbsp;:",
       "link": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-26-mars-2026",
+      "date": "2026-03-26T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Chairman Andrew N. Ferguson Issues Warning Letters to CEOs of PayPal, Stripe, Visa and Mastercard About Debanking American Consumers",
+      "description": "Federal Trade Commission Chairman Andrew N. Ferguson sent letters today to four major financial infrastructure platforms and payment providers reminding them of their obligations to their customers under the FTC Act.\nView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-chairman-andrew-n-ferguson-issues-warning-letters-ceos-paypal-stripe-visa-mastercard-about-debanking-american-consumers",
       "date": "2026-03-26T12:00:00.000Z"
     },
     {
@@ -316,6 +703,204 @@
       "description": "Rémi STEFANINI rejoindra la CNIL le 15 avril 2026 en tant que directeur des technologies, de l’innovation et de l’IA de la CNIL.",
       "link": "https://www.cnil.fr/fr/remi-stefanini-directeur-dtia",
       "date": "2026-03-25T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "FTC Testifies before the Joint Economic Committee on Agency’s Efforts to Combat Fraud",
+      "description": "The Federal Trade Commission testified today before the Joint Economic Committee about the agency’s ongoing work to combat fraud and protect consumers from scammers and other bad actors.\nView Press Release",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud",
+      "date": "2026-03-25T12:00:00.000Z"
+    },
+    {
+      "source": "FTC",
+      "category": "droit",
+      "tag": "Plateformes",
+      "title": "Federal Trade Commission and Department of Justice Seek Public Comment on the Premerger Notification and Report Form",
+      "description": "Comments will inform potential HSR rulemaking that seeks to reduce the burden for non-problematic transactions while also making necessary updates\nToday, the Federal Trade Commission (Commission) and the Department of Justice’s Antitrust Division (DOJ) (together, the Agencies) la",
+      "link": "https://www.ftc.gov/news-events/news/press-releases/2026/03/federal-trade-commission-department-justice-seek-public-comment-premerger-notification-report-form",
+      "date": "2026-03-25T12:00:00.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "International Cooperation",
+      "description": "International Cooperation\nikampoio\nMon, 09/02/2026 - 11:34\n\n\n            \n  \n\n\n\n      \n            \nIn an increasingly interconnected and globalised digital landscape, cybersecurity challenges are becoming more complex and creating more cross-border dependencies. Acting within it",
+      "link": "https://www.enisa.europa.eu/about-enisa/international-cooperation",
+      "date": "2026-02-09T10:34:09.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Meta contraint de prévenir la diffusion de publicités de jeux en ligne",
+      "description": "Dans un arrêt du 28 janvier 2026, la cour d’appel de Paris confirme l’injonction dynamique qui avait été prononcée par le juge des requêtes à l’encontre de Meta relative à la diffusion de publicités pour des jeux en ligne contrefaisant les marques des casinos du groupe Lucien Bar",
+      "link": "https://www.legalis.net/actualite/meta-contraint-de-prevenir-la-diffusion-de-publicites-de-jeux-en-ligne/",
+      "date": "2026-02-02T13:49:02.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "Hands-on Interactive Exercise- ECSF Workshop 2025",
+      "description": "Hands-on Interactive Exercise- ECSF Workshop 2025\nifrafabi\nFri, 30/01/2026 - 13:49\n\n\n            \nhttps://www.enisa.europa.eu/events/european-cybersecurity-skills-workshop/ECSF2…\nThe purpose of this exercise was to showcase and discuss how EU-cofunded projects and initiatives con",
+      "link": "https://www.enisa.europa.eu/events/european-cybersecurity-skills-workshop/ECSF2025/insights",
+      "date": "2026-01-30T12:49:43.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "L’éditeur européen de Playboy condamné pour dénigrement",
+      "description": "Par un arrêt du 4 décembre 2025, la cour d’appel de Paris a estimé que la société Kleverage, éditeur licencié de Playboy en Europe, s’était rendue responsable de dénigrement fautif à l’encontre de la société Kama Publishing, productrice de ses publications, constitutifs d’un trou",
+      "link": "https://www.legalis.net/actualite/lediteur-europeen-de-playboy-condamne-pour-denigrement/",
+      "date": "2025-12-22T15:04:34.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Le modèle de covoiturage de Citygo confirmé",
+      "description": "Par un arrêt du 26 novembre 2025, la cour d’appel de Versailles a confirmé le jugement du 7 juin 2023 du tribunal de commerce de Nanterre qui avait considéré que la plateforme Citygo respectait les obligations en matière de covoiturage imposées par l’article L.3132-1 du code des ",
+      "link": "https://www.legalis.net/actualite/le-modele-de-covoiturage-de-citygo-confirme/",
+      "date": "2025-12-05T14:39:41.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "ECSF Workshop 2025",
+      "description": "ECSF Workshop 2025\nifrafabi\nMon, 24/11/2025 - 10:28\n\n\n            \nhttps://www.enisa.europa.eu/events/european-cybersecurity-skills-workshop/ECSF2…\nThe full agenda and the interactive exercise are available here\nThe ECSF main webpage with all the relevant information is available",
+      "link": "https://www.enisa.europa.eu/events/european-cybersecurity-skills-workshop/ECSF2025",
+      "date": "2025-11-24T09:28:06.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "What are the specific conditions for contractors to join the Reserve?",
+      "description": "What are the specific conditions for contractors to join the Reserve?  \nikampoio\nThu, 20/11/2025 - 17:47\n\n\n            \nEach call for tenders contains a list of technical and professional capacity criteria. Evidence of the technical and professional capacity of the tenderers shal",
+      "link": "https://www.enisa.europa.eu/what-are-the-specific-conditions-for-contractors-to-join-the-reserve",
+      "date": "2025-11-20T16:47:05.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "How could a cybersecurity company join the EU Cybersecurity Reserve?",
+      "description": "How could a cybersecurity company join the EU Cybersecurity Reserve? \nikampoio\nThu, 20/11/2025 - 17:46\n\n\n            \nTrusted cybersecurity services providers are selected on the basis of open procurement procedure.  \nThe list of trusted cybersecurity services providers forming t",
+      "link": "https://www.enisa.europa.eu/how-could-a-cybersecurity-company-join-the-eu-cybersecurity-reserve",
+      "date": "2025-11-20T16:46:29.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "How will the EU Cybersecurity Reserve be funded?",
+      "description": "How will the EU Cybersecurity Reserve be funded? \nikampoio\nThu, 20/11/2025 - 17:45",
+      "link": "https://www.enisa.europa.eu/how-will-the-eu-cybersecurity-reserve-be-funded",
+      "date": "2025-11-20T16:45:58.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "Does the EU Cybersecurity Reserve only provide incident reponse and initial recovery actions?",
+      "description": "Does the EU Cybersecurity Reserve only provide incident reponse and initial recovery actions? \nikampoio\nThu, 20/11/2025 - 17:44\n\n\n            \nIn order to ensure the effective use of Union funding, pre-committed services under the EU Cybersecurity Reserve should be convertible, i",
+      "link": "https://www.enisa.europa.eu/does-the-eu-cybersecurity-reserve-only-provide-incident-reponse-and-initial-recovery-actions",
+      "date": "2025-11-20T16:44:28.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "Is any non-EU country eligible to receive support from the EU Cybersecurity Reserve?",
+      "description": "Is any non-EU country eligible to receive support from the EU Cybersecurity Reserve? \nikampoio\nThu, 20/11/2025 - 17:44\n\n\n            \nGiven that cyberspace has no borders and significant cyber incidents pose high risk of spillover effect, boosting of cyber resilience of EU's part",
+      "link": "https://www.enisa.europa.eu/is-any-non-eu-country-eligible-to-receive-support-from-the-eu-cybersecurity-reserve",
+      "date": "2025-11-20T16:44:04.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "How does ENISA cooperate with users of the EU Cybersecurity Reserve? Who decides which entity should benefit from services provided by the Reserve?",
+      "description": "How does ENISA cooperate with users of the EU Cybersecurity Reserve? Who decides which entity should benefit from services provided by the Reserve? \nikampoio\nThu, 20/11/2025 - 17:43\n\n\n            \nENISA is in regular contact with NIS2 national Single Points of Contact (SPoC), as ",
+      "link": "https://www.enisa.europa.eu/how-does-enisa-cooperate-with-users-of-the-eu-cybersecurity-reserve-who-decides-which-entity-should-benefit-from-services-provided-by-the-reserve",
+      "date": "2025-11-20T16:43:32.000Z"
+    },
+    {
+      "source": "ENISA",
+      "category": "droit",
+      "tag": "Cybersecurite",
+      "title": "What is the role of ENISA?",
+      "description": "What is the role of ENISA? \nikampoio\nThu, 20/11/2025 - 17:42\n\n\n            \nGiven the extensive experience gained by ENISA with cybersecurity Support Action, law-makers decided that ENISA is the most suitable agency to implement the EU Cybersecurity Reserve. Thus, under the EU Co",
+      "link": "https://www.enisa.europa.eu/what-is-the-role-of-enisa",
+      "date": "2025-11-20T16:42:49.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Géobloquer l’accès en France de messages dénigrants vaut suppression",
+      "description": "Par un arrêt du 13 juin 2025, la cour d’appel de Paris confirme le jugement du 21 septembre 2022 du tribunal de commerce de Paris en ce qu’il avait jugé manifestement illicite les commentaires des consommateurs sur le site Signal-arnaques.com édité par la société Heretic et dont ",
+      "link": "https://www.legalis.net/actualite/geobloquer-lacces-en-france-de-messages-denigrants-vaut-suppression/",
+      "date": "2025-07-02T14:07:24.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Un site de notation condamné pour dénigrement",
+      "description": "Par un arrêt du 7 mai 2025, la cour d’appel de Paris a confirmé l’ordonnance de référé du 4 juillet 2024 du tribunal de commerce de Paris qui avait enjoint Heretic de procéder à la suppression de la page de son site scamdoc.com sur laquelle figurait un score de confiance de 2%, d",
+      "link": "https://www.legalis.net/actualite/un-site-de-notation-condamne-pour-denigrement/",
+      "date": "2025-05-19T12:37:36.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Doctrine.fr condamné pour concurrence déloyale",
+      "description": "Par un arrêt du 7 mai 2025, la cour d’appel de Paris a condamné la société Forseti, qui édite le site Doctrine.fr, à payer en réparation des actes de concurrence déloyale la somme de 40 000 euros à chacune des sociétés, Lexbase, Lextenso et Lamy Liaisons, et la somme de 50 000 eu",
+      "link": "https://www.legalis.net/actualite/doctrine-fr-condamne-pour-concurrence-deloyale/",
+      "date": "2025-05-12T09:54:04.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Condamnation pour défaut de désignation d’un directeur de la publication",
+      "description": "L’absence de désignation d’un directeur de la publication dans les mentions légales sur un site internet est sanctionnée pénalement. Cette formalité est non seulement obligatoire mais elle aussi utile car elle permet d’identifier le responsable pénal d’un site. Dans l’affaire jug",
+      "link": "https://www.legalis.net/actualite/condamnation-pour-defaut-de-designation-dun-directeur-de-la-publication/",
+      "date": "2025-04-25T12:47:40.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Typosquatting : blocage judiciaire de 39 noms de domaine en .fr",
+      "description": "Une fois n’est pas coutume, un groupe victime de typosquatting sur ses marques française, européenne et internationale a choisi de passer par la voie judiciaire pour bloquer les noms de domaine contrefaisants et obtenir réparation. Le tribunal judiciaire de Paris a ordonné le tra",
+      "link": "https://www.legalis.net/actualite/typosquatting-blocage-judiciaire-de-39-noms-de-domaine-en-fr/",
+      "date": "2025-04-24T13:19:06.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "Droit d’auteur : preuve de la titularité par la Blockchain",
+      "description": "Par un jugement du 20 mars 2025, le tribunal judiciaire de Marseille a admis la blockchain comme mode de preuve de la titularité des droits patrimoniaux relatifs à des vêtements et qu’elle pouvait aussi servir à horodater la création. AZ Factory commercialise sous ses marques des",
+      "link": "https://www.legalis.net/actualite/droit-dauteur-preuve-de-la-titularite-par-la-blockchain/",
+      "date": "2025-04-04T08:29:31.000Z"
+    },
+    {
+      "source": "Legalis",
+      "category": "droit",
+      "tag": "Donnees personnelles",
+      "title": "La liberté d’expression prévaut sur le droit à l’oubli",
+      "description": "Par un arrêt très étayé du 20 février 2025, la cour d’appel de Paris a fait prévaloir la liberté d’expression sur le droit des personnes à l’effacement de leurs données personnelles concernant la publication en ligne d’un article de presse évoquant la condamnation d’un ancien pré",
+      "link": "https://www.legalis.net/actualite/la-liberte-dexpression-prevaut-sur-le-droit-a-loubli/",
+      "date": "2025-03-06T15:00:19.000Z"
     }
   ]
 }
