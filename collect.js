@@ -3,6 +3,7 @@ const fs = require("fs");
 const parser = new RSSParser({ timeout: 8000 });
 
 const SOURCES = [
+  // DROIT — sources officielles
   { name: "CNIL", url: "https://www.cnil.fr/fr/rss.xml", category: "droit", tag: "Donnees personnelles" },
   { name: "ANSSI", url: "https://www.cert.ssi.gouv.fr/feed/", category: "droit", tag: "Cybersecurite" },
   { name: "ARCEP", url: "https://en.arcep.fr/news/follow-regulatory-news/newswire/rss.xml", category: "droit", tag: "Plateformes" },
@@ -10,13 +11,36 @@ const SOURCES = [
   { name: "Parlement EU", url: "https://www.europarl.europa.eu/rss/doc/top-stories/fr.xml", category: "droit", tag: "Contrats IT" },
   { name: "ENISA", url: "https://www.enisa.europa.eu/rss.xml", category: "droit", tag: "Cybersecurite" },
   { name: "Legalis", url: "https://www.legalis.net/feed/", category: "droit", tag: "Donnees personnelles" },
-  { name: "ICO UK", url: "https://ico.org.uk/about-the-ico/newsroom/rss/", category: "droit", tag: "Donnees personnelles" },
+  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/rss", category: "droit", tag: "Donnees personnelles" },
   { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
+  { name: "OCDE IA", url: "https://oecd.ai/en/wonk/rss", category: "droit", tag: "IA" },
+  { name: "The Block", url: "https://www.theblockcrypto.com/rss.xml", category: "droit", tag: "Blockchain" },
+  { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/", category: "droit", tag: "Blockchain" },
+
+  // DROIT — Google Actualités par mots-clés
+  { name: "Google: IA & droit", url: "https://news.google.com/rss/search?q=intelligence+artificielle+droit&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "IA" },
+  { name: "Google: RGPD", url: "https://news.google.com/rss/search?q=RGPD+donnees+personnelles&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "Donnees personnelles" },
+  { name: "Google: cyber juridique", url: "https://news.google.com/rss/search?q=cybersecurite+juridique&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "Cybersecurite" },
+  { name: "Google: blockchain droit", url: "https://news.google.com/rss/search?q=blockchain+droit+regulation&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "Blockchain" },
+  { name: "Google: plateformes", url: "https://news.google.com/rss/search?q=plateformes+numeriques+regulation&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "Plateformes" },
+
+  // TECH — sources officielles
   { name: "Numerama", url: "https://www.numerama.com/feed/", category: "tech", tag: "Tech FR" },
+  { name: "Next INpact", url: "https://www.nextinpact.com/rss/news.xml", category: "tech", tag: "Tech FR" },
   { name: "The Verge", url: "https://www.theverge.com/rss/index.xml", category: "tech", tag: "Big Tech" },
   { name: "Wired", url: "https://www.wired.com/feed/rss", category: "tech", tag: "Big Tech" },
+  { name: "MIT Tech Review", url: "https://www.technologyreview.com/feed/", category: "tech", tag: "IA Innovation" },
   { name: "TechCrunch", url: "https://techcrunch.com/feed/", category: "tech", tag: "Startups" },
+
+  // TECH — Google Actualités par mots-clés
+  { name: "Google: IA tech", url: "https://news.google.com/rss/search?q=intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", category: "tech", tag: "IA Innovation" },
+  { name: "Google: big tech", url: "https://news.google.com/rss/search?q=big+tech+google+apple+meta&hl=fr&gl=FR&ceid=FR:fr", category: "tech", tag: "Big Tech" },
+  { name: "Google: startups FR", url: "https://news.google.com/rss/search?q=startups+technologie+france&hl=fr&gl=FR&ceid=FR:fr", category: "tech", tag: "Startups" },
+
+  // ARBITRAGE
   { name: "GAR", url: "https://globalarbitrationreview.com/rss", category: "arbitrage", tag: "Arbitrage" },
+  { name: "OMPI", url: "https://www.wipo.int/amc/en/news/rss/", category: "arbitrage", tag: "PI numerique" },
+  { name: "Google: arbitrage numerique", url: "https://news.google.com/rss/search?q=arbitrage+international+numerique&hl=fr&gl=FR&ceid=FR:fr", category: "arbitrage", tag: "Arbitrage" },
 ];
 
 function fetchWithTimeout(url) {
