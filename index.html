@@ -80,10 +80,7 @@ h1 em {
   color: var(--muted);
 }
 
-#last-update span {
-  color: var(--accent);
-  font-weight: 500;
-}
+#last-update span { color: var(--accent); font-weight: 500; }
 
 .count-badge {
   font-family: 'DM Mono', monospace;
@@ -94,40 +91,70 @@ h1 em {
   border-radius: 2px;
 }
 
-/* ── TABS ── */
+/* ── MAIN TABS ── */
 nav.tabs {
   border-bottom: 1.5px solid var(--border);
   padding: 0 3rem;
   display: flex;
   gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+
+nav.tabs::-webkit-scrollbar { display: none; }
 
 .tab-btn {
   font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   background: none;
   border: none;
   border-bottom: 2.5px solid transparent;
   margin-bottom: -1.5px;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
   cursor: pointer;
   color: var(--muted);
   transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
 }
 
 .tab-btn:hover { color: var(--ink); }
+.tab-btn.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
 
-.tab-btn.active {
-  color: var(--ink);
-  border-bottom-color: var(--accent);
-  font-weight: 500;
+/* ── SUB TABS ── */
+nav.subtabs {
+  border-bottom: 1px solid var(--border);
+  padding: 0 3rem;
+  display: flex;
+  gap: 0;
+  background: var(--cream);
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+
+nav.subtabs::-webkit-scrollbar { display: none; }
+
+.subtab-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+  color: var(--muted);
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.subtab-btn:hover { color: var(--ink); }
+.subtab-btn.active { color: var(--ink); border-bottom-color: var(--accent2); font-weight: 500; }
 
 /* ── FILTERS ── */
 .filter-bar {
-  padding: 1rem 3rem;
+  padding: 0.9rem 3rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -146,8 +173,8 @@ nav.tabs {
 
 .filter-chip {
   font-family: 'DM Mono', monospace;
-  font-size: 0.7rem;
-  padding: 0.25rem 0.7rem;
+  font-size: 0.68rem;
+  padding: 0.22rem 0.65rem;
   border: 1.5px solid var(--border);
   border-radius: 20px;
   background: var(--paper);
@@ -157,16 +184,17 @@ nav.tabs {
   letter-spacing: 0.04em;
 }
 
-.filter-chip:hover,
-.filter-chip.active {
+.filter-chip:hover, .filter-chip.active {
   border-color: var(--ink);
   color: var(--ink);
   background: var(--cream);
 }
 
-/* ── CONTENT PANELS ── */
+/* ── PANELS ── */
 .panel { display: none; }
 .panel.active { display: block; }
+.subpanel { display: none; }
+.subpanel.active { display: block; }
 
 /* ── ARTICLE GRID ── */
 .articles-grid {
@@ -181,7 +209,7 @@ nav.tabs {
   background: var(--paper);
   border: 1.5px solid var(--border);
   padding: 1.4rem 1.4rem 1.2rem;
-  transition: background 0.15s, transform 0.15s;
+  transition: background 0.15s;
   position: relative;
   margin: -1px;
   cursor: pointer;
@@ -192,10 +220,7 @@ nav.tabs {
   gap: 0.6rem;
 }
 
-.article-card:hover {
-  background: var(--cream);
-  z-index: 1;
-}
+.article-card:hover { background: var(--cream); z-index: 1; }
 
 .card-source {
   font-family: 'DM Mono', monospace;
@@ -260,11 +285,11 @@ nav.tabs {
   letter-spacing: 0.08em;
 }
 
-/* ── TEXTES APPLICABLES ── */
+/* ── TEXTES GRID ── */
 .textes-grid {
   padding: 2rem 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.2rem;
 }
 
@@ -314,6 +339,14 @@ nav.tabs {
 .status-transitoire { background: #fff0cc; color: #7a5c00; }
 .status-projet { background: #e0e8ff; color: #1a3c8c; }
 
+.texte-pays {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--accent2);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
 .texte-link {
   font-family: 'DM Mono', monospace;
   font-size: 0.68rem;
@@ -326,7 +359,88 @@ nav.tabs {
 
 .texte-link:hover { text-decoration: underline; }
 
-/* ── LOADING STATE ── */
+/* ── ARBITRAGE GRID ── */
+.arbitrage-grid {
+  padding: 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.2rem;
+}
+
+.arbitrage-card {
+  border: 2px solid var(--ink);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: background 0.15s;
+}
+
+.arbitrage-card:hover { background: var(--cream); }
+
+.arbitrage-org {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.arbitrage-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.arbitrage-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.arbitrage-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+}
+
+.arbitrage-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  background: var(--tag-bg);
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+.arbitrage-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--accent2);
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.arbitrage-link:hover { text-decoration: underline; }
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem 0.5rem;
+  color: var(--muted);
+  font-style: italic;
+  border-top: 1px solid var(--border);
+}
+
+.section-title:first-child { border-top: none; }
+
+/* ── LOADING / EMPTY ── */
 .loading {
   padding: 4rem 3rem;
   text-align: center;
@@ -359,13 +473,10 @@ nav.tabs {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
-  header, nav.tabs, .filter-bar, .articles-grid, .textes-grid {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  .articles-grid { grid-template-columns: 1fr; }
-  .textes-grid { grid-template-columns: 1fr; }
-  .tab-btn { padding: 0.8rem 0.8rem; font-size: 0.68rem; }
+  header, nav.tabs, nav.subtabs, .filter-bar,
+  .articles-grid, .textes-grid, .arbitrage-grid { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .articles-grid, .textes-grid, .arbitrage-grid { grid-template-columns: 1fr; }
+  .tab-btn { padding: 0.8rem 0.7rem; font-size: 0.65rem; }
 }
 ```
 
@@ -377,238 +488,450 @@ nav.tabs {
   <div class="header-top">
     <h1>Veille Juridique — <em>Droit du Numérique</em></h1>
   </div>
-  <p class="subtitle">Protection des données · IA · Cybersécurité · Plateformes · Contrats IT</p>
+  <p class="subtitle">Protection des données · IA · Cybersécurité · Plateformes · Arbitrage international</p>
   <div class="meta-bar">
     <span id="last-update">Dernière collecte : <span>—</span></span>
     <span class="count-badge" id="article-count">0 articles</span>
   </div>
 </header>
 
+<!-- ONGLETS PRINCIPAUX -->
+
 <nav class="tabs">
-  <button class="tab-btn active" data-tab="veille">📰 Veille Juridique</button>
-  <button class="tab-btn" data-tab="textes">📋 Textes Applicables</button>
-  <button class="tab-btn" data-tab="actu">💡 Actu Tech & Innovation</button>
+  <button class="tab-btn active" data-tab="droit">⚖️ Droit</button>
+  <button class="tab-btn" data-tab="tech">💡 Technologies</button>
+  <button class="tab-btn" data-tab="textes">🇪🇺 Europe</button>
+  <button class="tab-btn" data-tab="intl">🌍 Monde</button>
+  <button class="tab-btn" data-tab="arbitrage">🏛️ Arbitrage</button>
 </nav>
 
-<div class="filter-bar" id="filter-bar">
+<!-- FILTRE THÉMATIQUE (droit) -->
+
+<div class="filter-bar" id="filter-droit">
+  <span class="filter-label">Thème :</span>
+  <button class="filter-chip active" data-filter="all">Tous</button>
+  <button class="filter-chip" data-filter="Donnees personnelles">Données personnelles</button>
+  <button class="filter-chip" data-filter="IA">IA</button>
+  <button class="filter-chip" data-filter="Cybersecurite">Cybersécurité</button>
+  <button class="filter-chip" data-filter="Plateformes">Plateformes</button>
+  <button class="filter-chip" data-filter="Contrats IT">Contrats IT</button>
+  <button class="filter-chip" data-filter="Blockchain">Blockchain</button>
+</div>
+
+<!-- FILTRE SOURCE (tech) -->
+
+<div class="filter-bar" id="filter-tech" style="display:none">
   <span class="filter-label">Source :</span>
-  <button class="filter-chip active" data-filter="all">Toutes</button>
-  <button class="filter-chip" data-filter="CNIL">CNIL</button>
-  <button class="filter-chip" data-filter="EDPB">EDPB</button>
-  <button class="filter-chip" data-filter="ANSSI">ANSSI</button>
-  <button class="filter-chip" data-filter="ARCEP">ARCEP</button>
-  <button class="filter-chip" data-filter="EUR-Lex">EUR-Lex</button>
+  <button class="filter-chip active" data-filter-tech="all">Toutes</button>
+  <button class="filter-chip" data-filter-tech="Numerama">Numerama</button>
+  <button class="filter-chip" data-filter-tech="Next INpact">Next INpact</button>
+  <button class="filter-chip" data-filter-tech="The Verge">The Verge</button>
+  <button class="filter-chip" data-filter-tech="Wired">Wired</button>
+  <button class="filter-chip" data-filter-tech="MIT Tech Review">MIT Tech Review</button>
 </div>
 
-<!-- PANEL: VEILLE -->
+<!-- SOUS-ONGLETS TEXTES INTL -->
 
-<div class="panel active" id="panel-veille">
-  <div class="loading" id="loading-veille">Chargement des actualités…</div>
-  <div class="articles-grid" id="grid-veille" style="display:none"></div>
-  <div class="empty" id="empty-veille" style="display:none">Aucun article trouvé. Lance <code>node collect.js</code> pour collecter.</div>
+<nav class="subtabs" id="subtabs-intl" style="display:none">
+  <button class="subtab-btn active" data-subtab="france">🇫🇷 France</button>
+  <button class="subtab-btn" data-subtab="usa">🇺🇸 États-Unis</button>
+  <button class="subtab-btn" data-subtab="uk">🇬🇧 Royaume-Uni</button>
+  <button class="subtab-btn" data-subtab="asie">🌏 Asie</button>
+  <button class="subtab-btn" data-subtab="autres">🌐 Autres pays</button>
+  <button class="subtab-btn" data-subtab="projets">🔭 Projets en cours</button>
+</nav>
+
+<!-- SOUS-ONGLETS ARBITRAGE -->
+
+<nav class="subtabs" id="subtabs-arbitrage" style="display:none">
+  <button class="subtab-btn active" data-subtab-arb="organismes">📌 Organismes & Guidelines</button>
+  <button class="subtab-btn" data-subtab-arb="actu">📰 Actualités arbitrage</button>
+</nav>
+
+<!-- ════════════════════════════════════════════════════
+     PANEL : DROIT & TECHNOLOGIES
+════════════════════════════════════════════════════ -->
+
+<div class="panel active" id="panel-droit">
+  <div class="loading" id="loading-droit">Chargement…</div>
+  <div class="articles-grid" id="grid-droit" style="display:none"></div>
+  <div class="empty" id="empty-droit" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
 </div>
 
-<!-- PANEL: TEXTES -->
+<!-- ════════════════════════════════════════════════════
+     PANEL : TECHNOLOGIES
+════════════════════════════════════════════════════ -->
+
+<div class="panel" id="panel-tech">
+  <div class="loading" id="loading-tech">Chargement…</div>
+  <div class="articles-grid" id="grid-tech" style="display:none"></div>
+  <div class="empty" id="empty-tech" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
+</div>
+
+<!-- ════════════════════════════════════════════════════
+     PANEL : TEXTES UE
+════════════════════════════════════════════════════ -->
 
 <div class="panel" id="panel-textes">
-  <div class="textes-grid" id="grid-textes"></div>
+  <div class="textes-grid" id="grid-textes-ue"></div>
 </div>
 
-<!-- PANEL: ACTU TECH -->
+<!-- ════════════════════════════════════════════════════
+     PANEL : TEXTES FR & INTERNATIONAL
+════════════════════════════════════════════════════ -->
 
-<div class="panel" id="panel-actu">
-  <div class="loading" id="loading-actu">Chargement des actualités tech…</div>
-  <div class="articles-grid" id="grid-actu" style="display:none"></div>
-  <div class="empty" id="empty-actu" style="display:none">Aucun article trouvé. Lance <code>node collect.js</code> pour collecter.</div>
+<div class="panel" id="panel-intl">
+
+  <div class="subpanel active" id="subpanel-france">
+    <div class="textes-grid" id="grid-france"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-usa">
+    <div class="textes-grid" id="grid-usa"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-uk">
+    <div class="textes-grid" id="grid-uk"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-asie">
+    <div class="textes-grid" id="grid-asie"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-autres">
+    <div class="textes-grid" id="grid-autres"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-projets">
+    <div class="textes-grid" id="grid-projets"></div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════════════
+     PANEL : ARBITRAGE
+════════════════════════════════════════════════════ -->
+
+<div class="panel" id="panel-arbitrage">
+
+  <div class="subpanel active" id="subpanel-organismes">
+    <div class="arbitrage-grid" id="grid-organismes"></div>
+  </div>
+
+  <div class="subpanel" id="subpanel-actu">
+    <div class="loading" id="loading-arb">Chargement…</div>
+    <div class="articles-grid" id="grid-actu-arb" style="display:none"></div>
+    <div class="empty" id="empty-arb" style="display:none">Aucun article d'arbitrage collecté.</div>
+  </div>
+
 </div>
 
 <script>
-// ── TEXTES APPLICABLES (statique) ──────────────────────────────────────────
-const TEXTES = [
-  {
-    ref: "UE 2016/679",
-    title: "RGPD",
-    fullTitle: "Règlement Général sur la Protection des Données",
-    desc: "Régime de protection des données personnelles dans l'UE. Applicable depuis mai 2018.",
-    status: "vigueur",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
-  },
-  {
-    ref: "UE 2024/1689",
-    title: "AI Act",
-    fullTitle: "Règlement sur l'Intelligence Artificielle",
-    desc: "Premier cadre légal mondial sur l'IA. Approche par niveaux de risque. Entrée en vigueur août 2024, application progressive jusqu'en 2026.",
-    status: "transitoire",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689"
-  },
-  {
-    ref: "UE 2022/2065",
-    title: "DSA",
-    fullTitle: "Digital Services Act",
-    desc: "Régulation des services intermédiaires en ligne. Obligations renforcées pour les très grandes plateformes (VLOP).",
-    status: "vigueur",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R2065"
-  },
-  {
-    ref: "UE 2022/1925",
-    title: "DMA",
-    fullTitle: "Digital Markets Act",
-    desc: "Régulation des contrôleurs d'accès (gatekeepers) sur les marchés numériques. Obligations ex ante.",
-    status: "vigueur",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R1925"
-  },
-  {
-    ref: "UE 2022/2554",
-    title: "DORA",
-    fullTitle: "Digital Operational Resilience Act",
-    desc: "Résilience opérationnelle numérique des entités financières. Applicable depuis janvier 2025.",
-    status: "vigueur",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R2554"
-  },
-  {
-    ref: "UE 2022/868",
-    title: "Data Governance Act",
-    fullTitle: "Règlement sur la gouvernance des données",
-    desc: "Cadre pour le partage de données entre acteurs publics et privés. Altruisme de données.",
-    status: "vigueur",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R0868"
-  },
-  {
-    ref: "UE 2023/2854",
-    title: "Data Act",
-    fullTitle: "Règlement sur les données",
-    desc: "Accès et utilisation des données générées par des objets connectés et services connexes.",
-    status: "transitoire",
-    link: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023R2854"
-  },
-  {
-    ref: "FR — Loi 78-17",
-    title: "Loi Informatique & Libertés",
-    fullTitle: "Loi n°78-17 relative à l'informatique, aux fichiers et aux libertés",
-    desc: "Transposition française du RGPD. Modifiée en 2018 et 2021. Régit les traitements de données en France.",
-    status: "vigueur",
-    link: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/"
-  }
+// ════════════════════════════════════════════════════
+// DONNÉES STATIQUES
+// ════════════════════════════════════════════════════
+
+const TEXTES_UE = [
+  { ref: 'UE 2016/679', title: 'RGPD', fullTitle: 'Règlement Général sur la Protection des Données', desc: 'Régime de protection des données personnelles dans l\'UE. Applicable depuis mai 2018.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679' },
+  { ref: 'UE 2024/1689', title: 'AI Act', fullTitle: 'Règlement sur l\'Intelligence Artificielle', desc: 'Premier cadre légal mondial sur l\'IA. Approche par niveaux de risque. Application progressive jusqu\'en 2026.', status: 'transitoire', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689' },
+  { ref: 'UE 2022/2065', title: 'DSA', fullTitle: 'Digital Services Act', desc: 'Régulation des services intermédiaires en ligne. Obligations renforcées pour les très grandes plateformes.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R2065' },
+  { ref: 'UE 2022/1925', title: 'DMA', fullTitle: 'Digital Markets Act', desc: 'Régulation des contrôleurs d\'accès (gatekeepers). Obligations ex ante pour les grandes plateformes.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R1925' },
+  { ref: 'UE 2022/2554', title: 'DORA', fullTitle: 'Digital Operational Resilience Act', desc: 'Résilience opérationnelle numérique des entités financières. Applicable depuis janvier 2025.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R2554' },
+  { ref: 'UE 2022/868', title: 'Data Governance Act', fullTitle: 'Règlement sur la gouvernance des données', desc: 'Cadre pour le partage de données entre acteurs publics et privés. Altruisme de données.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R0868' },
+  { ref: 'UE 2023/2854', title: 'Data Act', fullTitle: 'Règlement sur les données', desc: 'Accès et utilisation des données générées par des objets connectés et services connexes.', status: 'transitoire', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023R2854' },
+  { ref: 'UE 2019/881', title: 'Cybersecurity Act', fullTitle: 'Règlement sur la cybersécurité', desc: 'Mandat permanent de l\'ENISA et cadre de certification européen pour les produits et services numériques.', status: 'vigueur', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019R0881' },
+  { ref: 'UE 2023/2841', title: 'CER / NIS2', fullTitle: 'Directive NIS 2', desc: 'Mesures pour un niveau élevé commun de cybersécurité dans l\'Union. Remplace NIS 1.', status: 'transitoire', link: 'https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022L2555' },
 ];
 
-const STATUS_LABELS = { vigueur: "En vigueur", transitoire: "Applicabilité progressive", projet: "En projet" };
+const TEXTES_FRANCE = [
+  { ref: 'Loi n°78-17', title: 'Loi Informatique & Libertés', fullTitle: 'Loi relative à l\'informatique, aux fichiers et aux libertés', desc: 'Transposition française du RGPD. Modifiée en 2018 et 2021. Base de la protection des données en France.', status: 'vigueur', link: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/' },
+  { ref: 'Loi n°2004-575', title: 'LCEN', fullTitle: 'Loi pour la Confiance dans l\'Économie Numérique', desc: 'Régime de responsabilité des hébergeurs, commerce électronique, communications en ligne.', status: 'vigueur', link: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/' },
+  { ref: 'Loi n°2018-133', title: 'Loi Secret des affaires', fullTitle: 'Loi portant sur la protection du secret des affaires', desc: 'Transposition de la directive UE 2016/943. Protection des informations commerciales confidentielles.', status: 'vigueur', link: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000036834545/' },
+  { ref: 'Loi n°2016-1321', title: 'Loi République Numérique', fullTitle: 'Loi pour une République Numérique', desc: 'Open data, neutralité du net, portabilité des données, accessibilité numérique.', status: 'vigueur', link: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033202746/' },
+  { ref: 'Décret 2022-1299', title: 'Doctrine Cloud de l\'État', fullTitle: 'Doctrine d\'utilisation de l\'informatique en nuage par l\'État', desc: 'Cloud au centre, cloud de confiance, SecNumCloud pour les données sensibles de l\'État.', status: 'vigueur', link: 'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046409971' },
+  { ref: 'Projet de loi', title: 'Projet IA France', fullTitle: 'Projet de loi relatif à l\'intelligence artificielle (en cours)', desc: 'Adaptation du droit français à l\'AI Act européen. Désignation de l\'autorité nationale compétente.', status: 'projet', link: 'https://www.legifrance.gouv.fr/' },
+];
 
-function renderTextes() {
-  const grid = document.getElementById('grid-textes');
-  grid.innerHTML = TEXTES.map(t => `
-    <div class="texte-card">
-      <span class="texte-ref">${t.ref}</span>
-      <div class="texte-title">${t.title}</div>
-      <div class="texte-desc"><strong>${t.fullTitle}</strong><br/>${t.desc}</div>
-      <span class="texte-status status-${t.status}">${STATUS_LABELS[t.status]}</span>
-      <a class="texte-link" href="${t.link}" target="_blank" rel="noopener">→ Texte officiel EUR-Lex / Légifrance</a>
-    </div>
-  `).join('');
+const TEXTES_USA = [
+  { ref: 'Executive Order 14110', title: 'Executive Order on AI', fullTitle: 'Safe, Secure, and Trustworthy AI (Biden, 2023)', desc: 'Cadre de gouvernance fédéral de l\'IA aux États-Unis. Partiellement révoqué sous Trump en janvier 2025.', status: 'transitoire', link: 'https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/' },
+  { ref: 'CCPA / CPRA', title: 'California Privacy Rights Act', fullTitle: 'California Consumer Privacy Act amendé par CPRA', desc: 'Loi californienne sur la protection des données personnelles. La plus avancée des États-Unis, souvent comparée au RGPD.', status: 'vigueur', link: 'https://cppa.ca.gov/regulations/' },
+  { ref: 'FTC Act § 5', title: 'FTC & IA', fullTitle: 'Régulation FTC sur l\'IA et les pratiques déloyales', desc: 'La Federal Trade Commission utilise le FTC Act pour encadrer les pratiques trompeuses liées à l\'IA et aux données.', status: 'vigueur', link: 'https://www.ftc.gov/business-guidance/blog/2023/02/ftc-act-covers-ai' },
+  { ref: 'Projet fédéral', title: 'American Privacy Rights Act', fullTitle: 'American Privacy Rights Act (APRA) — projet de loi fédéral', desc: 'Tentative de créer une loi fédérale unifiée sur la vie privée numérique aux États-Unis. En discussion au Congrès.', status: 'projet', link: 'https://www.congress.gov/' },
+];
+
+const TEXTES_UK = [
+  { ref: 'UK GDPR', title: 'UK GDPR', fullTitle: 'UK General Data Protection Regulation', desc: 'Version britannique du RGPD post-Brexit. Maintenu par le Data Protection Act 2018.', status: 'vigueur', link: 'https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/' },
+  { ref: 'AI White Paper 2023', title: 'UK AI Framework', fullTitle: 'A pro-innovation approach to AI regulation', desc: 'Approche sectorielle et flexible de l\'IA au Royaume-Uni. Pas de loi unique mais principes transversaux confiés aux régulateurs existants.', status: 'vigueur', link: 'https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach' },
+  { ref: 'Online Safety Act 2023', title: 'Online Safety Act', fullTitle: 'Online Safety Act 2023', desc: 'Obligations de sécurité pour les plateformes en ligne au Royaume-Uni. Régulé par l\'OFCOM.', status: 'vigueur', link: 'https://www.legislation.gov.uk/ukpga/2023/50/contents' },
+];
+
+const TEXTES_ASIE = [
+  { ref: 'Chine — 2021', title: 'PIPL Chine', fullTitle: 'Personal Information Protection Law (PIPL)', desc: 'Loi chinoise de protection des données personnelles, en vigueur depuis novembre 2021. Souvent comparée au RGPD.', status: 'vigueur', link: 'https://www.newamerica.org/cybersecurity-initiative/digichina/blog/translation-personal-information-protection-law-of-the-peoples-republic-of-china/' },
+  { ref: 'Chine — 2022', title: 'Régulation IA générative', fullTitle: 'Mesures provisoires pour la gestion des services d\'IA générative', desc: 'Premier cadre réglementaire mondial sur l\'IA générative. Applicable depuis août 2023.', status: 'vigueur', link: 'https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm' },
+  { ref: 'Japon — APPI', title: 'APPI Japon', fullTitle: 'Act on the Protection of Personal Information', desc: 'Loi japonaise sur la protection des données. Révisée en 2022, rapprochement progressif avec le RGPD.', status: 'vigueur', link: 'https://www.ppc.go.jp/en/legal/' },
+  { ref: 'Singapour — PDPA', title: 'PDPA Singapour', fullTitle: 'Personal Data Protection Act', desc: 'Loi de protection des données à Singapour. Hub régional de référence pour l\'Asie du Sud-Est.', status: 'vigueur', link: 'https://www.pdpc.gov.sg/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act' },
+  { ref: 'Inde — DPDP 2023', title: 'DPDP Act Inde', fullTitle: 'Digital Personal Data Protection Act 2023', desc: 'Première loi fédérale indienne sur la protection des données personnelles. Règlements d\'application en cours.', status: 'transitoire', link: 'https://www.meity.gov.in/data-protection-framework' },
+];
+
+const TEXTES_AUTRES = [
+  { ref: 'Canada — LPRPDE', title: 'LPRPDE / Bill C-27', fullTitle: 'Loi sur la protection des renseignements personnels et les documents électroniques', desc: 'Loi fédérale canadienne. Le projet C-27 (Loi sur l\'IA et les données) est en cours de refonte.', status: 'transitoire', link: 'https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-lprpde/' },
+  { ref: 'Brésil — LGPD', title: 'LGPD Brésil', fullTitle: 'Lei Geral de Proteção de Dados Pessoais', desc: 'Loi brésilienne sur la protection des données, largement inspirée du RGPD. En vigueur depuis 2020.', status: 'vigueur', link: 'https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd' },
+  { ref: 'Australie — Privacy Act', title: 'Privacy Act Australie', fullTitle: 'Privacy Act 1988 (réforme en cours)', desc: 'Loi fédérale australienne sur la vie privée. Réforme majeure en discussion depuis 2023 pour modernisation.', status: 'transitoire', link: 'https://www.oaic.gov.au/privacy/the-privacy-act' },
+  { ref: 'Afrique — CDAPDP', title: 'Convention UA données', fullTitle: 'Convention de l\'UA sur la cybersécurité et la protection des données (Convention de Malabo)', desc: 'Convention de l\'Union Africaine sur la cybersécurité. Peu ratifiée à ce jour.', status: 'transitoire', link: 'https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection' },
+];
+
+const TEXTES_PROJETS = [
+  { ref: 'UE — En cours', title: 'Cyber Resilience Act', fullTitle: 'Règlement sur la cyber-résilience des produits', desc: 'Obligations de cybersécurité pour les produits connectés (IoT, logiciels). Adoption finale attendue 2025.', status: 'projet', link: 'https://digital-strategy.ec.europa.eu/fr/policies/cyber-resilience-act' },
+  { ref: 'UE — En cours', title: 'AI Liability Directive', fullTitle: 'Directive sur la responsabilité civile liée à l\'IA', desc: 'Adaptation des règles de responsabilité aux dommages causés par l\'IA. Travaux en cours au Parlement européen.', status: 'projet', link: 'https://ec.europa.eu/info/business-economy-euro/doing-business-eu/contract-rules/digital-contracts/liability-rules-artificial-intelligence_fr' },
+  { ref: 'UE — En cours', title: 'Interopérabilité des données de santé', fullTitle: 'European Health Data Space (EHDS)', desc: 'Espace européen des données de santé. Usage secondaire des données de santé à des fins de recherche.', status: 'projet', link: 'https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_fr' },
+  { ref: 'France — En cours', title: 'Code du numérique', fullTitle: 'Projet de codification du droit du numérique français', desc: 'Réflexion en cours sur la création d\'un code du numérique en France, regroupant LCEN, loi IL, etc.', status: 'projet', link: 'https://www.legifrance.gouv.fr/' },
+  { ref: 'International — OCDE', title: 'Principes IA OCDE', fullTitle: 'Principes de l\'OCDE sur l\'intelligence artificielle (mise à jour 2024)', desc: 'Cadre international non contraignant sur l\'IA fiable. Révisé en 2024 pour inclure les systèmes d\'IA générative.', status: 'vigueur', link: 'https://oecd.ai/en/ai-principles' },
+  { ref: 'ONU — 2024', title: 'Résolution IA ONU', fullTitle: 'Résolution de l\'Assemblée générale de l\'ONU sur l\'IA sûre', desc: 'Première résolution de l\'ONU sur l\'IA. Adoptée en mars 2024, focus sur l\'IA sûre et digne de confiance.', status: 'vigueur', link: 'https://press.un.org/en/2024/ga12620.doc.htm' },
+];
+
+const ARBITRAGE_ORGANISMES = [
+  {
+    org: 'CCI — Chambre de Commerce Internationale',
+    title: 'Guidelines IA pour l\'arbitrage CCI',
+    desc: 'La CCI a publié des orientations sur l\'utilisation de l\'IA dans les procédures arbitrales : confidentialité, vérification des sources, transparence envers le tribunal. Applicable aux procédures sous Règlement CCI.',
+    tags: ['IA & arbitrage', 'Confidentialité', 'Règlement CCI 2021'],
+    link: 'https://iccwbo.org/dispute-resolution/dispute-resolution-services/arbitration/'
+  },
+  {
+    org: 'LCIA — London Court of International Arbitration',
+    title: 'Politique IA du LCIA',
+    desc: 'Le LCIA a publié une note sur l\'utilisation responsable de l\'IA générative dans les procédures. Exige la divulgation de l\'utilisation de l\'IA dans les actes de procédure.',
+    tags: ['IA générative', 'Disclosure', 'Règlement LCIA 2020'],
+    link: 'https://www.lcia.org/'
+  },
+  {
+    org: 'AAA-ICDR — American Arbitration Association',
+    title: 'AI Task Force AAA',
+    desc: 'L\'AAA a mis en place une task force sur l\'IA. Des lignes directrices provisoires encadrent l\'utilisation des outils d\'IA par les parties et arbitres dans les procédures ICDR.',
+    tags: ['IA', 'Task Force', 'Procédures internationales'],
+    link: 'https://www.adr.org/'
+  },
+  {
+    org: 'SIAC — Singapore International Arbitration Centre',
+    title: 'Practice Note IA du SIAC',
+    desc: 'Le SIAC a adopté une Practice Note sur l\'IA en arbitrage international. Obligations de transparence et limites à l\'usage autonome de l\'IA pour les actes de procédure.',
+    tags: ['IA', 'Practice Note', 'Asie-Pacifique'],
+    link: 'https://www.siac.org.sg/'
+  },
+  {
+    org: 'OMPI — Organisation Mondiale de la Propriété Intellectuelle',
+    title: 'WIPO CLEA & droit du numérique',
+    desc: 'L\'OMPI administre le Centre d\'arbitrage et de médiation, spécialisé en litiges de propriété intellectuelle et noms de domaine. Publication de rapports sur l\'IA et la PI.',
+    tags: ['PI numérique', 'Noms de domaine', 'IA & PI'],
+    link: 'https://www.wipo.int/amc/fr/'
+  },
+  {
+    org: 'CNUDCI / UNCITRAL',
+    title: 'Notes techniques sur l\'arbitrage en ligne',
+    desc: 'La CNUDCI a adopté des notes techniques sur le règlement en ligne des litiges (ODR). Travaux en cours sur l\'adaptation des règles d\'arbitrage aux litiges numériques.',
+    tags: ['ODR', 'Litiges numériques', 'Règles modèles'],
+    link: 'https://uncitral.un.org/fr/texts/odr'
+  },
+  {
+    org: 'Cour Permanente d\'Arbitrage (CPA)',
+    title: 'CPA & litiges technologiques',
+    desc: 'La CPA propose des règles adaptées aux litiges entre États et entreprises technologiques, notamment pour les contrats d\'infrastructure numérique et les litiges liés aux données.',
+    tags: ['Litiges État-entreprise', 'Infrastructure numérique', 'Données'],
+    link: 'https://pca-cpa.org/fr/'
+  },
+  {
+    org: 'ICSID — Centre international pour le règlement des différends relatifs aux investissements',
+    title: 'ICSID & investissements numériques',
+    desc: 'Arbitrage d\'investissement pour les litiges liés aux plateformes numériques, données transfrontalières, et réglementation nationale de l\'IA affectant des investisseurs étrangers.',
+    tags: ['Investissements numériques', 'Arbitrage d\'investissement', 'TBI'],
+    link: 'https://icsid.worldbank.org/'
+  },
+];
+
+// ════════════════════════════════════════════════════
+// RENDU DES TEXTES
+// ════════════════════════════════════════════════════
+const STATUS_LABELS = { vigueur: 'En vigueur', transitoire: 'Applicabilité progressive', projet: 'En projet / discussion' };
+
+function renderTextes(containerId, data) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = data.map(function(t) {
+    return '<div class="texte-card">' +
+      '<span class="texte-ref">' + t.ref + '</span>' +
+      '<div class="texte-title">' + t.title + '</div>' +
+      '<div class="texte-desc"><strong>' + t.fullTitle + '</strong><br/>' + t.desc + '</div>' +
+      '<span class="texte-status status-' + t.status + '">' + STATUS_LABELS[t.status] + '</span>' +
+      '<a class="texte-link" href="' + t.link + '" target="_blank" rel="noopener">→ Texte officiel</a>' +
+      '</div>';
+  }).join('');
 }
 
-// ── LOAD ARTICLES FROM JSON ────────────────────────────────────────────────
-let allArticles = [];
-let activeFilter = 'all';
-let activeTab = 'veille';
-
-function formatDate(isoString) {
-  if (!isoString) return '—';
-  const d = new Date(isoString);
-  return d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' });
+function renderArbitrage() {
+  const el = document.getElementById('grid-organismes');
+  if (!el) return;
+  el.innerHTML = ARBITRAGE_ORGANISMES.map(function(a) {
+    return '<div class="arbitrage-card">' +
+      '<span class="arbitrage-org">' + a.org + '</span>' +
+      '<div class="arbitrage-title">' + a.title + '</div>' +
+      '<div class="arbitrage-desc">' + a.desc + '</div>' +
+      '<div class="arbitrage-tags">' + a.tags.map(function(t) { return '<span class="arbitrage-tag">' + t + '</span>'; }).join('') + '</div>' +
+      '<a class="arbitrage-link" href="' + a.link + '" target="_blank" rel="noopener">→ Site officiel</a>' +
+      '</div>';
+  }).join('');
 }
 
-function isNew(isoString) {
-  if (!isoString) return false;
-  const d = new Date(isoString);
-  const now = new Date();
-  return (now - d) < 1000 * 60 * 60 * 48; // 48h
+// ════════════════════════════════════════════════════
+// ARTICLES DYNAMIQUES
+// ════════════════════════════════════════════════════
+var allArticles = [];
+var activeFilter = 'all';
+var activeFilterTech = 'all';
+
+function formatDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' });
 }
 
-function renderArticles(tab) {
-  const gridId = tab === 'veille' ? 'grid-veille' : 'grid-actu';
-  const emptyId = tab === 'veille' ? 'empty-veille' : 'empty-actu';
-  const loadingId = tab === 'veille' ? 'loading-veille' : 'loading-actu';
+function isNew(iso) {
+  if (!iso) return false;
+  return (new Date() - new Date(iso)) < 1000 * 60 * 60 * 48;
+}
 
-  const grid = document.getElementById(gridId);
-  const empty = document.getElementById(emptyId);
-  const loading = document.getElementById(loadingId);
-  loading.style.display = 'none';
+function renderArticles(category, gridId, emptyId, loadingId, filterKey, filterVal) {
+  var grid = document.getElementById(gridId);
+  var empty = document.getElementById(emptyId);
+  var loading = document.getElementById(loadingId);
+  if (loading) loading.style.display = 'none';
 
-  const filtered = allArticles.filter(a => {
-    const tabMatch = tab === 'veille' ? a.category !== 'tech' : a.category === 'tech';
-    const filterMatch = activeFilter === 'all' || a.source === activeFilter;
-    return tabMatch && filterMatch;
+  var filtered = allArticles.filter(function(a) {
+    var catMatch = a.category === category;
+    var filterMatch = filterVal === 'all' || a.tag === filterVal || a.source === filterVal;
+    return catMatch && filterMatch;
   });
 
   if (filtered.length === 0) {
-    grid.style.display = 'none';
-    empty.style.display = 'block';
+    if (grid) grid.style.display = 'none';
+    if (empty) empty.style.display = 'block';
     return;
   }
 
-  empty.style.display = 'none';
-  grid.style.display = 'grid';
-  grid.innerHTML = filtered.map(a => `
-    <a class="article-card ${isNew(a.date) ? 'card-new' : ''}" href="${a.link}" target="_blank" rel="noopener">
-      <span class="card-source">${a.source}</span>
-      <div class="card-title">${a.title}</div>
-      <div class="card-desc">${a.description || ''}</div>
-      <div class="card-footer">
-        <span class="card-date">${formatDate(a.date)}</span>
-        ${a.tag ? `<span class="card-tag">${a.tag}</span>` : ''}
-      </div>
-    </a>
-  `).join('');
+  if (empty) empty.style.display = 'none';
+  if (grid) {
+    grid.style.display = 'grid';
+    grid.innerHTML = filtered.map(function(a) {
+      return '<a class="article-card ' + (isNew(a.date) ? 'card-new' : '') + '" href="' + a.link + '" target="_blank" rel="noopener">' +
+        '<span class="card-source">' + a.source + '</span>' +
+        '<div class="card-title">' + a.title + '</div>' +
+        '<div class="card-desc">' + (a.description || '') + '</div>' +
+        '<div class="card-footer">' +
+          '<span class="card-date">' + formatDate(a.date) + '</span>' +
+          (a.tag ? '<span class="card-tag">' + a.tag + '</span>' : '') +
+        '</div>' +
+        '</a>';
+    }).join('');
+  }
 }
 
 async function loadData() {
   try {
-    const res = await fetch('./data/articles.json');
+    var res = await fetch('./data/articles.json');
     if (!res.ok) throw new Error('no data');
-    const data = await res.json();
+    var data = await res.json();
     allArticles = data.articles || [];
 
-    // Update meta
     if (data.lastUpdate) {
       document.querySelector('#last-update span').textContent = new Date(data.lastUpdate).toLocaleString('fr-FR');
     }
     document.getElementById('article-count').textContent = allArticles.length + ' articles';
 
-    renderArticles('veille');
-    renderArticles('actu');
+    renderArticles('droit', 'grid-droit', 'empty-droit', 'loading-droit', 'tag', activeFilter);
+    renderArticles('tech', 'grid-tech', 'empty-tech', 'loading-tech', 'source', activeFilterTech);
+    renderArticles('arbitrage', 'grid-actu-arb', 'empty-arb', 'loading-arb', 'tag', 'all');
+
   } catch(e) {
-    // No data file yet — show empty states
-    ['loading-veille','loading-actu'].forEach(id => document.getElementById(id).style.display = 'none');
-    ['empty-veille','empty-actu'].forEach(id => document.getElementById(id).style.display = 'block');
-    document.getElementById('article-count').textContent = '0 articles';
+    ['loading-droit','loading-tech','loading-arb'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    ['empty-droit','empty-tech','empty-arb'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.style.display = 'block';
+    });
   }
 }
 
-// ── TABS ───────────────────────────────────────────────────────────────────
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+// ════════════════════════════════════════════════════
+// NAVIGATION
+// ════════════════════════════════════════════════════
+var activeTab = 'droit';
+
+document.querySelectorAll('.tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.panel').forEach(function(p) { p.classList.remove('active'); });
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
     document.getElementById('panel-' + activeTab).classList.add('active');
-    // Hide filter bar on textes tab
-    document.getElementById('filter-bar').style.display = activeTab === 'textes' ? 'none' : 'flex';
+
+    document.getElementById('filter-droit').style.display = activeTab === 'droit' ? 'flex' : 'none';
+    document.getElementById('filter-tech').style.display = activeTab === 'tech' ? 'flex' : 'none';
+    document.getElementById('subtabs-intl').style.display = activeTab === 'intl' ? 'flex' : 'none';
+    document.getElementById('subtabs-arbitrage').style.display = activeTab === 'arbitrage' ? 'flex' : 'none';
   });
 });
 
-// ── FILTERS ────────────────────────────────────────────────────────────────
-document.querySelectorAll('.filter-chip').forEach(chip => {
-  chip.addEventListener('click', () => {
-    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+// Sous-onglets FR & International
+document.querySelectorAll('[data-subtab]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-subtab]').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('#panel-intl .subpanel').forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById('subpanel-' + btn.dataset.subtab).classList.add('active');
+  });
+});
+
+// Sous-onglets Arbitrage
+document.querySelectorAll('[data-subtab-arb]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-subtab-arb]').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('#panel-arbitrage .subpanel').forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById('subpanel-' + btn.dataset.subtabArb).classList.add('active');
+  });
+});
+
+// Filtres thématiques (droit)
+document.querySelectorAll('[data-filter]').forEach(function(chip) {
+  chip.addEventListener('click', function() {
+    document.querySelectorAll('[data-filter]').forEach(function(c) { c.classList.remove('active'); });
     chip.classList.add('active');
     activeFilter = chip.dataset.filter;
-    renderArticles(activeTab);
+    renderArticles('droit', 'grid-droit', 'empty-droit', 'loading-droit', 'tag', activeFilter);
   });
 });
 
-// ── INIT ───────────────────────────────────────────────────────────────────
-renderTextes();
+// Filtres sources (tech)
+document.querySelectorAll('[data-filter-tech]').forEach(function(chip) {
+  chip.addEventListener('click', function() {
+    document.querySelectorAll('[data-filter-tech]').forEach(function(c) { c.classList.remove('active'); });
+    chip.classList.add('active');
+    activeFilterTech = chip.dataset.filterTech;
+    renderArticles('tech', 'grid-tech', 'empty-tech', 'loading-tech', 'source', activeFilterTech);
+  });
+});
+
+// ════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════
+renderTextes('grid-textes-ue', TEXTES_UE);
+renderTextes('grid-france', TEXTES_FRANCE);
+renderTextes('grid-usa', TEXTES_USA);
+renderTextes('grid-uk', TEXTES_UK);
+renderTextes('grid-asie', TEXTES_ASIE);
+renderTextes('grid-autres', TEXTES_AUTRES);
+renderTextes('grid-projets', TEXTES_PROJETS);
+renderArbitrage();
 loadData();
 </script>
 
