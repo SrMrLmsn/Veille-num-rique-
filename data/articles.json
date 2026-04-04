@@ -1,0 +1,321 @@
+{
+  "lastUpdate": "2026-04-04T11:25:29.518Z",
+  "totalArticles": 35,
+  "articles": [
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Pour ses 50 ans, Apple montre des prototypes d’iPhone et d’iPod",
+      "description": "En plus d'une exhibition éphémère dans les couloirs de l'Apple Park et d'une distribution de goodies collectors à ses employés, Apple a ouvert les portes de ses archives secrètes au Wall Street Journal le temps d'une présentation rapide de prototypes et de documents historiques.",
+      "link": "https://www.numerama.com/tech/2226905-pour-ses-50-ans-apple-montre-des-prototypes-diphone-et-dipod.html",
+      "date": "2026-04-04T10:47:56.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Artemis II : la Nasa publie des photos époustouflantes de la Terre prises par les astronautes",
+      "description": "Les premières photos prises depuis la capsule Orion qui se dirige vers la Lune montrent la Terre d'un point de vue humain. Difficile de ne pas être stupéfait par sa beauté.",
+      "link": "https://www.numerama.com/sciences/2226885-artemis-ii-la-nasa-publie-des-photos-epoustouflantes-de-la-terre-prises-par-les-astronautes.html",
+      "date": "2026-04-04T09:50:00.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Whoop veut tuer Bevel, l’application qui analyse vos données de santé depuis n’importe quel montre ou bracelet connecté",
+      "description": "Whoop, connu pour ses bracelets qui analysent les données de santé, poursuit en justice Bevel, qui permet de faire la même chose avec n'importe quel bracelet ou montre. Whoop reproche à Bevel de proposer une interface trop semblable à la sienne et de surveiller les mêmes métrique",
+      "link": "https://www.numerama.com/tech/2226873-whoop-veut-tuer-bevel-lapplication-qui-analyse-vos-donnees-de-sante-depuis-nimporte-quel-montre-ou-bracelet-connecte.html",
+      "date": "2026-04-04T09:13:25.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Le forfait Free Max rencontre un succès inespéré… chez les étrangers",
+      "description": "Sur les réseaux sociaux, plusieurs internautes de différentes nationalités affirment avoir souscrit à l'abonnement Free Max à 29,99 euros par mois pour bénéficier d'un Internet illimité à petit prix dans leurs propres pays, ce qui est impossible chez eux. Free interdit normalemen",
+      "link": "https://www.numerama.com/tech/2226851-le-forfait-free-max-rencontre-un-succes-inespere-chez-les-etrangers.html",
+      "date": "2026-04-04T08:30:07.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Anthropic bannit l’usage d’OpenClaw avec Claude : « nos abonnements n’ont pas été conçus pour ces outils tiers »",
+      "description": "Victime de son succès, Anthropic n'a plus la capacité de faire tourner ses serveurs correctement entre les utilisateurs gratuits, ses abonnés payants et les services tiers, comme OpenClaw, que beaucoup associent à Claude. L'entreprise annonce qu'il n'est désormais plus possible d",
+      "link": "https://www.numerama.com/tech/2226835-anthropic-bannit-lusage-dopenclaw-avec-claude-nos-abonnements-nont-pas-ete-concus-pour-ces-outils-tiers.html",
+      "date": "2026-04-04T07:42:19.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Holafly : pourquoi l’arrivée de l’eSIM avec data illimité change la donne pour les voyages à l’étranger [Sponso]",
+      "description": "Cet article a été réalisé en collaboration avec Holafly\n\nLe temps où il fallait acheter et installer une nouvelle SIM dès son arrivée dans un nouveau pays est révolu. Avec l’eSIM et des opérateurs comme Holafly, quelques secondes suffisent pour activer et utiliser son internet mo",
+      "link": "https://www.numerama.com/tech/2214521-holafly-pourquoi-larrivee-de-lesim-avec-data-illimite-change-la-donne-pour-les-voyages-a-letranger.html",
+      "date": "2026-04-04T07:02:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Anker’s Nebula P1 projector is the portable sound king",
+      "description": "The Nebula P1 goes anywhere you can find a power source.\t\n\nThe Soundcore Nebula P1 from Anker isn't the most portable Google TV projector I've ever reviewed, nor is it the brightest. It doesn't even have a built-in battery. Instead it's a decent video device that focuses on sound",
+      "link": "https://www.theverge.com/reviews/906455/anker-nebula-p1-review-vanlife-sound-champ",
+      "date": "2026-04-04T07:00:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Anthropic essentially bans OpenClaw from Claude by making subscribers pay extra",
+      "description": "Using OpenClaw with Claude AI is about to get a lot more expensive, thanks to Anthropic's new policy changes. Beginning April 4th at 3PM ET, users will \"no longer be able to use your Claude subscription limits for third-party harnesses including OpenClaw,\" according to an email s",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban",
+      "date": "2026-04-03T23:52:49.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "NASA did eventually solve Artemis II&#8217;s Outlook glitch",
+      "description": "NASA’s Artemis II rocket launched from the Kennedy Space Center on Wednesday. | Photo: Joe Raedle via Getty Images\t\n\nOn Thursday, during Artemis II's journey to the Moon, commander Reid Wiseman ran into a tech issue some of us back on Earth can relate to: Microsoft Outlook wasn't",
+      "link": "https://www.theverge.com/science/906988/nasa-artemis-ii-microsoft-outlook-issue-fixed",
+      "date": "2026-04-03T20:53:48.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "OpenAI’s AGI boss is taking a leave of absence",
+      "description": "OpenAI is undergoing another round of C-suite changes, according to an internal memo viewed by The Verge. \nFidji Simo, OpenAI's CEO of AGI deployment - who was until recently the company's CEO of applications - says in the memo that she will be stepping away on medical leave \"for",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906965/openais-agi-boss-is-taking-a-leave-of-absence",
+      "date": "2026-04-03T20:22:59.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Lenovo Legion Go 2 suddenly costs $650 more as RAMageddon lays waste to gaming hardware",
+      "description": "The Legion Go 2’s mouse mode, unique among Windows handhelds. | Photo: Antonio G. Di Benedetto / The Verge\t\n\nRemember when we thought the Legion Go 2 was expensive at $1,099 and up? Those were the days - Best Buy is now listing Lenovo's handheld for $1,499 with a Ryzen Z2 or $1,9",
+      "link": "https://www.theverge.com/games/906752/lenovo-legion-go-2-suddenly-costs-650-more-as-ramageddon-lays-waste-to-gaming-hardware",
+      "date": "2026-04-03T19:19:14.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "The best iPad deals you can get right now",
+      "description": "The new iPad Air is already on sale. | Photo by Amelia Holowaty Krales / The Verge\t\n\nWhile the best iPad deals usually land during major sale events like Black Friday, many great iPad deals are available outside of those moments. The day-to-day discounts come and go like the chan",
+      "link": "https://www.theverge.com/21280354/best-ipad-deals-apple",
+      "date": "2026-04-03T17:31:17.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Le boss final de la Flèche du Vide résiste sur WoW, le duel des deux meilleures guildes atteint un point critique",
+      "description": "Dernière ligne droite pour Echo et Liquid. Les deux meilleures guildes du monde doivent se départager sur l'ultime boss du raid de la Flèche du Vide en mode mythique, sur World of Warcraft. Les scores sont très serrés.",
+      "link": "https://www.numerama.com/pop-culture/2226469-le-boss-final-de-la-fleche-du-vide-resiste-sur-wow-le-duel-des-deux-meilleures-guildes-atteint-un-point-critique.html",
+      "date": "2026-04-03T16:58:00.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Comment s’y retrouver dans la jungle des tarifs de la recharge rapide pour voiture électrique ?",
+      "description": "Il est facile pour le conducteur d’une voiture électrique de connaître le coût de la recharge à domicile. Cela se complique lorsque la recharge doit s'effectuer sur des bornes rapides publiques, notamment lors des vacances.",
+      "link": "https://www.numerama.com/vroom/1811600-comment-sy-retrouver-dans-la-jungle-des-tarifs-des-reseaux-de-recharge.html",
+      "date": "2026-04-03T16:17:56.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "World first sur WoW : après le traumatisme historique face aux USA, l’Europe cherche sa revanche",
+      "description": "Après le grand chelem historique des Américains de la guilde Liquid sur l'extension précédente, l'Europe sonne la révolte. Alors que le raid mythique de la Flèche du Vide vient d'ouvrir ses portes dans World of Warcraft: Midnight, la guilde européenne Echo aborde cette nouvelle c",
+      "link": "https://www.numerama.com/pop-culture/2216337-world-first-sur-wow-apres-le-traumatisme-et-le-succes-historique-des-usa-cest-lheure-de-la-revanche-pour-leurope.html",
+      "date": "2026-04-03T16:00:05.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Le Seigneur des Anneaux : ça sera un nouvel acteur pour Aragorn dans The Hunt for Gollum, c’est acté",
+      "description": "Le retour en Terre du Milieu se précise, mais il ne se fera pas sans quelques bouleversements majeurs. Alors que la production de The Hunt for Gollum passe à la vitesse supérieure, une décision cruciale vient d'être officialisée par Andy Serkis. Elle concerne l'un des piliers de ",
+      "link": "https://www.numerama.com/pop-culture/2226539-le-seigneur-des-anneaux-ca-sera-un-nouvel-acteur-pour-aragorn-dans-the-hunt-for-gollum-cest-acte.html",
+      "date": "2026-04-03T15:51:40.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "« Aucun des deux ne fonctionne » : même très loin dans l’espace, Outlook prend la tête des astronautes d’Artémis",
+      "description": "L'épique mission Artémis II qui se dirige vers la Lune a été rattrapée par la trivialité d'un bug informatique : selon le commandant Reid Wiseman, le logiciel de messagerie Outlook n'a pas bien fonctionné.",
+      "link": "https://www.numerama.com/tech/2225773-aucun-des-deux-ne-marche-en-pleine-mission-vers-la-lune-les-astronautes-dartemis-2-ont-subi-un-bug-doutlook.html",
+      "date": "2026-04-03T15:39:00.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Mercedes adds steer-by-wire — and a dang steering yoke — to the EQS",
+      "description": "Steer-by-wire, in which a car can be steered electronically rather than through a physical connection between the steering wheel and steering rack, is coming to Mercedes-Benz. The German automaker says it will use the steering technology in its forthcoming refreshed EQS sedan, ma",
+      "link": "https://www.theverge.com/transportation/906539/mercedes-steer-by-wire-steering-yoke-eqs",
+      "date": "2026-04-03T15:34:10.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Anker&#8217;s small, five-port travel adapter is down to its best price yet",
+      "description": "Anker’s pocketable Nano Travel Adapter can power up to five devices and works in over 200 countries. | Image: The Verge\t\n\nFew things kill the vibe of your relaxing spring break abroad faster than realizing you forgot a way to keep things charged. Anker’s Nano Travel Adapter makes",
+      "link": "https://www.theverge.com/gadgets/906392/anker-nano-travel-adapter-samsung-galaxy-watch-ultra-deal-sale",
+      "date": "2026-04-03T15:10:31.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "I saved a doomed Windows laptop by embracing Linux",
+      "description": "Two weeks ago I set aside my M4 MacBook Air and picked up a nine-year-old ThinkPad. It's one of an estimated 200 to 400 million Windows 10 PCs that don't meet Microsoft's requirements for Windows 11. When Microsoft officially ended support for Windows 10 in October, it became \"ob",
+      "link": "https://www.theverge.com/tech/905946/windows-11-forced-obsolescence-linux-thinkpad",
+      "date": "2026-04-03T15:00:00.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "La première entreprise milliardaire bâtie grâce à l’IA… génère 800 faux médecins ?",
+      "description": "Mise en lumière par le New York Times le 2 avril 2026, Medvi incarne une nouvelle génération de start-up dopées à l’IA : peu d’employés, une croissance fulgurante et un marketing largement automatisé. Mais derrière cette réussite éclair, plusieurs zones d’ombre interrogent.",
+      "link": "https://www.numerama.com/tech/2226127-la-premiere-entreprise-milliardaire-batie-grace-a-lia-genere-800-faux-medecins.html",
+      "date": "2026-04-03T14:43:07.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Et maintenant, OpenAI rachète un podcast",
+      "description": "En pleine restructuration pour se concentrer sur ChatGPT, OpenAI a laissé tomber plusieurs projets annexes comme la génération de vidéos Sora ou la création de hardware. Pourtant, et à la surprise générale, le groupe de Sam Altman a annoncé le rachat de TPBN, le talk show tech le",
+      "link": "https://www.numerama.com/tech/2226059-et-maintenant-openai-rachete-un-podcast.html",
+      "date": "2026-04-03T14:38:37.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Le créateur de Parasite va aller dans un genre qu’il n’a jamais exploré",
+      "description": "Le cinéaste sud-coréen Bong Joon-Ho, oscarisé pour Parasite, délaisse les plateaux de tournage réels pour sa première incursion dans le cinéma d'animation. Prévu pour 2027, Ally s'annonce comme une odyssée sous-marine ambitieuse, mêlant humour, émotion et prouesses technologiques",
+      "link": "https://www.numerama.com/pop-culture/2226383-le-createur-de-parasite-va-aller-dans-un-genre-quil-na-jamais-explore.html",
+      "date": "2026-04-03T14:31:17.000Z"
+    },
+    {
+      "source": "The Verge",
+      "category": "tech",
+      "tag": "Big Tech",
+      "title": "Waiting for Trump Phone",
+      "description": "Nothing moved the needle this week. | Image: The Verge / Shutterstock\t\n\nWhere's the Trump phone? We're going to keep talking about it every week. We've reached out, as usual, to ask about the Trump phone's whereabouts. Crickets. \nDespite recent signs of life, another week has com",
+      "link": "https://www.theverge.com/tech/905599/where-is-the-trump-phone-t1-april",
+      "date": "2026-04-03T14:00:00.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech",
+      "title": "Anthropic a découvert les « curseurs » secrets qui contrôlent les émotions de l’IA Claude",
+      "description": "Le 2 avril 2026, Anthropic a affirmé avoir identifié, au cœur de son modèle Claude, des « représentations internes » proches d’émotions. Une découverte qui éclaire pourquoi les IA semblent parfois empathiques… et comment ces états influencent réellement leurs décisions.",
+      "link": "https://www.numerama.com/tech/2225793-pourquoi-votre-ia-semble-parfois-triste-ou-agacee-anthropic-a-enfin-trouve-la-reponse.html",
+      "date": "2026-04-03T13:50:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Les webinaires de la CNIL",
+      "description": "La CNIL propose régulièrement des webinaires à destination des professionnels. Ces webinaires sont gratuits et ouverts à tous.",
+      "link": "https://www.cnil.fr/fr/les-webinaires-de-la-cnil",
+      "date": "2026-04-03T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Les contrôles en 2026 : recrutement, répertoire électoral unique et fédérations sportives",
+      "description": "Chaque année, la CNIL définit des thématiques prioritaires de contrôle. Parmi celles choisies pour 2026 figurent le recrutement, le répertoire électoral unique et les fédérations sportives. D’autres annonces relatives à la cybersécurité interviendront à l’occasion de la publicati",
+      "link": "https://www.cnil.fr/fr/controles-prioritaires-2026",
+      "date": "2026-04-03T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Désigner un délégué à la protection des données (DPO) ou modifier une désignation",
+      "description": "Avant de désigner en ligne votre délégué à la protection des données, vérifiez qu'il dispose du statut, des compétences et des moyens nécessaires à l’exercice de ses missions.",
+      "link": "https://www.cnil.fr/fr/designation-dpo",
+      "date": "2026-04-03T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Revoir le webinaire - Développement d’un système IA, webscraping : comment mobiliser la base légale de l’intérêt légitime ?",
+      "description": "La CNIL vous propose de décrypter un sujet ou une actualité en lien avec la protection des données à travers une série de webinaires. Retrouvez ce nouvel épisode consacré au développement de systèmes d'intelligence artificielle.",
+      "link": "https://www.cnil.fr/fr/revoir-le-webinaire-developpement-ia-webscraping-base-legale-interet-legitime",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Ordre du jour de la séance plénière du 2 avril 2026",
+      "description": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 2 avril 2026 à 9&nbsp;h&nbsp;30 avec l’ordre du jour suivant&nbsp;:",
+      "link": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-2-avril-2026",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Gestion des ressources humaines : la CNIL publie un référentiel de durées de conservation",
+      "description": "La CNIL publie un référentiel pour aider les responsables de traitement à identifier les durées de conservation pour leurs activités de gestion du personnel.",
+      "link": "https://www.cnil.fr/fr/referentiel-durees-conservation-donnees-rh",
+      "date": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Données post mortem : publication du cahier air2025 sur l’éthique des traces numériques",
+      "description": "Dans le cadre de sa mission éthique, la CNIL publie son cahier air2025 à la suite du colloque du 15 octobre 2025 sur le thème des données post mortem, organisé en partenariat avec la Bibliothèque nationale de France.",
+      "link": "https://www.cnil.fr/fr/cahier-air2025",
+      "date": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Opération Cactus 2026 : renforcer durablement la sensibilisation de la communauté éducative aux cybermenaces",
+      "description": "Le ministère de l’Éducation nationale a conduit une opération nationale de prévention de grande ampleur reposant sur une simulation d’hameçonnage.&nbsp;Cette initiative vise à renforcer la vigilance et la responsabilisation de l’ensemble de la communauté éducative face à l’une de",
+      "link": "https://www.cnil.fr/fr/operation-cactus-2026",
+      "date": "2026-03-30T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Ordre du jour de la séance plénière du 26 mars 2026",
+      "description": "La Commission nationale de l'informatique et des libertés s’est réunie le jeudi 26 mars 2026 à 9&nbsp;h&nbsp;30 avec l’ordre du jour suivant&nbsp;:",
+      "link": "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-26-mars-2026",
+      "date": "2026-03-26T12:00:00.000Z"
+    },
+    {
+      "source": "CNIL",
+      "category": "veille",
+      "tag": "Donnees personnelles",
+      "title": "Rémi STEFANINI, nouveau directeur des technologies, de l’innovation et de l’intelligence artificielle",
+      "description": "Rémi STEFANINI rejoindra la CNIL le 15 avril 2026 en tant que directeur des technologies, de l’innovation et de l’IA de la CNIL.",
+      "link": "https://www.cnil.fr/fr/remi-stefanini-directeur-dtia",
+      "date": "2026-03-25T12:00:00.000Z"
+    }
+  ]
+}
