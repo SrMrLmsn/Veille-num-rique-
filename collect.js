@@ -53,7 +53,7 @@ var SOURCES = [].concat(
   src("ANSSI", "https://www.cert.ssi.gouv.fr/feed/", ["actu", "europe-actu"], "Cybersecurite", false),
   src("ARCEP", "https://en.arcep.fr/news/follow-regulatory-news/newswire/rss.xml", ["actu", "europe-actu"], "Plateformes", false),
   src("ENISA", "https://www.enisa.europa.eu/rss.xml", ["actu", "europe-actu"], "Cybersecurite", false),
-  src("EDPB", "https://www.edpb.europa.eu/feed/news_en", ["actu", "europe-actu", "europe-decisions"], "RGPD", false),
+  src("EDPB", "https://www.edpb.europa.eu/feed/news_en", ["actu", "europe-actu"], "RGPD", false),
   src("Parlement EU", "https://www.europarl.europa.eu/rss/doc/top-stories/fr.xml", ["actu", "europe-actu"], "Parlement", true),
   src("Legalis", "https://www.legalis.net/feed/", ["actu", "monde-france-actu"], "Donnees personnelles", false),
   src("Legifrss: numerique", "https://legifrss.org/latest?q=num%C3%A9rique", ["actu", "monde-france-actu"], "Contrats IT", false),
