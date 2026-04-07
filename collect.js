@@ -49,7 +49,7 @@ function src(name, url, categories, tag, filter) {
 var SOURCES = [].concat(
 
   // ── ACTUALITES (onglet 1) + EUROPE ACTU (onglet 3)
-  src("CNIL", "https://www.cnil.fr/fr/rss.xml", ["actu", "europe-actu"], "Donnees personnelles", false),
+  src("ARCOM", "https://www.arcom.fr/rss/actualites.xml", ["actu", "europe-actu"], "Plateformes", false),
   src("ANSSI", "https://www.cert.ssi.gouv.fr/feed/", ["actu", "europe-actu"], "Cybersecurite", false),
   src("ARCEP", "https://en.arcep.fr/news/follow-regulatory-news/newswire/rss.xml", ["actu", "europe-actu"], "Plateformes", false),
   src("ENISA", "https://www.enisa.europa.eu/rss.xml", ["actu", "europe-actu"], "Cybersecurite", false),
@@ -64,6 +64,7 @@ var SOURCES = [].concat(
   src("CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/", ["actu"], "Blockchain", false),
 
   // ── GOOGLE ACTU — dupliques dans actualites + zones geographiques
+  src("Google: CNIL", "https://news.google.com/rss/search?q=CNIL+donnees+personnelles&hl=fr&gl=FR&ceid=FR:fr", ["actu", "europe-actu"], "Donnees personnelles", false),
   src("Google: IA & droit", "https://news.google.com/rss/search?q=intelligence+artificielle+droit&hl=fr&gl=FR&ceid=FR:fr", ["actu", "europe-actu"], "IA", false),
   src("Google: RGPD", "https://news.google.com/rss/search?q=RGPD+donnees+personnelles&hl=fr&gl=FR&ceid=FR:fr", ["actu", "europe-actu", "monde-france-actu"], "Donnees personnelles", false),
   src("Google: cyber juridique", "https://news.google.com/rss/search?q=cybersecurite+juridique&hl=fr&gl=FR&ceid=FR:fr", ["actu", "europe-actu"], "Cybersecurite", false),
