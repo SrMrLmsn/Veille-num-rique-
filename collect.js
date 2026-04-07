@@ -13,15 +13,14 @@ const SOURCES = [
   { name: "Legalis", url: "https://www.legalis.net/feed/", category: "droit", tag: "Donnees personnelles" },
   { name: "Conseil d'Etat", url: "https://www.conseil-etat.fr/outils/flux-rss/actualites-rss", category: "droit", tag: "Contrats IT" },
   { name: "Conseil d'Etat avis", url: "https://www.conseil-etat.fr/outils/flux-rss/avis-rss", category: "droit", tag: "Contrats IT" },
-  { name: "Juricaf: numerique", url: "https://juricaf.org/recherche/numerique.rss", category: "droit", tag: "Donnees personnelles" },
-  { name: "Juricaf: IA", url: "https://juricaf.org/recherche/intelligence-artificielle.rss", category: "droit", tag: "IA" },
-  { name: "Droit.org", url: "https://www.droit.org/rss/", category: "droit", tag: "Donnees personnelles" },
+  { name: "Google: DPC Ireland", url: "https://news.google.com/rss/search?q=Data+Protection+Commission+Ireland&hl=en&gl=IE&ceid=IE:en", category: "droit", tag: "Donnees personnelles" },
+  { name: "Google: droit.org", url: "https://news.google.com/rss/search?q=jurisprudence+numerique+France&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "Donnees personnelles" },
   { name: "Google: EUR-Lex IA", url: "https://news.google.com/rss/search?q=EUR-Lex+intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "IA" },
   { name: "Legifrss: numerique", url: "https://legifrss.org/latest?q=num%C3%A9rique", category: "droit", tag: "Contrats IT" },
   { name: "Legifrss: IA", url: "https://legifrss.org/latest?q=intelligence+artificielle", category: "droit", tag: "IA" },
 
 
-  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/news-media/press-releases/rss", category: "droit", tag: "Donnees personnelles" },
+  { name: "Google: arbitrage IA", url: "https://news.google.com/rss/search?q=arbitrage+intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", category: "arbitrage", tag: "Arbitrage" },
   { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
   { name: "Google: OCDE IA", url: "https://news.google.com/rss/search?q=OCDE+intelligence+artificielle+regulation&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "IA" },
   { name: "The Block", url: "https://www.theblockcrypto.com/rss.xml", category: "droit", tag: "Blockchain" },
@@ -36,7 +35,7 @@ const SOURCES = [
 
   // TECH — sources officielles
   { name: "Numerama", url: "https://www.numerama.com/feed/", category: "tech", tag: "Tech FR" },
-  { name: "Next INpact", url: "https://www.nextinpact.com/rss/news.xml", category: "tech", tag: "Tech FR" },
+  { name: "Next INpact", url: "https://next.ink/feed/", category: "tech", tag: "Tech FR" },
   { name: "The Verge", url: "https://www.theverge.com/rss/index.xml", category: "tech", tag: "Big Tech" },
   { name: "Wired", url: "https://www.wired.com/feed/rss", category: "tech", tag: "Big Tech" },
   { name: "MIT Tech Review", url: "https://www.technologyreview.com/feed/", category: "tech", tag: "IA Innovation" },
@@ -49,8 +48,8 @@ const SOURCES = [
 
   // ARBITRAGE
   { name: "GAR", url: "https://globalarbitrationreview.com/rss", category: "arbitrage", tag: "Arbitrage" },
-  { name: "CIArb", url: "https://www.ciarb.org/news/rss/", category: "arbitrage", tag: "Arbitrage" },
-  { name: "OMPI", url: "https://www.wipo.int/pressroom/en/rss/", category: "arbitrage", tag: "PI numerique" },
+  { name: "Google: arbitrage IA", url: "https://news.google.com/rss/search?q=arbitrage+intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", category: "arbitrage", tag: "Arbitrage" },
+  { name: "OMPI actualites", url: "https://www.wipo.int/pressroom/fr/rss/", category: "arbitrage", tag: "PI numerique" },
   { name: "Google: arbitrage numerique", url: "https://news.google.com/rss/search?q=arbitrage+international+numerique&hl=fr&gl=FR&ceid=FR:fr", category: "arbitrage", tag: "Arbitrage" },
 ];
 
