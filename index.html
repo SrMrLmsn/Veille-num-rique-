@@ -463,6 +463,18 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
 
+.subsubpanel { display: none; }
+.subsubpanel.active { display: block; }
+
+.subsub-tabs {
+  background: var(--paper);
+  border-bottom: 1px dashed var(--border);
+}
+.subsub-tabs .subtab-btn {
+  font-size: 0.72rem;
+  padding: 0.5rem 1rem;
+}
+
 .empty {
   padding: 4rem 3rem;
   text-align: center;
@@ -498,16 +510,16 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 <!-- ONGLETS PRINCIPAUX -->
 
 <nav class="tabs">
-  <button class="tab-btn active" data-tab="droit">⚖️ Droit</button>
+  <button class="tab-btn active" data-tab="actu">📰 Actualités</button>
   <button class="tab-btn" data-tab="tech">💡 Technologies</button>
-  <button class="tab-btn" data-tab="textes">🇪🇺 Europe</button>
+  <button class="tab-btn" data-tab="europe">🇪🇺 Europe</button>
   <button class="tab-btn" data-tab="intl">🌍 Monde</button>
   <button class="tab-btn" data-tab="arbitrage">🏛️ Arbitrage</button>
 </nav>
 
 <!-- FILTRE THÉMATIQUE (droit) -->
 
-<div class="filter-bar" id="filter-droit">
+<div class="filter-bar" id="filter-actu">
   <span class="filter-label">Thème :</span>
   <button class="filter-chip active" data-filter="all">Tous</button>
   <button class="filter-chip" data-filter="Donnees personnelles">Données personnelles</button>
@@ -530,7 +542,15 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <button class="filter-chip" data-filter-tech="MIT Tech Review">MIT Tech Review</button>
 </div>
 
-<!-- SOUS-ONGLETS TEXTES INTL -->
+<!-- SOUS-ONGLETS EUROPE -->
+
+<nav class="subtabs" id="subtabs-europe" style="display:none">
+  <button class="subtab-btn active" data-subtab-eu="legislation">📜 Législation</button>
+  <button class="subtab-btn" data-subtab-eu="decisions">⚖️ Décisions</button>
+  <button class="subtab-btn" data-subtab-eu="actu">📰 Actualités UE</button>
+</nav>
+
+<!-- SOUS-ONGLETS MONDE -->
 
 <nav class="subtabs" id="subtabs-intl" style="display:none">
   <button class="subtab-btn active" data-subtab="france">🇫🇷 France</button>
@@ -539,6 +559,11 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <button class="subtab-btn" data-subtab="asie">🌏 Asie</button>
   <button class="subtab-btn" data-subtab="autres">🌐 Autres pays</button>
   <button class="subtab-btn" data-subtab="projets">🔭 Projets en cours</button>
+</nav>
+<!-- SOUS-SOUS-ONGLETS MONDE (legislation / actu) -->
+<nav class="subtabs subsub-tabs" id="subsub-monde" style="display:none">
+  <button class="subtab-btn active" data-subsubtab="leg">📜 Législation</button>
+  <button class="subtab-btn" data-subsubtab="actu">📰 Actualités & décisions</button>
 </nav>
 
 <!-- SOUS-ONGLETS ARBITRAGE -->
@@ -552,10 +577,10 @@ nav.subtabs::-webkit-scrollbar { display: none; }
      PANEL : DROIT & TECHNOLOGIES
 ════════════════════════════════════════════════════ -->
 
-<div class="panel active" id="panel-droit">
-  <div class="loading" id="loading-droit">Chargement…</div>
-  <div class="articles-grid" id="grid-droit" style="display:none"></div>
-  <div class="empty" id="empty-droit" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
+<div class="panel active" id="panel-actu">
+  <div class="loading" id="loading-actu">Chargement…</div>
+  <div class="articles-grid" id="grid-actu" style="display:none"></div>
+  <div class="empty" id="empty-actu" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
 </div>
 
 <!-- ════════════════════════════════════════════════════
@@ -569,11 +594,23 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 </div>
 
 <!-- ════════════════════════════════════════════════════
-     PANEL : TEXTES UE
+     PANEL : EUROPE
 ════════════════════════════════════════════════════ -->
 
-<div class="panel" id="panel-textes">
-  <div class="textes-grid" id="grid-textes-ue"></div>
+<div class="panel" id="panel-europe">
+  <div class="subpanel active" id="subpanel-eu-legislation">
+    <div class="textes-grid" id="grid-textes-ue"></div>
+  </div>
+  <div class="subpanel" id="subpanel-eu-decisions">
+    <div class="loading" id="loading-eu-decisions">Chargement…</div>
+    <div class="articles-grid" id="grid-eu-decisions" style="display:none"></div>
+    <div class="empty" id="empty-eu-decisions" style="display:none">Aucune décision. Lance la collecte depuis GitHub Actions.</div>
+  </div>
+  <div class="subpanel" id="subpanel-eu-actu">
+    <div class="loading" id="loading-eu-actu">Chargement…</div>
+    <div class="articles-grid" id="grid-eu-actu" style="display:none"></div>
+    <div class="empty" id="empty-eu-actu" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
+  </div>
 </div>
 
 <!-- ════════════════════════════════════════════════════
@@ -583,23 +620,58 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 <div class="panel" id="panel-intl">
 
   <div class="subpanel active" id="subpanel-france">
-    <div class="textes-grid" id="grid-france"></div>
+    <div class="subsubpanel active" id="subsubpanel-france-leg">
+      <div class="textes-grid" id="grid-france"></div>
+    </div>
+    <div class="subsubpanel" id="subsubpanel-france-actu">
+      <div class="loading" id="loading-france">Chargement...</div>
+      <div class="articles-grid" id="grid-france-actu" style="display:none"></div>
+      <div class="empty" id="empty-france-actu" style="display:none">Aucun article.</div>
+    </div>
   </div>
 
   <div class="subpanel" id="subpanel-usa">
-    <div class="textes-grid" id="grid-usa"></div>
+    <div class="subsubpanel active" id="subsubpanel-usa-leg">
+      <div class="textes-grid" id="grid-usa"></div>
+    </div>
+    <div class="subsubpanel" id="subsubpanel-usa-actu">
+      <div class="loading" id="loading-usa">Chargement...</div>
+      <div class="articles-grid" id="grid-usa-actu" style="display:none"></div>
+      <div class="empty" id="empty-usa-actu" style="display:none">Aucun article.</div>
+    </div>
   </div>
 
   <div class="subpanel" id="subpanel-uk">
-    <div class="textes-grid" id="grid-uk"></div>
+    <div class="subsubpanel active" id="subsubpanel-uk-leg">
+      <div class="textes-grid" id="grid-uk"></div>
+    </div>
+    <div class="subsubpanel" id="subsubpanel-uk-actu">
+      <div class="loading" id="loading-uk">Chargement...</div>
+      <div class="articles-grid" id="grid-uk-actu" style="display:none"></div>
+      <div class="empty" id="empty-uk-actu" style="display:none">Aucun article.</div>
+    </div>
   </div>
 
   <div class="subpanel" id="subpanel-asie">
-    <div class="textes-grid" id="grid-asie"></div>
+    <div class="subsubpanel active" id="subsubpanel-asie-leg">
+      <div class="textes-grid" id="grid-asie"></div>
+    </div>
+    <div class="subsubpanel" id="subsubpanel-asie-actu">
+      <div class="loading" id="loading-asie">Chargement...</div>
+      <div class="articles-grid" id="grid-asie-actu" style="display:none"></div>
+      <div class="empty" id="empty-asie-actu" style="display:none">Aucun article.</div>
+    </div>
   </div>
 
   <div class="subpanel" id="subpanel-autres">
-    <div class="textes-grid" id="grid-autres"></div>
+    <div class="subsubpanel active" id="subsubpanel-autres-leg">
+      <div class="textes-grid" id="grid-autres"></div>
+    </div>
+    <div class="subsubpanel" id="subsubpanel-autres-actu">
+      <div class="loading" id="loading-autres">Chargement...</div>
+      <div class="articles-grid" id="grid-autres-actu" style="display:none"></div>
+      <div class="empty" id="empty-autres-actu" style="display:none">Aucun article.</div>
+    </div>
   </div>
 
   <div class="subpanel" id="subpanel-projets">
@@ -845,18 +917,22 @@ async function loadData() {
     }
     document.getElementById('article-count').textContent = allArticles.length + ' articles';
 
-    renderArticles('droit', 'grid-droit', 'empty-droit', 'loading-droit', 'tag', activeFilter);
+    renderArticles('actu', 'grid-actu', 'empty-actu', 'loading-actu', 'tag', activeFilter);
     renderArticles('tech', 'grid-tech', 'empty-tech', 'loading-tech', 'source', activeFilterTech);
+    renderArticles('europe-decisions', 'grid-eu-decisions', 'empty-eu-decisions', 'loading-eu-decisions', 'tag', 'all');
+    renderArticles('europe-actu', 'grid-eu-actu', 'empty-eu-actu', 'loading-eu-actu', 'tag', 'all');
     renderArticles('arbitrage', 'grid-actu-arb', 'empty-arb', 'loading-arb', 'tag', 'all');
+    renderArticles('monde-france-actu', 'grid-france-actu', 'empty-france-actu', 'loading-france', 'tag', 'all');
+    renderArticles('monde-usa-actu', 'grid-usa-actu', 'empty-usa-actu', 'loading-usa', 'tag', 'all');
+    renderArticles('monde-uk-actu', 'grid-uk-actu', 'empty-uk-actu', 'loading-uk', 'tag', 'all');
+    renderArticles('monde-asie-actu', 'grid-asie-actu', 'empty-asie-actu', 'loading-asie', 'tag', 'all');
+    renderArticles('monde-autres-actu', 'grid-autres-actu', 'empty-autres-actu', 'loading-autres', 'tag', 'all');
 
   } catch(e) {
-    ['loading-droit','loading-tech','loading-arb'].forEach(function(id) {
+    ['loading-actu','loading-tech','loading-eu-decisions','loading-eu-actu','loading-arb',
+     'loading-france','loading-usa','loading-uk','loading-asie','loading-autres'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.style.display = 'none';
-    });
-    ['empty-droit','empty-tech','empty-arb'].forEach(function(id) {
-      var el = document.getElementById(id);
-      if (el) el.style.display = 'block';
     });
   }
 }
@@ -864,7 +940,7 @@ async function loadData() {
 // ════════════════════════════════════════════════════
 // NAVIGATION
 // ════════════════════════════════════════════════════
-var activeTab = 'droit';
+var activeTab = 'actu';
 
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
@@ -874,20 +950,58 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
     activeTab = btn.dataset.tab;
     document.getElementById('panel-' + activeTab).classList.add('active');
 
-    document.getElementById('filter-droit').style.display = activeTab === 'droit' ? 'flex' : 'none';
+    document.getElementById('filter-actu').style.display = activeTab === 'actu' ? 'flex' : 'none';
     document.getElementById('filter-tech').style.display = activeTab === 'tech' ? 'flex' : 'none';
+    document.getElementById('subtabs-europe').style.display = activeTab === 'europe' ? 'flex' : 'none';
     document.getElementById('subtabs-intl').style.display = activeTab === 'intl' ? 'flex' : 'none';
+    document.getElementById('subsub-monde').style.display = activeTab === 'intl' ? 'flex' : 'none';
     document.getElementById('subtabs-arbitrage').style.display = activeTab === 'arbitrage' ? 'flex' : 'none';
   });
 });
 
-// Sous-onglets FR & International
+// Sous-onglets Europe
+document.querySelectorAll('[data-subtab-eu]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-subtab-eu]').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('#panel-europe .subpanel').forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById('subpanel-eu-' + btn.dataset.subtabEu).classList.add('active');
+  });
+});
+
+// Sous-sous-onglets Monde (legislation / actu)
+var activeSubSubTab = {};
+document.querySelectorAll('[data-subsubtab]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var activeCountry = document.querySelector('#panel-intl .subpanel.active');
+    if (!activeCountry) return;
+    var countryId = activeCountry.id.replace('subpanel-', '');
+    document.querySelectorAll('[data-subsubtab]').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var tab = btn.dataset.subsubtab;
+    activeCountry.querySelectorAll('.subsubpanel').forEach(function(p) { p.classList.remove('active'); });
+    var target = document.getElementById('subsubpanel-' + countryId + '-' + tab);
+    if (target) target.classList.add('active');
+  });
+});
+
+// Sous-onglets Monde
 document.querySelectorAll('[data-subtab]').forEach(function(btn) {
   btn.addEventListener('click', function() {
     document.querySelectorAll('[data-subtab]').forEach(function(b) { b.classList.remove('active'); });
     document.querySelectorAll('#panel-intl .subpanel').forEach(function(p) { p.classList.remove('active'); });
     btn.classList.add('active');
     document.getElementById('subpanel-' + btn.dataset.subtab).classList.add('active');
+    // Reset sub-subpanel to legislation
+    document.querySelectorAll('[data-subsubtab]').forEach(function(b) { b.classList.remove('active'); });
+    var legBtn = document.querySelector('[data-subsubtab="leg"]');
+    if (legBtn) legBtn.classList.add('active');
+    var countryId = btn.dataset.subtab;
+    document.querySelectorAll('#subpanel-' + countryId + ' .subsubpanel').forEach(function(p) { p.classList.remove('active'); });
+    var legPanel = document.getElementById('subsubpanel-' + countryId + '-leg');
+    if (legPanel) legPanel.classList.add('active');
+    // Hide subsub-monde for projets (no actu subpanel)
+    document.getElementById('subsub-monde').style.display = countryId === 'projets' ? 'none' : 'flex';
   });
 });
 
@@ -901,13 +1015,13 @@ document.querySelectorAll('[data-subtab-arb]').forEach(function(btn) {
   });
 });
 
-// Filtres thématiques (droit)
+// Filtres thematiques (actu)
 document.querySelectorAll('[data-filter]').forEach(function(chip) {
   chip.addEventListener('click', function() {
     document.querySelectorAll('[data-filter]').forEach(function(c) { c.classList.remove('active'); });
     chip.classList.add('active');
     activeFilter = chip.dataset.filter;
-    renderArticles('droit', 'grid-droit', 'empty-droit', 'loading-droit', 'tag', activeFilter);
+    renderArticles('actu', 'grid-actu', 'empty-actu', 'loading-actu', 'tag', activeFilter);
   });
 });
 
