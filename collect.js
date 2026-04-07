@@ -15,15 +15,15 @@ const SOURCES = [
   { name: "Conseil d'Etat avis", url: "https://www.conseil-etat.fr/outils/flux-rss/avis-rss", category: "droit", tag: "Contrats IT" },
   { name: "Juricaf: numerique", url: "https://juricaf.org/recherche/numerique.rss", category: "droit", tag: "Donnees personnelles" },
   { name: "Juricaf: IA", url: "https://juricaf.org/recherche/intelligence-artificielle.rss", category: "droit", tag: "IA" },
-  { name: "Nouvelles.droit.org", url: "https://nouvelles.droit.org/rss/ip-it.xml", category: "droit", tag: "Donnees personnelles" },
+  { name: "Droit.org", url: "https://www.droit.org/rss/", category: "droit", tag: "Donnees personnelles" },
   { name: "Google: EUR-Lex IA", url: "https://news.google.com/rss/search?q=EUR-Lex+intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "IA" },
   { name: "Legifrss: numerique", url: "https://legifrss.org/latest?q=num%C3%A9rique", category: "droit", tag: "Contrats IT" },
   { name: "Legifrss: IA", url: "https://legifrss.org/latest?q=intelligence+artificielle", category: "droit", tag: "IA" },
 
 
-  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/news-media/rss", category: "droit", tag: "Donnees personnelles" },
+  { name: "DPC Ireland", url: "https://www.dataprotection.ie/en/news-media/press-releases/rss", category: "droit", tag: "Donnees personnelles" },
   { name: "FTC", url: "https://www.ftc.gov/feeds/press-release.xml", category: "droit", tag: "Plateformes" },
-  { name: "OCDE", url: "https://www.oecd.org/newsroom/rss/", category: "droit", tag: "IA" },
+  { name: "Google: OCDE IA", url: "https://news.google.com/rss/search?q=OCDE+intelligence+artificielle+regulation&hl=fr&gl=FR&ceid=FR:fr", category: "droit", tag: "IA" },
   { name: "The Block", url: "https://www.theblockcrypto.com/rss.xml", category: "droit", tag: "Blockchain" },
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/", category: "droit", tag: "Blockchain" },
 
