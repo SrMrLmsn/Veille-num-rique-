@@ -1,7 +1,67 @@
 {
-  "lastUpdate": "2026-04-08T08:30:12.101Z",
-  "totalArticles": 2030,
+  "lastUpdate": "2026-04-08T08:44:19.847Z",
+  "totalArticles": 2051,
   "articles": [
+    {
+      "source": "CoinDesk",
+      "category": "actu",
+      "tag": "Blockchain",
+      "title": "Crypto's 'AWS' Alchemy unveils tool to make AI payment systems talk to each other",
+      "description": "Alchemy’s AgentPay addresses the problem that the agentic payment systems currently coming online don’t talk to one another.",
+      "link": "https://www.coindesk.com/tech/2026/04/08/blockchain-development-firm-alchemy-unveils-interoperable-layer-for-ai-payments|actu",
+      "originalLink": "https://www.coindesk.com/tech/2026/04/08/blockchain-development-firm-alchemy-unveils-interoperable-layer-for-ai-payments",
+      "date": "2026-04-08T08:43:08.000Z"
+    },
+    {
+      "source": "CoinDesk",
+      "category": "actu",
+      "tag": "Blockchain",
+      "title": "Crypto whale holding oil shorts walks away with $2 million in profit",
+      "description": "A trader named Loracle closed his short position in oil futures early Wednesday, pocketing $2 million in profit.",
+      "link": "https://www.coindesk.com/markets/2026/04/08/crypto-whale-holding-oil-shorts-walks-away-with-usd2-million-in-profit|actu",
+      "originalLink": "https://www.coindesk.com/markets/2026/04/08/crypto-whale-holding-oil-shorts-walks-away-with-usd2-million-in-profit",
+      "date": "2026-04-08T08:42:39.000Z"
+    },
+    {
+      "source": "Google: IA tech",
+      "category": "tech",
+      "tag": "IA Innovation",
+      "title": "OpenAI écoute-t-il nos conversations avec ChatGPT ? Une arrestation à Strasbourg lance la polémique - Le Figaro",
+      "description": "OpenAI écoute-t-il nos conversations avec ChatGPT ? Une arrestation à Strasbourg lance la polémique  Le Figaro",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNVRUZ1pORXRuUTF2NDJLVDViZXlUOXdzRF9YZHlSTjBmeF9VS3N6VW9GekJtWEtiRGhfUDQtRGVYMjViS1FhMmtGWkNwdmJINkpkaW1qVU9zYkdSOXhPRHZQQURXZWJqcXRXSnhmd3BQTnFMTjdNV2wzYWpCdVNSTlRLcGo5UmotRWYxTDVpMklPdVdzcDYzaHJTV09vbmdvaG91YVhEZHRCcGtaaExYOWxZNXBzeXBJbEkzWGl1UEtWbU0wOFJmVXVSbmNRMGdaRTItZFd4dWVjZmxCSW9qVG5R?oc=5|tech",
+      "originalLink": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNVRUZ1pORXRuUTF2NDJLVDViZXlUOXdzRF9YZHlSTjBmeF9VS3N6VW9GekJtWEtiRGhfUDQtRGVYMjViS1FhMmtGWkNwdmJINkpkaW1qVU9zYkdSOXhPRHZQQURXZWJqcXRXSnhmd3BQTnFMTjdNV2wzYWpCdVNSTlRLcGo5UmotRWYxTDVpMklPdVdzcDYzaHJTV09vbmdvaG91YVhEZHRCcGtaaExYOWxZNXBzeXBJbEkzWGl1UEtWbU0wOFJmVXVSbmNRMGdaRTItZFd4dWVjZmxCSW9qVG5R?oc=5",
+      "date": "2026-04-08T08:41:04.000Z"
+    },
+    {
+      "source": "Google: IA tech",
+      "category": "tech",
+      "tag": "IA Innovation",
+      "title": "Strasbourg : un homme interpellé après avoir évoqué un projet d’attentat sur ChatGPT - lejdd.fr",
+      "description": "Strasbourg : un homme interpellé après avoir évoqué un projet d’attentat sur ChatGPT  lejdd.fr",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQkRDMzUxR3l5bEkyWm9TSE9KcENNSFB2UWwwNEJteWJhUlZ0UlQ1dVM0OHVZYWEwUWphRWVSLWVLa01jeTNIM25udW9YTWhDczFvZGtUcXJGUUw0c3hHZUdKam9zN0xxSzJxdzNjQTA2TmI0bDdvRHgyZlVhclhSOXdOd0MzRjZXcWFGQ20tZzhfWGZ1QmV1SzFDNlhyZlJsT1BPRWY3Y3NIbHlJclNyaF80ZXF0VUFJWThqTEpEZVpRcHlTQTJnME9XbmI0dVNlZ1pzQmJtTWNmLWhzQ1RJeVNiWmQ2TnZTR3c?oc=5|tech",
+      "originalLink": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQkRDMzUxR3l5bEkyWm9TSE9KcENNSFB2UWwwNEJteWJhUlZ0UlQ1dVM0OHVZYWEwUWphRWVSLWVLa01jeTNIM25udW9YTWhDczFvZGtUcXJGUUw0c3hHZUdKam9zN0xxSzJxdzNjQTA2TmI0bDdvRHgyZlVhclhSOXdOd0MzRjZXcWFGQ20tZzhfWGZ1QmV1SzFDNlhyZlJsT1BPRWY3Y3NIbHlJclNyaF80ZXF0VUFJWThqTEpEZVpRcHlTQTJnME9XbmI0dVNlZ1pzQmJtTWNmLWhzQ1RJeVNiWmQ2TnZTR3c?oc=5",
+      "date": "2026-04-08T08:35:08.000Z"
+    },
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech FR",
+      "title": "Houston, on a encore un problème de WC",
+      "description": "La mission historique Artémis II autour de la Lune se déroule à merveille, à un détail près : la capsule Orion rencontre un problème technique des plus gênants avec ses toilettes. Les astronautes n'arrivent plus à vider le réservoir dans l'espace.",
+      "link": "https://www.numerama.com/sciences/2228009-houston-on-a-encore-un-probleme-de-wc.html|tech",
+      "originalLink": "https://www.numerama.com/sciences/2228009-houston-on-a-encore-un-probleme-de-wc.html",
+      "date": "2026-04-08T08:34:53.000Z"
+    },
+    {
+      "source": "The Block",
+      "category": "actu",
+      "tag": "Blockchain",
+      "title": "UBS, Sygnum, PostFinance join banks in Swiss franc stablecoin sandbox",
+      "description": "Seven financial institutions launched sandbox testing regulated Swiss franc stablecoin, running through 2026 as stablecoin usage accelerates globally.",
+      "link": "https://www.theblock.co/post/396650/swiss-franc-stablecoin-sandbox?utm_source=rss&utm_medium=rss|actu",
+      "originalLink": "https://www.theblock.co/post/396650/swiss-franc-stablecoin-sandbox?utm_source=rss&utm_medium=rss",
+      "date": "2026-04-08T08:33:48.000Z"
+    },
     {
       "source": "Google: IA & droit",
       "category": "actu",
@@ -7450,6 +7510,16 @@
       "date": "2026-03-24T07:00:00.000Z"
     },
     {
+      "source": "Google: AI arbitration",
+      "category": "arbitrage",
+      "tag": "Arbitrage numerique",
+      "title": "Signus.ai Launches AI-Native Contract Platform and Announces Collaboration with the American Arbitration Association - CXO Digitalpulse",
+      "description": "Signus.ai Launches AI-Native Contract Platform and Announces Collaboration with the American Arbitration Association  CXO Digitalpulse",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTE9lZ05fMGxoT1VvNWtfS3hJR2R0ZHc3NXBIdG9PZ0JPRTk1RHpmalpMSWFvSWZvSk4weGR3TUF1QXVvYnBNc3JISGY5ckoxVlNJOWEwUzg3S2hjbnJEQVNHRkpmWWtFV2dxeEVzUGhQUm5MdUxjWlA2eXdTRlU1UnJfM2FiTTN5S0FyLVdkTV8xVG1TNFJ2RnA4OHFqbTV4aVptSjBWY3g2NVVUZ1c4MW1sUVdSU0lKc0NiUzJWMEtTWnZjaUVtb000S0xnM3lJbjdocm1kRnRsN05oY3RpMUVfOA?oc=5|arbitrage",
+      "originalLink": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTE9lZ05fMGxoT1VvNWtfS3hJR2R0ZHc3NXBIdG9PZ0JPRTk1RHpmalpMSWFvSWZvSk4weGR3TUF1QXVvYnBNc3JISGY5ckoxVlNJOWEwUzg3S2hjbnJEQVNHRkpmWWtFV2dxeEVzUGhQUm5MdUxjWlA2eXdTRlU1UnJfM2FiTTN5S0FyLVdkTV8xVG1TNFJ2RnA4OHFqbTV4aVptSjBWY3g2NVVUZ1c4MW1sUVdSU0lKc0NiUzJWMEtTWnZjaUVtb000S0xnM3lJbjdocm1kRnRsN05oY3RpMUVfOA?oc=5",
+      "date": "2026-03-24T07:00:00.000Z"
+    },
+    {
       "source": "ARCEP",
       "category": "droit",
       "tag": "Plateformes",
@@ -7632,6 +7702,16 @@
       "description": "New crypto regulations likely to be big favor to the Trump family, industry insiders say | Cryptocurrencies  The Guardian",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQM3JCd3dacC1BaFdoYTBQOGlmUkJSeV9USEZpRVdIY0ljLXNLWEc1dnNRLWtySEp3dkdueDZwazhLM0NIdUdtV1VIQWhQdTBOV2ZxMV9oaU9zRlZmTzQxX3JWRWNDejh0WEEzbFFlMFVWbm5BX2tyaFRpVTFrcmp2ZENwZ2gyRklqMmFKRXZuRQ?oc=5|actu",
       "originalLink": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQM3JCd3dacC1BaFdoYTBQOGlmUkJSeV9USEZpRVdIY0ljLXNLWEc1dnNRLWtySEp3dkdueDZwazhLM0NIdUdtV1VIQWhQdTBOV2ZxMV9oaU9zRlZmTzQxX3JWRWNDejh0WEEzbFFlMFVWbm5BX2tyaFRpVTFrcmp2ZENwZ2gyRklqMmFKRXZuRQ?oc=5",
+      "date": "2026-03-23T07:00:00.000Z"
+    },
+    {
+      "source": "Google: blockchain law",
+      "category": "actu",
+      "tag": "Blockchain",
+      "title": "SEC Clarifies Crypto Laws -- Here's What It Means for Investors - The Motley Fool",
+      "description": "SEC Clarifies Crypto Laws -- Here's What It Means for Investors  The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTmpENVhmQ29VbFZfZzM1RGZoeDh5SHJTa1pFWEpOa1MtZUZ0dzB4S1lkV3RZUW1mN2JNUEMwMG45bmlobEVGS3M3Tm93U2UxNjh6UVZhWEZlM2hudGlWWUVFQ25aNXdkTDNpVXByN0hwUjFKRng5MHFaeGw2X0ZfWGNNYmFDRGVKcW1aN3NfZmgyaDVsYk9N?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTmpENVhmQ29VbFZfZzM1RGZoeDh5SHJTa1pFWEpOa1MtZUZ0dzB4S1lkV3RZUW1mN2JNUEMwMG45bmlobEVGS3M3Tm93U2UxNjh6UVZhWEZlM2hudGlWWUVFQ25aNXdkTDNpVXByN0hwUjFKRng5MHFaeGw2X0ZfWGNNYmFDRGVKcW1aN3NfZmgyaDVsYk9N?oc=5",
       "date": "2026-03-23T07:00:00.000Z"
     },
     {
@@ -9223,6 +9303,26 @@
       "date": "2026-02-26T08:00:00.000Z"
     },
     {
+      "source": "Google: cyber juridique",
+      "category": "actu",
+      "tag": "Numerique",
+      "title": "Digital et cybersécurité : le Maroc expose son modèle à Madrid | L'observateur - lobservateur.info",
+      "description": "Digital et cybersécurité : le Maroc expose son modèle à Madrid | L'observateur  lobservateur.info",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFktRFo0SlFGSFNCRENsNGFrSTRuLXRWMHAweXFQYkxsWVM4NkMwOG9ieC1ianhOU0hqZEljcHBnUTc0MUdiZ0p5d2FtTDUtaXZYbFR1U2RRU0hlM3NXZ1hRQ0dNWjN3U0Q3WUY5TmpmTjlHaW0wS1p3VFZRMmFlamFIcjRtSldTZWxubHhJLVQ1NTJ2dnZQeFNOdjRfU19BaFRxRENJVVF4blpOcWdEYmpR0gFWQVVfeXFMTzdTMm1VM3J1VW1lXzF1RVFIb0ZUWEIxVlY0REJFdno5S1E3ek4tQTJGV1JJdk5iTHhJUlZEMURUSDFNcThsRWJZYjY4cWx4OEJrNmRGZXc?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFktRFo0SlFGSFNCRENsNGFrSTRuLXRWMHAweXFQYkxsWVM4NkMwOG9ieC1ianhOU0hqZEljcHBnUTc0MUdiZ0p5d2FtTDUtaXZYbFR1U2RRU0hlM3NXZ1hRQ0dNWjN3U0Q3WUY5TmpmTjlHaW0wS1p3VFZRMmFlamFIcjRtSldTZWxubHhJLVQ1NTJ2dnZQeFNOdjRfU19BaFRxRENJVVF4blpOcWdEYmpR0gFWQVVfeXFMTzdTMm1VM3J1VW1lXzF1RVFIb0ZUWEIxVlY0REJFdno5S1E3ek4tQTJGV1JJdk5iTHhJUlZEMURUSDFNcThsRWJZYjY4cWx4OEJrNmRGZXc?oc=5",
+      "date": "2026-02-26T08:00:00.000Z"
+    },
+    {
+      "source": "Google: cyber juridique",
+      "category": "europe-actu",
+      "tag": "Numerique",
+      "title": "Digital et cybersécurité : le Maroc expose son modèle à Madrid | L'observateur - lobservateur.info",
+      "description": "Digital et cybersécurité : le Maroc expose son modèle à Madrid | L'observateur  lobservateur.info",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFktRFo0SlFGSFNCRENsNGFrSTRuLXRWMHAweXFQYkxsWVM4NkMwOG9ieC1ianhOU0hqZEljcHBnUTc0MUdiZ0p5d2FtTDUtaXZYbFR1U2RRU0hlM3NXZ1hRQ0dNWjN3U0Q3WUY5TmpmTjlHaW0wS1p3VFZRMmFlamFIcjRtSldTZWxubHhJLVQ1NTJ2dnZQeFNOdjRfU19BaFRxRENJVVF4blpOcWdEYmpR0gFWQVVfeXFMTzdTMm1VM3J1VW1lXzF1RVFIb0ZUWEIxVlY0REJFdno5S1E3ek4tQTJGV1JJdk5iTHhJUlZEMURUSDFNcThsRWJZYjY4cWx4OEJrNmRGZXc?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFktRFo0SlFGSFNCRENsNGFrSTRuLXRWMHAweXFQYkxsWVM4NkMwOG9ieC1ianhOU0hqZEljcHBnUTc0MUdiZ0p5d2FtTDUtaXZYbFR1U2RRU0hlM3NXZ1hRQ0dNWjN3U0Q3WUY5TmpmTjlHaW0wS1p3VFZRMmFlamFIcjRtSldTZWxubHhJLVQ1NTJ2dnZQeFNOdjRfU19BaFRxRENJVVF4blpOcWdEYmpR0gFWQVVfeXFMTzdTMm1VM3J1VW1lXzF1RVFIb0ZUWEIxVlY0REJFdno5S1E3ek4tQTJGV1JJdk5iTHhJUlZEMURUSDFNcThsRWJZYjY4cWx4OEJrNmRGZXc?oc=5",
+      "date": "2026-02-26T08:00:00.000Z"
+    },
+    {
       "source": "Google: UK court tech",
       "category": "monde-uk-actu",
       "tag": "Jurisprudence UK",
@@ -10592,6 +10692,16 @@
       "date": "2026-02-05T08:00:00.000Z"
     },
     {
+      "source": "Google: international AI",
+      "category": "monde-autres-actu",
+      "tag": "Numerique",
+      "title": "With the RAISE Act, New York Aligns With California on Frontier AI Laws - Carnegie Endowment for International Peace",
+      "description": "With the RAISE Act, New York Aligns With California on Frontier AI Laws  Carnegie Endowment for International Peace",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXUtMVRSYm9GZnNnblZ0b3otX1NkcmU4NjBsbThIZmJHZXlFdnZrY05HWTNEWHdYUWc1RGwyRXliWXhfVGlpVU5FYlVyQklZRXZWLVl3a29KNjRhM1UtdU5GTkRSZmE5d2J1aFpCeDdaODd1R1V0dkpQaTBnejdVUGFmVzB4WEhoc0t5dUVXTGxBRlM1ZUtVTUp3?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXUtMVRSYm9GZnNnblZ0b3otX1NkcmU4NjBsbThIZmJHZXlFdnZrY05HWTNEWHdYUWc1RGwyRXliWXhfVGlpVU5FYlVyQklZRXZWLVl3a29KNjRhM1UtdU5GTkRSZmE5d2J1aFpCeDdaODd1R1V0dkpQaTBnejdVUGFmVzB4WEhoc0t5dUVXTGxBRlM1ZUtVTUp3?oc=5",
+      "date": "2026-02-05T08:00:00.000Z"
+    },
+    {
       "source": "Google: cyber juridique",
       "category": "droit",
       "tag": "Cybersecurite",
@@ -10785,6 +10895,16 @@
       "description": "Recent ICO Data Breach Enforcement Emphasizes the Importance of a Robust Breach Response  Skadden, Arps, Slate, Meagher & Flom LLP",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNN3RMZmNCNFh2WmpqSFl3dWNueHNWR2FZUTIxVjJXSEJsaUJJQlNiZFpHRkJlR3l0VU5WMzgtbC1qRl9yeXJpbW80aFZmQlVDcldpdk1CUmxqM1h3Um5idk04QVppdW9FY1d3czhEVVh4OUsyVm1kRE8tSVh5Z2lDcW1za0NGWjRoS1J1NFU4VHBsUQ?oc=5|europe-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNN3RMZmNCNFh2WmpqSFl3dWNueHNWR2FZUTIxVjJXSEJsaUJJQlNiZFpHRkJlR3l0VU5WMzgtbC1qRl9yeXJpbW80aFZmQlVDcldpdk1CUmxqM1h3Um5idk04QVppdW9FY1d3czhEVVh4OUsyVm1kRE8tSVh5Z2lDcW1za0NGWjRoS1J1NFU4VHBsUQ?oc=5",
+      "date": "2026-02-03T08:00:00.000Z"
+    },
+    {
+      "source": "Google: international AI",
+      "category": "monde-autres-actu",
+      "tag": "Numerique",
+      "title": "South Korea May Regret Being First with New AI Law - Tech Policy Press",
+      "description": "South Korea May Regret Being First with New AI Law  Tech Policy Press",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPT0E4QWVTVnF6cFdWcnZScnRIYTNLSDFPWk40T2UtWHFwX3NNZmhUN21xejIzRWlWaWtPNnA5bGdjVHBqV3Npa0MtbTZCRjBYY3ZvSVJ0WW50emhnNlBIeVJRbjZ2Z0g2YmpMNE45UkpjRWlKUklCUlBNcjAwNURtVA?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPT0E4QWVTVnF6cFdWcnZScnRIYTNLSDFPWk40T2UtWHFwX3NNZmhUN21xejIzRWlWaWtPNnA5bGdjVHBqV3Npa0MtbTZCRjBYY3ZvSVJ0WW50emhnNlBIeVJRbjZ2Z0g2YmpMNE45UkpjRWlKUklCUlBNcjAwNURtVA?oc=5",
       "date": "2026-02-03T08:00:00.000Z"
     },
     {
@@ -15622,6 +15742,16 @@
       "date": "2025-10-17T07:00:00.000Z"
     },
     {
+      "source": "Google: international AI",
+      "category": "monde-autres-actu",
+      "tag": "Blockchain",
+      "title": "AI in Global Governance - Blockchain Council",
+      "description": "AI in Global Governance  Blockchain Council",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15cU9Ub19yVzhEakFJYkFacUZXZG9ZTnF0c084eFkzd0EzREpKSE01NmpQN25oOHdEUlN5bHgwYWlXRkIzcXBqUjB0c3lRV3ozQU9UWVBNS0xodWkzMGl2RWt0UFVNX1hGWWtzeEotZw?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15cU9Ub19yVzhEakFJYkFacUZXZG9ZTnF0c084eFkzd0EzREpKSE01NmpQN25oOHdEUlN5bHgwYWlXRkIzcXBqUjB0c3lRV3ozQU9UWVBNS0xodWkzMGl2RWt0UFVNX1hGWWtzeEotZw?oc=5",
+      "date": "2025-10-17T07:00:00.000Z"
+    },
+    {
       "source": "Google: DPC Ireland",
       "category": "droit",
       "tag": "Donnees personnelles",
@@ -17544,6 +17674,16 @@
       "date": "2025-06-04T07:00:00.000Z"
     },
     {
+      "source": "Google: US court tech",
+      "category": "monde-usa-actu",
+      "tag": "IA",
+      "title": "OpenAI slams court order to save all ChatGPT logs, including deleted chats - Ars Technica",
+      "description": "OpenAI slams court order to save all ChatGPT logs, including deleted chats  Ars Technica",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbl96THZjMGtzc0RxdmlXNVBhOXJGRjhPOWp5QVU4ck5Bb3hRb2VVNTlIUkxDcnFpUTZjX2w0ZVprS2hNWjRuTjJfNEMzaW9XcllwbGJFSDNWcXotR09wNy0wb0p0RjF3bmRVT1UwRjRfUWxKNWNfY2lNQ2d4Wi1aamdqUDM4SDNQMmxYUDlfRHQ0S0h5a28zdnpvU3ptQ3dKb0RETmU2SVdteW52U3g1TXVidDl0eHpBdmZMZXVn?oc=5|monde-usa-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbl96THZjMGtzc0RxdmlXNVBhOXJGRjhPOWp5QVU4ck5Bb3hRb2VVNTlIUkxDcnFpUTZjX2w0ZVprS2hNWjRuTjJfNEMzaW9XcllwbGJFSDNWcXotR09wNy0wb0p0RjF3bmRVT1UwRjRfUWxKNWNfY2lNQ2d4Wi1aamdqUDM4SDNQMmxYUDlfRHQ0S0h5a28zdnpvU3ptQ3dKb0RETmU2SVdteW52U3g1TXVidDl0eHpBdmZMZXVn?oc=5",
+      "date": "2025-06-04T07:00:00.000Z"
+    },
+    {
       "source": "Google: cyber juridique",
       "category": "droit",
       "tag": "Cybersecurite",
@@ -17995,6 +18135,16 @@
       "date": "2025-04-23T07:00:00.000Z"
     },
     {
+      "source": "Google: CJUE numerique",
+      "category": "europe-decisions",
+      "tag": "Plateformes",
+      "title": "700 millions d’euros d’amendes : l’UE reproche à Apple et Meta une violation du Digital Market Act au risque d'irriter Washington - droit-technologie.org",
+      "description": "700 millions d’euros d’amendes : l’UE reproche à Apple et Meta une violation du Digital Market Act au risque d'irriter Washington  droit-technologie.org",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPODlRYURsWl9kUy1ESGxmeHJZS2lUQkd3WmphQnQyeUF5NVFJZi1TMExxVzF5R3VDelhsTXB6SHdvOU1iTXZoYzA2Wjh1eGNRbHZmUWJjYkZPVDFLeHRKSnpzanNOVTBSSjlKaXh4YmNyY0g0eGRJZFBzQ3VkY1BSMGozSTYtQ3RwSFd2YlBoY2UwYzJPenlUOXZ4MXFYNjZSc01VdWJQcmU5SDI1YW44MS1zSjBta0hEd3pXV3lPZUplVlpRMlRUeWNXUnV3LUpQemh0RjE5MVIzaTIxbDhhYkVQTXVHUXROU0ZXanlkbVRmRWI0QWpNWTFVLVpjUQ?oc=5|europe-decisions",
+      "originalLink": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPODlRYURsWl9kUy1ESGxmeHJZS2lUQkd3WmphQnQyeUF5NVFJZi1TMExxVzF5R3VDelhsTXB6SHdvOU1iTXZoYzA2Wjh1eGNRbHZmUWJjYkZPVDFLeHRKSnpzanNOVTBSSjlKaXh4YmNyY0g0eGRJZFBzQ3VkY1BSMGozSTYtQ3RwSFd2YlBoY2UwYzJPenlUOXZ4MXFYNjZSc01VdWJQcmU5SDI1YW44MS1zSjBta0hEd3pXV3lPZUplVlpRMlRUeWNXUnV3LUpQemh0RjE5MVIzaTIxbDhhYkVQTXVHUXROU0ZXanlkbVRmRWI0QWpNWTFVLVpjUQ?oc=5",
+      "date": "2025-04-23T07:00:00.000Z"
+    },
+    {
       "source": "Google: US court tech",
       "category": "monde-usa-actu",
       "tag": "Donnees personnelles",
@@ -18121,6 +18271,26 @@
       "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPTEUwYjVYVWNNRDV2WjVEVThfbkdKNXVBSERCT2wxRWgxUWNlNmJEWjdzal9vY21fbWVneUxPUFZvd202bjdla3E2MUt5ajR2SHZkWkg0bS1GTXVBellOWlVSc1c2N0tLcDlmWWZLSkpPLWk0SlBLRTJnSTNtWm10YkZnUjZvWS1fVGVoeUZPc2k5RGFPZHRERnoyRTFobWZrZHVRQjgtNzhKbXROM2dMQnVWZWo1UV9NeElpQ3VmanJubmVza3RhNDVfalpaSjRJd205TmdraUJWV3VNaVhDUUNoZ3NnU0pmbS1jcEo0NG1BaTk4VzczRmstRTltMXBxQy1z?oc=5|europe-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPTEUwYjVYVWNNRDV2WjVEVThfbkdKNXVBSERCT2wxRWgxUWNlNmJEWjdzal9vY21fbWVneUxPUFZvd202bjdla3E2MUt5ajR2SHZkWkg0bS1GTXVBellOWlVSc1c2N0tLcDlmWWZLSkpPLWk0SlBLRTJnSTNtWm10YkZnUjZvWS1fVGVoeUZPc2k5RGFPZHRERnoyRTFobWZrZHVRQjgtNzhKbXROM2dMQnVWZWo1UV9NeElpQ3VmanJubmVza3RhNDVfalpaSjRJd205TmdraUJWV3VNaVhDUUNoZ3NnU0pmbS1jcEo0NG1BaTk4VzczRmstRTltMXBxQy1z?oc=5",
       "date": "2025-04-04T07:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "actu",
+      "tag": "Plateformes",
+      "title": "Staffing Up: Antitrust Regulators Around the World Step Up Digital Platform and Technology Enforcement - mayerbrown.com",
+      "description": "Staffing Up: Antitrust Regulators Around the World Step Up Digital Platform and Technology Enforcement  mayerbrown.com",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNclJpNzB5UGFPZlk2WGp4THowY0pxNHlZRVpvTGw0NjBhUVQ2Zk1IazlTa2VCcm4xUmRsRTl4QVRCM3NKWWtnQ1RrTVVCLWJCWkZLNVJjM1NxNFk5dmgxUHJMV0xPN0duZTFNZ3BQblpVWURuZGwzejdvQ1p3Yy1YQS1rcXh0NTVMWWMzWXdqak50UGFVa1N6ckNjd3NNU0s0eDEtRkFFZWUwb2FSVWV4QTJvQm9zNG95WGJkWjN1bXJ2aDdBOHBwYW9yUW1kVmdPWlRpQUF2VEhGNFY4c0luVnlycXN4VURMRXhpMnlZWXBqYTg?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNclJpNzB5UGFPZlk2WGp4THowY0pxNHlZRVpvTGw0NjBhUVQ2Zk1IazlTa2VCcm4xUmRsRTl4QVRCM3NKWWtnQ1RrTVVCLWJCWkZLNVJjM1NxNFk5dmgxUHJMV0xPN0duZTFNZ3BQblpVWURuZGwzejdvQ1p3Yy1YQS1rcXh0NTVMWWMzWXdqak50UGFVa1N6ckNjd3NNU0s0eDEtRkFFZWUwb2FSVWV4QTJvQm9zNG95WGJkWjN1bXJ2aDdBOHBwYW9yUW1kVmdPWlRpQUF2VEhGNFY4c0luVnlycXN4VURMRXhpMnlZWXBqYTg?oc=5",
+      "date": "2025-04-03T07:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "europe-actu",
+      "tag": "Plateformes",
+      "title": "Staffing Up: Antitrust Regulators Around the World Step Up Digital Platform and Technology Enforcement - mayerbrown.com",
+      "description": "Staffing Up: Antitrust Regulators Around the World Step Up Digital Platform and Technology Enforcement  mayerbrown.com",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNclJpNzB5UGFPZlk2WGp4THowY0pxNHlZRVpvTGw0NjBhUVQ2Zk1IazlTa2VCcm4xUmRsRTl4QVRCM3NKWWtnQ1RrTVVCLWJCWkZLNVJjM1NxNFk5dmgxUHJMV0xPN0duZTFNZ3BQblpVWURuZGwzejdvQ1p3Yy1YQS1rcXh0NTVMWWMzWXdqak50UGFVa1N6ckNjd3NNU0s0eDEtRkFFZWUwb2FSVWV4QTJvQm9zNG95WGJkWjN1bXJ2aDdBOHBwYW9yUW1kVmdPWlRpQUF2VEhGNFY4c0luVnlycXN4VURMRXhpMnlZWXBqYTg?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNclJpNzB5UGFPZlk2WGp4THowY0pxNHlZRVpvTGw0NjBhUVQ2Zk1IazlTa2VCcm4xUmRsRTl4QVRCM3NKWWtnQ1RrTVVCLWJCWkZLNVJjM1NxNFk5dmgxUHJMV0xPN0duZTFNZ3BQblpVWURuZGwzejdvQ1p3Yy1YQS1rcXh0NTVMWWMzWXdqak50UGFVa1N6ckNjd3NNU0s0eDEtRkFFZWUwb2FSVWV4QTJvQm9zNG95WGJkWjN1bXJ2aDdBOHBwYW9yUW1kVmdPWlRpQUF2VEhGNFY4c0luVnlycXN4VURMRXhpMnlZWXBqYTg?oc=5",
+      "date": "2025-04-03T07:00:00.000Z"
     },
     {
       "source": "Google: arbitrage numerique",
@@ -18631,6 +18801,16 @@
       "date": "2024-10-02T07:00:00.000Z"
     },
     {
+      "source": "Google: Brazil LGPD",
+      "category": "monde-autres-actu",
+      "tag": "Donnees personnelles",
+      "title": "Data Protection in Europe and Beyond – A Short Comparative Analysis - Ifimes",
+      "description": "Data Protection in Europe and Beyond – A Short Comparative Analysis  Ifimes",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVXk2UVFvNDRFaHpod1gzUWZ3RUNGcmswZTJSS0hKc1Rub2lxYXc1VkNWLVRKMEtwVTdGVEpkOEc3bFJmcGlneVRoVHRDeHU2dzNrLXV0TThaYTU1czhodU9lRlJhQU9ibDlSZlc0UVQyb05HbXgzZ3lhYnVXWkZfTG41VlFMUWNYZmxRUmNuRjNYdWhodkVWeWdkQktPbG1RVVNpVm9kTm9GTVYzMEhmZllnUVV2Zw?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVXk2UVFvNDRFaHpod1gzUWZ3RUNGcmswZTJSS0hKc1Rub2lxYXc1VkNWLVRKMEtwVTdGVEpkOEc3bFJmcGlneVRoVHRDeHU2dzNrLXV0TThaYTU1czhodU9lRlJhQU9ibDlSZlc0UVQyb05HbXgzZ3lhYnVXWkZfTG41VlFMUWNYZmxRUmNuRjNYdWhodkVWeWdkQktPbG1RVVNpVm9kTm9GTVYzMEhmZllnUVV2Zw?oc=5",
+      "date": "2024-09-30T07:00:00.000Z"
+    },
+    {
       "source": "Google: blockchain droit",
       "category": "droit",
       "tag": "Blockchain",
@@ -18677,6 +18857,26 @@
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSFpjc1Q2Q3ZvX1FuZGFJczNKdVVKRWN2X2hTWnhWMC1ZVTFodDJvREJGTDhSbHJwV1JjV2k5MEkwUVFoNE5XdzFYcWxod1JPTzd3ZDVyaHI5c3hKZ1pxcHByMXpuQ3lmVmo5bndWSVYzSS1lekZjVkl0cnBMY0ZxelFlYkxseVRfUm1VS0ROdWs3MlFISE1OTmxmMW5BdXliUFdXV1Z3NWNzTGxnMVRrS2F2Yi13UzZG?oc=5|actu",
       "originalLink": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSFpjc1Q2Q3ZvX1FuZGFJczNKdVVKRWN2X2hTWnhWMC1ZVTFodDJvREJGTDhSbHJwV1JjV2k5MEkwUVFoNE5XdzFYcWxod1JPTzd3ZDVyaHI5c3hKZ1pxcHByMXpuQ3lmVmo5bndWSVYzSS1lekZjVkl0cnBMY0ZxelFlYkxseVRfUm1VS0ROdWs3MlFISE1OTmxmMW5BdXliUFdXV1Z3NWNzTGxnMVRrS2F2Yi13UzZG?oc=5",
       "date": "2024-09-20T07:00:00.000Z"
+    },
+    {
+      "source": "Google: CJEU digital",
+      "category": "europe-decisions",
+      "tag": "Donnees personnelles",
+      "title": "Navigating the Intersections of Data Protection and Competition Laws - Reed Smith LLP",
+      "description": "Navigating the Intersections of Data Protection and Competition Laws  Reed Smith LLP",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcDBETklRTGplZjdQQ3hXaVFMU1BrT3p3MWdwMS1ya0k2SGJUbzV1TUhQSGx1TlBOeWpKYnRYaGlGVzlBRnc4enVHdlA2TUppVG1RLThKRERNUzVKaGtwMVBwbHRkcmszQ012elR2VzZyVTNrVklOaFY3ZjlHdDU3THlUM25KaU11UHBxSUJ2cm9BeWkxZk93MkQtTmFmRDJham1oOXVRejVXQWpOSEZCMlNDdEJoZ0lxTVVxOEpLRV9wbGE2WUdMRV8yOEFiUQ?oc=5|europe-decisions",
+      "originalLink": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcDBETklRTGplZjdQQ3hXaVFMU1BrT3p3MWdwMS1ya0k2SGJUbzV1TUhQSGx1TlBOeWpKYnRYaGlGVzlBRnc4enVHdlA2TUppVG1RLThKRERNUzVKaGtwMVBwbHRkcmszQ012elR2VzZyVTNrVklOaFY3ZjlHdDU3THlUM25KaU11UHBxSUJ2cm9BeWkxZk93MkQtTmFmRDJham1oOXVRejVXQWpOSEZCMlNDdEJoZ0lxTVVxOEpLRV9wbGE2WUdMRV8yOEFiUQ?oc=5",
+      "date": "2024-09-16T07:00:00.000Z"
+    },
+    {
+      "source": "Google: Brazil LGPD",
+      "category": "monde-autres-actu",
+      "tag": "IA",
+      "title": "Glass Half Full or Half Empty: An Overview on the Brazilian Data Protection Landscape since its Hallmark Act - mayerbrown.com",
+      "description": "Glass Half Full or Half Empty: An Overview on the Brazilian Data Protection Landscape since its Hallmark Act  mayerbrown.com",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aR1YwdXJTQzdkNDZfMFR2aWx3NlJ2X3ZMYUItc3BqNThEcENadUs4Y2FUWjNyWFM3OTFaN0dUTUFmeUVPVE1PQ3E0ZWN6OWtJZ0xINm1pNVl6UXI3WFB4clRBOHkzT20tWEZrUHVZeld1M2M2aFFkdmZmU1U?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aR1YwdXJTQzdkNDZfMFR2aWx3NlJ2X3ZMYUItc3BqNThEcENadUs4Y2FUWjNyWFM3OTFaN0dUTUFmeUVPVE1PQ3E0ZWN6OWtJZ0xINm1pNVl6UXI3WFB4clRBOHkzT20tWEZrUHVZeld1M2M2aFFkdmZmU1U?oc=5",
+      "date": "2024-09-03T07:00:00.000Z"
     },
     {
       "source": "Google: CCPA CPRA",
@@ -19295,6 +19495,16 @@
       "link": "https://www.europarl.europa.eu/news/fr/headlines/priorities/protection-des-consommateurs-dans-l-ue|europe-actu",
       "originalLink": "https://www.europarl.europa.eu/news/fr/headlines/priorities/protection-des-consommateurs-dans-l-ue",
       "date": "2023-02-21T12:46:39.000Z"
+    },
+    {
+      "source": "Google: Brazil LGPD",
+      "category": "monde-autres-actu",
+      "tag": "Donnees personnelles",
+      "title": "What Marketers Should Know About Privacy Regulations: GDPR, CCPA, LGPD, and More - Oracle Blogs",
+      "description": "What Marketers Should Know About Privacy Regulations: GDPR, CCPA, LGPD, and More  Oracle Blogs",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOGZfdTRjcnNDSXg4T1ByTG85RnhlN1NnQmh5WHAwNUhvUVRvRU1ONE5DZzJLa2J2SWZOOFhtWnRFWHA0Z2pCLTFSaVhBQnlQcmZJX0hFNDhWT3VRYzNmRkRfN3VGbHdTb1NTN0M4Z0JFUHV1VEdMMnhTNWdJNGdJakliQmxnajFSOHJqWEgyNE1DdFpraEZucmp3V0dYQmF3anUxVjg5VUZKVGNNaXhycmg3cFMtTFk?oc=5|monde-autres-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOGZfdTRjcnNDSXg4T1ByTG85RnhlN1NnQmh5WHAwNUhvUVRvRU1ONE5DZzJLa2J2SWZOOFhtWnRFWHA0Z2pCLTFSaVhBQnlQcmZJX0hFNDhWT3VRYzNmRkRfN3VGbHdTb1NTN0M4Z0JFUHV1VEdMMnhTNWdJNGdJakliQmxnajFSOHJqWEgyNE1DdFpraEZucmp3V0dYQmF3anUxVjg5VUZKVGNNaXhycmg3cFMtTFk?oc=5",
+      "date": "2023-01-01T08:00:00.000Z"
     },
     {
       "source": "Google: Canada AI law",
