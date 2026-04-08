@@ -1,7 +1,17 @@
 {
-  "lastUpdate": "2026-04-08T08:44:19.847Z",
-  "totalArticles": 2051,
+  "lastUpdate": "2026-04-08T08:59:34.771Z",
+  "totalArticles": 2081,
   "articles": [
+    {
+      "source": "Numerama",
+      "category": "tech",
+      "tag": "Tech FR",
+      "title": "Hideo Kojima (Metal Gear Solid) pense que vous n’êtes pas assez cultivé",
+      "description": "La culture, c'est important. Hideo Kojima l'a bien compris, et il veut que vous le compreniez aussi. C'est pourquoi le créateur veut vous faire aimer la culture. Aimez la culture s'il vous plaît.",
+      "link": "https://www.numerama.com/pop-culture/2228007-hideo-kojima-metal-gear-solid-pense-que-vous-netes-pas-assez-cultive.html|tech",
+      "originalLink": "https://www.numerama.com/pop-culture/2228007-hideo-kojima-metal-gear-solid-pense-que-vous-netes-pas-assez-cultive.html",
+      "date": "2026-04-08T08:51:43.000Z"
+    },
     {
       "source": "CoinDesk",
       "category": "actu",
@@ -61,6 +71,16 @@
       "link": "https://www.theblock.co/post/396650/swiss-franc-stablecoin-sandbox?utm_source=rss&utm_medium=rss|actu",
       "originalLink": "https://www.theblock.co/post/396650/swiss-franc-stablecoin-sandbox?utm_source=rss&utm_medium=rss",
       "date": "2026-04-08T08:33:48.000Z"
+    },
+    {
+      "source": "Google: IA tech",
+      "category": "tech",
+      "tag": "IA Innovation",
+      "title": "Anthropic reporte la sortie de sa nouvelle IA, Mythos, trop dangereuse pour la cybersécurité actuelle - Courrier picard",
+      "description": "Anthropic reporte la sortie de sa nouvelle IA, Mythos, trop dangereuse pour la cybersécurité actuelle  Courrier picard",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbTdCQjZrWHo5aEIwMExDaW93SHV1NGUwQWNLTHVmdnVwWGlpQ2Vsd1J0OGttSUVQa1dUcUVlTEdzRVVsR1l5TTFzSV9iTVpfNVdxX0RaSFpxWHR6S0FjLWl5TmN6cTZfdmg2ZTF1dXcyNFRsSVE3eTZuaHBudEtsaFhubGJ6UkMxamRrMFJPYVhWdDNxcTliU2NGbUtrOU1ORDBmYXo3Q0Y1bnlUd3hJOVpQRTZpdjR1emNyYzVVcHEwc1VlXzlrSVFuU2k5aGROQWJ0TzlB?oc=5|tech",
+      "originalLink": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbTdCQjZrWHo5aEIwMExDaW93SHV1NGUwQWNLTHVmdnVwWGlpQ2Vsd1J0OGttSUVQa1dUcUVlTEdzRVVsR1l5TTFzSV9iTVpfNVdxX0RaSFpxWHR6S0FjLWl5TmN6cTZfdmg2ZTF1dXcyNFRsSVE3eTZuaHBudEtsaFhubGJ6UkMxamRrMFJPYVhWdDNxcTliU2NGbUtrOU1ORDBmYXo3Q0Y1bnlUd3hJOVpQRTZpdjR1emNyYzVVcHEwc1VlXzlrSVFuU2k5aGROQWJ0TzlB?oc=5",
+      "date": "2026-04-08T08:22:10.000Z"
     },
     {
       "source": "Google: IA & droit",
@@ -256,6 +276,16 @@
       "source": "Google: IA tech",
       "category": "tech",
       "tag": "IA Innovation",
+      "title": "GEO : quand l’intelligence artificielle redessine les règles du search - frenchweb.fr",
+      "description": "GEO : quand l’intelligence artificielle redessine les règles du search  frenchweb.fr",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOczV3bmdDRk1CaVNOTkgtbnMwb2RnUHpVLWRFelhjNlEzZU5EQ2dYOGhHRDFNYzJ3djBKekNtcnBublRGZnlaem8yM2U4bW9oRXZEenFORmM2amFkU0xSZy1LbUhweWNyMmI0TV9HT3hFVmkwdUJMVFRZcmV6cmpaRVpUcURDRDh5VXJYb09DX1hja1hZd08xeXg0MkdnTE5C?oc=5|tech",
+      "originalLink": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOczV3bmdDRk1CaVNOTkgtbnMwb2RnUHpVLWRFelhjNlEzZU5EQ2dYOGhHRDFNYzJ3djBKekNtcnBublRGZnlaem8yM2U4bW9oRXZEenFORmM2amFkU0xSZy1LbUhweWNyMmI0TV9HT3hFVmkwdUJMVFRZcmV6cmpaRVpUcURDRDh5VXJYb09DX1hja1hZd08xeXg0MkdnTE5C?oc=5",
+      "date": "2026-04-08T05:57:25.000Z"
+    },
+    {
+      "source": "Google: IA tech",
+      "category": "tech",
+      "tag": "IA Innovation",
       "title": "OpenAI dépeint un avenir d'IA, de taxation des robots et de semaine de 32 heures - Les Echos",
       "description": "OpenAI dépeint un avenir d'IA, de taxation des robots et de semaine de 32 heures  Les Echos",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObTJycFFTR0QxbG1idS1teVBHNXl0X3BFSzZsSHA5U0dpelduQXhFNmdzenJSSFNOb3BweWlNcnRia1U5Wlh5R1dDRmk0NV80VUlJa3lNQUZUZlFNSGZHQVJzSGY4NDJVSi1jcTdtbGVWN0FJeFltSXRNd1REaElqdkVLSWFMQkkwNjRzNm5GbVhhQmJTVnE3LUFtTEFtMEEwMWR2dllnRDN3MWpHdmpUVmp3TWtrSnNMTVhVQXlaeWh0TkFWemY0NlBwM0txbDkweERxYW5UZW9fT01QUVRkUXJB?oc=5|tech",
@@ -271,6 +301,16 @@
       "link": "https://www.coindesk.com/tech/2026/04/08/attacking-bitcoin-mining-with-a-quantum-computer-would-require-the-energy-of-a-star-academics-say|actu",
       "originalLink": "https://www.coindesk.com/tech/2026/04/08/attacking-bitcoin-mining-with-a-quantum-computer-would-require-the-energy-of-a-star-academics-say",
       "date": "2026-04-08T05:42:54.000Z"
+    },
+    {
+      "source": "Google: IA tech",
+      "category": "tech",
+      "tag": "IA Innovation",
+      "title": "Un signal alarmant : Claude Mythos, l'IA surpuissante d'Anthropic, s'est échappée de son environnement de test - Les Numériques",
+      "description": "Un signal alarmant : Claude Mythos, l'IA surpuissante d'Anthropic, s'est échappée de son environnement de test  Les Numériques",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPQUZJd3ZhME5xWVRqNnZGNXp5aHQtMjFvdE5HZzJuR2JYeXRIR29KREJiZUViSXFLYlBXQ3B1dk5rYXVmVzh1NnhuZFh2aDhQVUVfdUI0YXNfQ240MmQyV0IzN2ZKNlBWWGd4OTNnQWpUd0ZDVWZKX2NNX3BrMllOV2tFcHlRS1dlRTlVYXBrVDdncGNybmQzcXZWZk04d05oRm5GWkJtd3BNRWdXVF82VENPcHZCTFpTcEViS3RhWXBLa2gyRk50MDkwQ2M1ZnBoYlRCa2lkNEhTaHUzSE52ZVpuRkZDaUJyX3JHakNkR3JieHNwblNKc2taSnJqTGdVTnVQQjhn?oc=5|tech",
+      "originalLink": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPQUZJd3ZhME5xWVRqNnZGNXp5aHQtMjFvdE5HZzJuR2JYeXRIR29KREJiZUViSXFLYlBXQ3B1dk5rYXVmVzh1NnhuZFh2aDhQVUVfdUI0YXNfQ240MmQyV0IzN2ZKNlBWWGd4OTNnQWpUd0ZDVWZKX2NNX3BrMllOV2tFcHlRS1dlRTlVYXBrVDdncGNybmQzcXZWZk04d05oRm5GWkJtd3BNRWdXVF82VENPcHZCTFpTcEViS3RhWXBLa2gyRk50MDkwQ2M1ZnBoYlRCa2lkNEhTaHUzSE52ZVpuRkZDaUJyX3JHakNkR3JieHNwblNKc2taSnJqTGdVTnVQQjhn?oc=5",
+      "date": "2026-04-08T05:41:00.000Z"
     },
     {
       "source": "TechCrunch",
@@ -3282,6 +3322,16 @@
       "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQdENVbVZTblMwZU9CelJncnFNRGlRRlpMVThYZVE3N25GanJDU0NrZmdCbzRPUUhZRVJ2dEk0eUxaU0R4TFdsXzUxUWotZnVNZWpoXzd6RUZVaXJXdzU2NW9WWVY0SkFKaU5Od0oxdFlmUWVGLVFjUmFQeFRrQ2RRWXRfV0JtNGdfVkx2MGdqdlhMUXFfVl9uaEFZMk5DSGxmOFA5eHdSOEJZUFBFVVJXWlBnWjdrQVVYX0FnZjQxdVN1NERMTVpna1h3eUI0alpPTU5QRFB1R0RrRHEtLUw0aTBaR0IzZUUyUE4zaXZEUGlpdw?oc=5|tech",
       "originalLink": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQdENVbVZTblMwZU9CelJncnFNRGlRRlpMVThYZVE3N25GanJDU0NrZmdCbzRPUUhZRVJ2dEk0eUxaU0R4TFdsXzUxUWotZnVNZWpoXzd6RUZVaXJXdzU2NW9WWVY0SkFKaU5Od0oxdFlmUWVGLVFjUmFQeFRrQ2RRWXRfV0JtNGdfVkx2MGdqdlhMUXFfVl9uaEFZMk5DSGxmOFA5eHdSOEJZUFBFVVJXWlBnWjdrQVVYX0FnZjQxdVN1NERMTVpna1h3eUI0alpPTU5QRFB1R0RrRHEtLUw0aTBaR0IzZUUyUE4zaXZEUGlpdw?oc=5",
       "date": "2026-04-06T12:45:00.000Z"
+    },
+    {
+      "source": "Google: blockchain law",
+      "category": "actu",
+      "tag": "Blockchain",
+      "title": "Russia Moves to Formalize Cryptocurrency Market With New Legislation - Bitcoin.com News",
+      "description": "Russia Moves to Formalize Cryptocurrency Market With New Legislation  Bitcoin.com News",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSHJBeUozWXBOR05LNExaZ2tpdDlWZWlkMGdNdzlFVEVHUE1HdXFUS2psR3BHSnFJYWMxVkFULW1Ebm5CZWhyOW5oUnRPZ0hDV2FnUlpFc3VkSUFJWGx1dVFQT2F4SHhXN1dHRjdiV0gweFNNcER6Skg5VnRpal9nWTJvVTlvMl9fWnU0YXNmMlpGNEFHU2pEYVlB?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSHJBeUozWXBOR05LNExaZ2tpdDlWZWlkMGdNdzlFVEVHUE1HdXFUS2psR3BHSnFJYWMxVkFULW1Ebm5CZWhyOW5oUnRPZ0hDV2FnUlpFc3VkSUFJWGx1dVFQT2F4SHhXN1dHRjdiV0gweFNNcER6Skg5VnRpal9nWTJvVTlvMl9fWnU0YXNmMlpGNEFHU2pEYVlB?oc=5",
+      "date": "2026-04-06T11:30:07.000Z"
     },
     {
       "source": "MIT Tech Review",
@@ -6658,6 +6708,26 @@
       "date": "2026-03-30T09:48:00.000Z"
     },
     {
+      "source": "Google: AI law",
+      "category": "actu",
+      "tag": "Numerique",
+      "title": "States Plow Ahead With A.I. Regulation, Defying Trump - The New York Times",
+      "description": "States Plow Ahead With A.I. Regulation, Defying Trump  The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT0JqVlJ0Y3A0WGktOENLZmdRSDc5WGVoM2toYU5YX0V0eF9kVFNKVl9fRllKT293Z1NmTDg3VHZfZFpJdkNLSlRsMzhjQWh5V2JZUWZTOVNHai16RVpOREhaOUR6ZHE0cWNyNnBmbHc1Rkp1UVJTaGM0N3lmQ0lOYVF1NlJrS1oxYVk0NFNOWHZJeDRp?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT0JqVlJ0Y3A0WGktOENLZmdRSDc5WGVoM2toYU5YX0V0eF9kVFNKVl9fRllKT293Z1NmTDg3VHZfZFpJdkNLSlRsMzhjQWh5V2JZUWZTOVNHai16RVpOREhaOUR6ZHE0cWNyNnBmbHc1Rkp1UVJTaGM0N3lmQ0lOYVF1NlJrS1oxYVk0NFNOWHZJeDRp?oc=5",
+      "date": "2026-03-30T07:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "europe-actu",
+      "tag": "Numerique",
+      "title": "States Plow Ahead With A.I. Regulation, Defying Trump - The New York Times",
+      "description": "States Plow Ahead With A.I. Regulation, Defying Trump  The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT0JqVlJ0Y3A0WGktOENLZmdRSDc5WGVoM2toYU5YX0V0eF9kVFNKVl9fRllKT293Z1NmTDg3VHZfZFpJdkNLSlRsMzhjQWh5V2JZUWZTOVNHai16RVpOREhaOUR6ZHE0cWNyNnBmbHc1Rkp1UVJTaGM0N3lmQ0lOYVF1NlJrS1oxYVk0NFNOWHZJeDRp?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT0JqVlJ0Y3A0WGktOENLZmdRSDc5WGVoM2toYU5YX0V0eF9kVFNKVl9fRllKT293Z1NmTDg3VHZfZFpJdkNLSlRsMzhjQWh5V2JZUWZTOVNHai16RVpOREhaOUR6ZHE0cWNyNnBmbHc1Rkp1UVJTaGM0N3lmQ0lOYVF1NlJrS1oxYVk0NFNOWHZJeDRp?oc=5",
+      "date": "2026-03-30T07:00:00.000Z"
+    },
+    {
       "source": "ANSSI",
       "category": "droit",
       "tag": "Cybersecurite",
@@ -7712,6 +7782,26 @@
       "description": "SEC Clarifies Crypto Laws -- Here's What It Means for Investors  The Motley Fool",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTmpENVhmQ29VbFZfZzM1RGZoeDh5SHJTa1pFWEpOa1MtZUZ0dzB4S1lkV3RZUW1mN2JNUEMwMG45bmlobEVGS3M3Tm93U2UxNjh6UVZhWEZlM2hudGlWWUVFQ25aNXdkTDNpVXByN0hwUjFKRng5MHFaeGw2X0ZfWGNNYmFDRGVKcW1aN3NfZmgyaDVsYk9N?oc=5|actu",
       "originalLink": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTmpENVhmQ29VbFZfZzM1RGZoeDh5SHJTa1pFWEpOa1MtZUZ0dzB4S1lkV3RZUW1mN2JNUEMwMG45bmlobEVGS3M3Tm93U2UxNjh6UVZhWEZlM2hudGlWWUVFQ25aNXdkTDNpVXByN0hwUjFKRng5MHFaeGw2X0ZfWGNNYmFDRGVKcW1aN3NfZmgyaDVsYk9N?oc=5",
+      "date": "2026-03-23T07:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "actu",
+      "tag": "IA",
+      "title": "Trump Administration Issues Legislative Recommendations for a Federal Artificial Intelligence Framework - mayerbrown.com",
+      "description": "Trump Administration Issues Legislative Recommendations for a Federal Artificial Intelligence Framework  mayerbrown.com",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbFZnN2xTajVKZnhVMS1ZYTc3eEJGSm1BWExVcmRrNDhVYnJZU0M0Q3pMZDh5OGtJOHFJc3ozc0oyclJ3Y1FnZUgwSUdfdnlpclMzQlhKaUNmaFgwRkhOVHkyMzI3M2lsMG5kZE1MckxrRWZURDVDYzJJcU5uV2trQjBtQmVPZzVxbTNvQ1VGeXIxNkRMUVRxNlF5Q2FyTWJJNjEtcG44N2JDZHB4aDdYaHk3VVFVdW9kSjJCeUMweXpVYjU2c1A0c3J6M1RTa0dYZE5FYlNqMGxDQXVTa3VocWZ5a0tFMXk4VXNIX1ktM1V0RzFxVHc?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbFZnN2xTajVKZnhVMS1ZYTc3eEJGSm1BWExVcmRrNDhVYnJZU0M0Q3pMZDh5OGtJOHFJc3ozc0oyclJ3Y1FnZUgwSUdfdnlpclMzQlhKaUNmaFgwRkhOVHkyMzI3M2lsMG5kZE1MckxrRWZURDVDYzJJcU5uV2trQjBtQmVPZzVxbTNvQ1VGeXIxNkRMUVRxNlF5Q2FyTWJJNjEtcG44N2JDZHB4aDdYaHk3VVFVdW9kSjJCeUMweXpVYjU2c1A0c3J6M1RTa0dYZE5FYlNqMGxDQXVTa3VocWZ5a0tFMXk4VXNIX1ktM1V0RzFxVHc?oc=5",
+      "date": "2026-03-23T07:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "europe-actu",
+      "tag": "IA",
+      "title": "Trump Administration Issues Legislative Recommendations for a Federal Artificial Intelligence Framework - mayerbrown.com",
+      "description": "Trump Administration Issues Legislative Recommendations for a Federal Artificial Intelligence Framework  mayerbrown.com",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbFZnN2xTajVKZnhVMS1ZYTc3eEJGSm1BWExVcmRrNDhVYnJZU0M0Q3pMZDh5OGtJOHFJc3ozc0oyclJ3Y1FnZUgwSUdfdnlpclMzQlhKaUNmaFgwRkhOVHkyMzI3M2lsMG5kZE1MckxrRWZURDVDYzJJcU5uV2trQjBtQmVPZzVxbTNvQ1VGeXIxNkRMUVRxNlF5Q2FyTWJJNjEtcG44N2JDZHB4aDdYaHk3VVFVdW9kSjJCeUMweXpVYjU2c1A0c3J6M1RTa0dYZE5FYlNqMGxDQXVTa3VocWZ5a0tFMXk4VXNIX1ktM1V0RzFxVHc?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbFZnN2xTajVKZnhVMS1ZYTc3eEJGSm1BWExVcmRrNDhVYnJZU0M0Q3pMZDh5OGtJOHFJc3ozc0oyclJ3Y1FnZUgwSUdfdnlpclMzQlhKaUNmaFgwRkhOVHkyMzI3M2lsMG5kZE1MckxrRWZURDVDYzJJcU5uV2trQjBtQmVPZzVxbTNvQ1VGeXIxNkRMUVRxNlF5Q2FyTWJJNjEtcG44N2JDZHB4aDdYaHk3VVFVdW9kSjJCeUMweXpVYjU2c1A0c3J6M1RTa0dYZE5FYlNqMGxDQXVTa3VocWZ5a0tFMXk4VXNIX1ktM1V0RzFxVHc?oc=5",
       "date": "2026-03-23T07:00:00.000Z"
     },
     {
@@ -9604,6 +9694,26 @@
       "date": "2026-02-20T08:00:00.000Z"
     },
     {
+      "source": "Google: AI law",
+      "category": "actu",
+      "tag": "Numerique",
+      "title": "States Split as Trump Threatens Lawsuits Over AI Laws - Governing",
+      "description": "States Split as Trump Threatens Lawsuits Over AI Laws  Governing",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWJJeXlzaHA2bTlrdkJTYjJ5RW1PVUhNNEwyd2VSMDB2cWx5QkFXMmt0SEJuR0lBSmI0cG1hTlN4OVhPekJUc0EyMlZXd3RISWllemRvQ0FWdTRhRFBDVlFYNWRGUUxaZFR6ZkE1MFZacTk0cDJCaWZiTV9rbGp6UHYxWHNZTFZoRHJWT0NDVTdQRE42QkplODNxNEpDdjBld2ktTktn?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWJJeXlzaHA2bTlrdkJTYjJ5RW1PVUhNNEwyd2VSMDB2cWx5QkFXMmt0SEJuR0lBSmI0cG1hTlN4OVhPekJUc0EyMlZXd3RISWllemRvQ0FWdTRhRFBDVlFYNWRGUUxaZFR6ZkE1MFZacTk0cDJCaWZiTV9rbGp6UHYxWHNZTFZoRHJWT0NDVTdQRE42QkplODNxNEpDdjBld2ktTktn?oc=5",
+      "date": "2026-02-20T08:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "europe-actu",
+      "tag": "Numerique",
+      "title": "States Split as Trump Threatens Lawsuits Over AI Laws - Governing",
+      "description": "States Split as Trump Threatens Lawsuits Over AI Laws  Governing",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWJJeXlzaHA2bTlrdkJTYjJ5RW1PVUhNNEwyd2VSMDB2cWx5QkFXMmt0SEJuR0lBSmI0cG1hTlN4OVhPekJUc0EyMlZXd3RISWllemRvQ0FWdTRhRFBDVlFYNWRGUUxaZFR6ZkE1MFZacTk0cDJCaWZiTV9rbGp6UHYxWHNZTFZoRHJWT0NDVTdQRE42QkplODNxNEpDdjBld2ktTktn?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWJJeXlzaHA2bTlrdkJTYjJ5RW1PVUhNNEwyd2VSMDB2cWx5QkFXMmt0SEJuR0lBSmI0cG1hTlN4OVhPekJUc0EyMlZXd3RISWllemRvQ0FWdTRhRFBDVlFYNWRGUUxaZFR6ZkE1MFZacTk0cDJCaWZiTV9rbGp6UHYxWHNZTFZoRHJWT0NDVTdQRE42QkplODNxNEpDdjBld2ktTktn?oc=5",
+      "date": "2026-02-20T08:00:00.000Z"
+    },
+    {
       "source": "Google: Canada AI law",
       "category": "monde-autres-actu",
       "tag": "Canada",
@@ -10856,6 +10966,26 @@
       "description": "International Arbitration: AI Arbitrator Launched by the AAA-ICDR  Akin",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdDlYSGptejZfbEMyX3p1U1NwMExwd0h1Rk5PdFR5NmZvczBUZXVPYXpMMndnR0w2dU5OTUpkZi00c3VsSjhhYXZlb2plUng0VGRHdm0tWGxjSDNXWk9fTGRpMlcyZVdqeVBjMUt0RmFyb0ZQZlQyQ001Vy1MSlRqN3B4azRXekdQMGNBSEdCeUk0TG9PRDczcDZqeUUyX0poLU9pNXBPMWNMaUZi?oc=5|arbitrage",
       "originalLink": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdDlYSGptejZfbEMyX3p1U1NwMExwd0h1Rk5PdFR5NmZvczBUZXVPYXpMMndnR0w2dU5OTUpkZi00c3VsSjhhYXZlb2plUng0VGRHdm0tWGxjSDNXWk9fTGRpMlcyZVdqeVBjMUt0RmFyb0ZQZlQyQ001Vy1MSlRqN3B4azRXekdQMGNBSEdCeUk0TG9PRDczcDZqeUUyX0poLU9pNXBPMWNMaUZi?oc=5",
+      "date": "2026-02-04T08:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "actu",
+      "tag": "Numerique",
+      "title": "Global AI Law and Policy Tracker: Highlights and takeaways - iapp.org",
+      "description": "Global AI Law and Policy Tracker: Highlights and takeaways  iapp.org",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOclYta3RyNkp5SVg2dF9PdlAydDhCNXNlZ2F0THFfcnJXODZ0b1k0TzhTNjc3QXlXQTEyOWpkWC1WVnFDdDFnSWdNOHZDdkR5SVM5a3ZudUdUZ3ctSG1vNHpuNEI0d29vX2tzRmx1SGtHQjJHay02djZDaFRQQVp0V054bmRFMXVZ?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOclYta3RyNkp5SVg2dF9PdlAydDhCNXNlZ2F0THFfcnJXODZ0b1k0TzhTNjc3QXlXQTEyOWpkWC1WVnFDdDFnSWdNOHZDdkR5SVM5a3ZudUdUZ3ctSG1vNHpuNEI0d29vX2tzRmx1SGtHQjJHay02djZDaFRQQVp0V054bmRFMXVZ?oc=5",
+      "date": "2026-02-04T08:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "europe-actu",
+      "tag": "Numerique",
+      "title": "Global AI Law and Policy Tracker: Highlights and takeaways - iapp.org",
+      "description": "Global AI Law and Policy Tracker: Highlights and takeaways  iapp.org",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOclYta3RyNkp5SVg2dF9PdlAydDhCNXNlZ2F0THFfcnJXODZ0b1k0TzhTNjc3QXlXQTEyOWpkWC1WVnFDdDFnSWdNOHZDdkR5SVM5a3ZudUdUZ3ctSG1vNHpuNEI0d29vX2tzRmx1SGtHQjJHay02djZDaFRQQVp0V054bmRFMXVZ?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOclYta3RyNkp5SVg2dF9PdlAydDhCNXNlZ2F0THFfcnJXODZ0b1k0TzhTNjc3QXlXQTEyOWpkWC1WVnFDdDFnSWdNOHZDdkR5SVM5a3ZudUdUZ3ctSG1vNHpuNEI0d29vX2tzRmx1SGtHQjJHay02djZDaFRQQVp0V054bmRFMXVZ?oc=5",
       "date": "2026-02-04T08:00:00.000Z"
     },
     {
@@ -12517,6 +12647,26 @@
       "date": "2026-01-12T08:00:00.000Z"
     },
     {
+      "source": "Google: cyber law",
+      "category": "actu",
+      "tag": "Cybersecurite",
+      "title": "Navigating Privacy and Cybersecurity Laws in 2026 Will Prove Difficult - Dark Reading",
+      "description": "Navigating Privacy and Cybersecurity Laws in 2026 Will Prove Difficult  Dark Reading",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOG01Y2Q5V245WE9BQmpkUng3Z0Nwb0dkcXBpVnNqQ01jY2N5Y0ljSmNrY2NIZUxlbkd6OEJ5UjZJMWFSV3RrMmQxa094TWVaVC1DRWtOcDgzb3RnR2JxdENfVFgzRmF5aTU1TzBSU3B0cXFpM1VPY2ZobGJncDh2SkN0ZUs2OGZwVEs2d3lBRmNKRl84RElyRE1xbXl2MWxMMkhYNkdzY2w4dDBTS3c?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOG01Y2Q5V245WE9BQmpkUng3Z0Nwb0dkcXBpVnNqQ01jY2N5Y0ljSmNrY2NIZUxlbkd6OEJ5UjZJMWFSV3RrMmQxa094TWVaVC1DRWtOcDgzb3RnR2JxdENfVFgzRmF5aTU1TzBSU3B0cXFpM1VPY2ZobGJncDh2SkN0ZUs2OGZwVEs2d3lBRmNKRl84RElyRE1xbXl2MWxMMkhYNkdzY2w4dDBTS3c?oc=5",
+      "date": "2026-01-12T08:00:00.000Z"
+    },
+    {
+      "source": "Google: cyber law",
+      "category": "europe-actu",
+      "tag": "Cybersecurite",
+      "title": "Navigating Privacy and Cybersecurity Laws in 2026 Will Prove Difficult - Dark Reading",
+      "description": "Navigating Privacy and Cybersecurity Laws in 2026 Will Prove Difficult  Dark Reading",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOG01Y2Q5V245WE9BQmpkUng3Z0Nwb0dkcXBpVnNqQ01jY2N5Y0ljSmNrY2NIZUxlbkd6OEJ5UjZJMWFSV3RrMmQxa094TWVaVC1DRWtOcDgzb3RnR2JxdENfVFgzRmF5aTU1TzBSU3B0cXFpM1VPY2ZobGJncDh2SkN0ZUs2OGZwVEs2d3lBRmNKRl84RElyRE1xbXl2MWxMMkhYNkdzY2w4dDBTS3c?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOG01Y2Q5V245WE9BQmpkUng3Z0Nwb0dkcXBpVnNqQ01jY2N5Y0ljSmNrY2NIZUxlbkd6OEJ5UjZJMWFSV3RrMmQxa094TWVaVC1DRWtOcDgzb3RnR2JxdENfVFgzRmF5aTU1TzBSU3B0cXFpM1VPY2ZobGJncDh2SkN0ZUs2OGZwVEs2d3lBRmNKRl84RElyRE1xbXl2MWxMMkhYNkdzY2w4dDBTS3c?oc=5",
+      "date": "2026-01-12T08:00:00.000Z"
+    },
+    {
       "source": "Google: arbitrage IA",
       "category": "arbitrage",
       "tag": "Arbitrage",
@@ -12794,6 +12944,26 @@
       "description": "VPN Brésil 2026 : les offres gratuites, stables et légales  Clubic",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SazQwODItakVjUEFvWGd1MFh3OFJHcEgyWXhleFVGMnp2c1NGRm9rWXVKdDVHLS1pdzZUZFZCUXBKUjV1QlMzbFNYcVo3VzE3UkZXdngyODU?oc=5|monde-autres-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SazQwODItakVjUEFvWGd1MFh3OFJHcEgyWXhleFVGMnp2c1NGRm9rWXVKdDVHLS1pdzZUZFZCUXBKUjV1QlMzbFNYcVo3VzE3UkZXdngyODU?oc=5",
+      "date": "2025-12-31T08:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "actu",
+      "tag": "IA",
+      "title": "Scared of artificial intelligence? New law forces makers to disclose disaster plans - CalMatters",
+      "description": "Scared of artificial intelligence? New law forces makers to disclose disaster plans  CalMatters",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TalN1Qm1qYzhmdTNMUHBZN21GdWJpQzBJVllXR2tNb3ZzeW9TZURHemRnMVlmNHdBNjN3WldFS0MydkNuSzVDTFlmNVBHMXB0ak5NWFRLMGFZTWhwNGNsYlhEOGxqOVJkeEg0ZEtQN0doMnRiZFpv?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TalN1Qm1qYzhmdTNMUHBZN21GdWJpQzBJVllXR2tNb3ZzeW9TZURHemRnMVlmNHdBNjN3WldFS0MydkNuSzVDTFlmNVBHMXB0ak5NWFRLMGFZTWhwNGNsYlhEOGxqOVJkeEg0ZEtQN0doMnRiZFpv?oc=5",
+      "date": "2025-12-31T08:00:00.000Z"
+    },
+    {
+      "source": "Google: AI law",
+      "category": "europe-actu",
+      "tag": "IA",
+      "title": "Scared of artificial intelligence? New law forces makers to disclose disaster plans - CalMatters",
+      "description": "Scared of artificial intelligence? New law forces makers to disclose disaster plans  CalMatters",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TalN1Qm1qYzhmdTNMUHBZN21GdWJpQzBJVllXR2tNb3ZzeW9TZURHemRnMVlmNHdBNjN3WldFS0MydkNuSzVDTFlmNVBHMXB0ak5NWFRLMGFZTWhwNGNsYlhEOGxqOVJkeEg0ZEtQN0doMnRiZFpv?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TalN1Qm1qYzhmdTNMUHBZN21GdWJpQzBJVllXR2tNb3ZzeW9TZURHemRnMVlmNHdBNjN3WldFS0MydkNuSzVDTFlmNVBHMXB0ak5NWFRLMGFZTWhwNGNsYlhEOGxqOVJkeEg0ZEtQN0doMnRiZFpv?oc=5",
       "date": "2025-12-31T08:00:00.000Z"
     },
     {
@@ -13096,6 +13266,36 @@
       "description": "Korea’s “Online Platform Fairness” Bill Risks Becoming a Digital Non-Tariff Barrier | Blogs | Dec 22, 2025  Information Technology and Innovation Foundation (ITIF)",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ243MDYwOXMzYWx5RXlObHNqcXlVMlo4M1dtbGZ1bC1WMW1rbFZxV1ZCczIzZ19vWmpPZ2tHaVdfNldUenJLUUprRE1nTUNZcl9maFA3eWtOalViek5qNURySzl2N3p1QjZNd0RKUlJMM3FUYy1SMHd5RFRsZ3l0c3RqNmhmdUhidnBteTZZbm1DeWFZZlY1MEVGc0FMNm5WSzUzUVg3eHN5S0pzVktQbDI4WWd6eDEwY3pfVg?oc=5|europe-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ243MDYwOXMzYWx5RXlObHNqcXlVMlo4M1dtbGZ1bC1WMW1rbFZxV1ZCczIzZ19vWmpPZ2tHaVdfNldUenJLUUprRE1nTUNZcl9maFA3eWtOalViek5qNURySzl2N3p1QjZNd0RKUlJMM3FUYy1SMHd5RFRsZ3l0c3RqNmhmdUhidnBteTZZbm1DeWFZZlY1MEVGc0FMNm5WSzUzUVg3eHN5S0pzVktQbDI4WWd6eDEwY3pfVg?oc=5",
+      "date": "2025-12-22T08:00:00.000Z"
+    },
+    {
+      "source": "Google: RGPD",
+      "category": "actu",
+      "tag": "Donnees personnelles",
+      "title": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données - CNIL",
+      "description": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données  CNIL",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5",
+      "date": "2025-12-22T08:00:00.000Z"
+    },
+    {
+      "source": "Google: RGPD",
+      "category": "europe-actu",
+      "tag": "Donnees personnelles",
+      "title": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données - CNIL",
+      "description": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données  CNIL",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5",
+      "date": "2025-12-22T08:00:00.000Z"
+    },
+    {
+      "source": "Google: RGPD",
+      "category": "monde-france-actu",
+      "tag": "Donnees personnelles",
+      "title": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données - CNIL",
+      "description": "Le règlement sur les données (Data Act) : un nouveau cadre européen pour le partage et l’utilisation des données  CNIL",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5|monde-france-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS3ZkQU1rTHlYWU9jaTVZTmE4RUZsUUItaTZYLXY1clRfc2lvZTgzRURyVEpvTW1WOHRBTHFET1k3T0p5SEozVW5VWmZmWmRmVzVVaTU0eEVrRURHVHVENUVwWE9ha1d0bFpmVXliZnBkREFySUJMcDBpcXJyZmFvVjlpaUQzMElpc3JqeGVTbGhyYllMWFZxU0huWERRRHVzZl85MUhLRmE?oc=5",
       "date": "2025-12-22T08:00:00.000Z"
     },
     {
@@ -13912,6 +14112,26 @@
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRmtEd0FPTlZRZmxQOXBaelBya3hyMzdJS1JjRWhQWDNXcDgwOEtuUXN6NDdPRWR2bHVMRXN6VXdVeVJsaUdNLVdSQVRTdzAzVzJHME1xd1ZRd3B4aFd2VkZkN0lXR1F1ZEVLZFctWG41YVJHWk9ZZWRRMHlPN0pCNl9MbTZ6ZUk1T3BkRkdDaw?oc=5|monde-asie-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRmtEd0FPTlZRZmxQOXBaelBya3hyMzdJS1JjRWhQWDNXcDgwOEtuUXN6NDdPRWR2bHVMRXN6VXdVeVJsaUdNLVdSQVRTdzAzVzJHME1xd1ZRd3B4aFd2VkZkN0lXR1F1ZEVLZFctWG41YVJHWk9ZZWRRMHlPN0pCNl9MbTZ6ZUk1T3BkRkdDaw?oc=5",
       "date": "2025-11-28T08:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "actu",
+      "tag": "Donnees personnelles",
+      "title": "Socialists push for formal inquiry into enforcement of EU digital rules - politico.eu",
+      "description": "Socialists push for formal inquiry into enforcement of EU digital rules  politico.eu",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWN4ekZFU05kYWxWSEwxa0NYLW5NOElSa0hXSlE5RUNQYnl1WkRWZENwM2h3Zmh3Y1VZZWlocTFFU0dRWC0wSWppWHdFdGlCalhXSFFiWklHcmFxSHByTVkzVVhRMWtHcXVnYm9lcndtRi1iSGFrYzJQY3JFQzZhM3VlV09sTGZELXg3UWp2ZUxqRzRzM0lETjBVU1FwZmNJRWVPQg?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWN4ekZFU05kYWxWSEwxa0NYLW5NOElSa0hXSlE5RUNQYnl1WkRWZENwM2h3Zmh3Y1VZZWlocTFFU0dRWC0wSWppWHdFdGlCalhXSFFiWklHcmFxSHByTVkzVVhRMWtHcXVnYm9lcndtRi1iSGFrYzJQY3JFQzZhM3VlV09sTGZELXg3UWp2ZUxqRzRzM0lETjBVU1FwZmNJRWVPQg?oc=5",
+      "date": "2025-11-27T08:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "europe-actu",
+      "tag": "Donnees personnelles",
+      "title": "Socialists push for formal inquiry into enforcement of EU digital rules - politico.eu",
+      "description": "Socialists push for formal inquiry into enforcement of EU digital rules  politico.eu",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWN4ekZFU05kYWxWSEwxa0NYLW5NOElSa0hXSlE5RUNQYnl1WkRWZENwM2h3Zmh3Y1VZZWlocTFFU0dRWC0wSWppWHdFdGlCalhXSFFiWklHcmFxSHByTVkzVVhRMWtHcXVnYm9lcndtRi1iSGFrYzJQY3JFQzZhM3VlV09sTGZELXg3UWp2ZUxqRzRzM0lETjBVU1FwZmNJRWVPQg?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWN4ekZFU05kYWxWSEwxa0NYLW5NOElSa0hXSlE5RUNQYnl1WkRWZENwM2h3Zmh3Y1VZZWlocTFFU0dRWC0wSWppWHdFdGlCalhXSFFiWklHcmFxSHByTVkzVVhRMWtHcXVnYm9lcndtRi1iSGFrYzJQY3JFQzZhM3VlV09sTGZELXg3UWp2ZUxqRzRzM0lETjBVU1FwZmNJRWVPQg?oc=5",
+      "date": "2025-11-27T08:00:00.000Z"
     },
     {
       "source": "Conseil d'Etat avis",
@@ -15216,6 +15436,46 @@
       "description": "Global AI Governance Law and Policy: Australia  IAPP",
       "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5HRnpPcU1wZ3M1bHhncllncFBLLXFNSHE0UVduWHhLajh1dnZzUDBtRm9NNVVQZDZ6VFlYbDlvdldyajlmSWRkMnhEXzhMVjhZSi1vaERFT1hNSkJTaG5YUDBlVXduTllrZHMyS2JLdUV5LVU?oc=5|monde-autres-actu",
       "originalLink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5HRnpPcU1wZ3M1bHhncllncFBLLXFNSHE0UVduWHhLajh1dnZzUDBtRm9NNVVQZDZ6VFlYbDlvdldyajlmSWRkMnhEXzhMVjhZSi1vaERFT1hNSkJTaG5YUDBlVXduTllrZHMyS2JLdUV5LVU?oc=5",
+      "date": "2025-11-05T08:00:00.000Z"
+    },
+    {
+      "source": "Google: GDPR",
+      "category": "actu",
+      "tag": "Donnees personnelles",
+      "title": "Data Privacy Newsletter - Issue 29 - Slaughter and May",
+      "description": "Data Privacy Newsletter - Issue 29  Slaughter and May",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2llSkt2TS1aZUVNcERrdC1ObnZ2SnJoT2NrMWYtcm5yamdESThJMGx4b2hwN3RWcmtrRVF0SllnbkF1LWFETGE0a3BDaGRKMldkRXJWUGthRGF4ZVJRMEJOSU9SN3Y4WGhMTGw1SkxhOGUwVzVUdUpyTllwV3I4azRBbjVKazNYSkwzakwtakI?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2llSkt2TS1aZUVNcERrdC1ObnZ2SnJoT2NrMWYtcm5yamdESThJMGx4b2hwN3RWcmtrRVF0SllnbkF1LWFETGE0a3BDaGRKMldkRXJWUGthRGF4ZVJRMEJOSU9SN3Y4WGhMTGw1SkxhOGUwVzVUdUpyTllwV3I4azRBbjVKazNYSkwzakwtakI?oc=5",
+      "date": "2025-11-05T08:00:00.000Z"
+    },
+    {
+      "source": "Google: GDPR",
+      "category": "europe-actu",
+      "tag": "Donnees personnelles",
+      "title": "Data Privacy Newsletter - Issue 29 - Slaughter and May",
+      "description": "Data Privacy Newsletter - Issue 29  Slaughter and May",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2llSkt2TS1aZUVNcERrdC1ObnZ2SnJoT2NrMWYtcm5yamdESThJMGx4b2hwN3RWcmtrRVF0SllnbkF1LWFETGE0a3BDaGRKMldkRXJWUGthRGF4ZVJRMEJOSU9SN3Y4WGhMTGw1SkxhOGUwVzVUdUpyTllwV3I4azRBbjVKazNYSkwzakwtakI?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOM2llSkt2TS1aZUVNcERrdC1ObnZ2SnJoT2NrMWYtcm5yamdESThJMGx4b2hwN3RWcmtrRVF0SllnbkF1LWFETGE0a3BDaGRKMldkRXJWUGthRGF4ZVJRMEJOSU9SN3Y4WGhMTGw1SkxhOGUwVzVUdUpyTllwV3I4azRBbjVKazNYSkwzakwtakI?oc=5",
+      "date": "2025-11-05T08:00:00.000Z"
+    },
+    {
+      "source": "Google: cyber law",
+      "category": "actu",
+      "tag": "Cybersecurite",
+      "title": "China Cybersecurity Law Amendment in Effect January 1, 2026 - China Briefing",
+      "description": "China Cybersecurity Law Amendment in Effect January 1, 2026  China Briefing",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VMUhYRU9scm1fSUlRRWlMZm9QT0F0MXdUTlhkOE9mTGk5dmJtaFlyNHBqTjdGQ0FjTU4xRW9LYjdnaWZ1VlZ2aUNYQlMtanhnYkc0WlNGUEd4Z2NkWDIzUnU4ajFBbTM4eUQyMFktM3JzWDdlVTJfbVFR?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VMUhYRU9scm1fSUlRRWlMZm9QT0F0MXdUTlhkOE9mTGk5dmJtaFlyNHBqTjdGQ0FjTU4xRW9LYjdnaWZ1VlZ2aUNYQlMtanhnYkc0WlNGUEd4Z2NkWDIzUnU4ajFBbTM4eUQyMFktM3JzWDdlVTJfbVFR?oc=5",
+      "date": "2025-11-05T08:00:00.000Z"
+    },
+    {
+      "source": "Google: cyber law",
+      "category": "europe-actu",
+      "tag": "Cybersecurite",
+      "title": "China Cybersecurity Law Amendment in Effect January 1, 2026 - China Briefing",
+      "description": "China Cybersecurity Law Amendment in Effect January 1, 2026  China Briefing",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VMUhYRU9scm1fSUlRRWlMZm9QT0F0MXdUTlhkOE9mTGk5dmJtaFlyNHBqTjdGQ0FjTU4xRW9LYjdnaWZ1VlZ2aUNYQlMtanhnYkc0WlNGUEd4Z2NkWDIzUnU4ajFBbTM4eUQyMFktM3JzWDdlVTJfbVFR?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VMUhYRU9scm1fSUlRRWlMZm9QT0F0MXdUTlhkOE9mTGk5dmJtaFlyNHBqTjdGQ0FjTU4xRW9LYjdnaWZ1VlZ2aUNYQlMtanhnYkc0WlNGUEd4Z2NkWDIzUnU4ajFBbTM4eUQyMFktM3JzWDdlVTJfbVFR?oc=5",
       "date": "2025-11-05T08:00:00.000Z"
     },
     {
@@ -18324,6 +18584,26 @@
     {
       "source": "Google: platform law",
       "category": "actu",
+      "tag": "Plateformes",
+      "title": "Competition Regulation of Digital Platforms in China - promarket.org",
+      "description": "Competition Regulation of Digital Platforms in China  promarket.org",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1VKSGhJU3U4bWRoN29jNHRMVk9TSm5sVnR5U09DVmlCZGJ2VDNveXVIQ25GaXNSdXpPSmZyQ3o3UlVVbGl0MFdJOUxYZWJfbF9PMWxoQXh2QUNwc2piUmhkUUJuRXZZcTRXMDVOcFJIQzVndG5nN1NyOFBEVS1kQ1BDUTlQY24zT0xSaGJfbWxxblUx?oc=5|actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1VKSGhJU3U4bWRoN29jNHRMVk9TSm5sVnR5U09DVmlCZGJ2VDNveXVIQ25GaXNSdXpPSmZyQ3o3UlVVbGl0MFdJOUxYZWJfbF9PMWxoQXh2QUNwc2piUmhkUUJuRXZZcTRXMDVOcFJIQzVndG5nN1NyOFBEVS1kQ1BDUTlQY24zT0xSaGJfbWxxblUx?oc=5",
+      "date": "2025-04-01T07:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "europe-actu",
+      "tag": "Plateformes",
+      "title": "Competition Regulation of Digital Platforms in China - promarket.org",
+      "description": "Competition Regulation of Digital Platforms in China  promarket.org",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1VKSGhJU3U4bWRoN29jNHRMVk9TSm5sVnR5U09DVmlCZGJ2VDNveXVIQ25GaXNSdXpPSmZyQ3o3UlVVbGl0MFdJOUxYZWJfbF9PMWxoQXh2QUNwc2piUmhkUUJuRXZZcTRXMDVOcFJIQzVndG5nN1NyOFBEVS1kQ1BDUTlQY24zT0xSaGJfbWxxblUx?oc=5|europe-actu",
+      "originalLink": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1VKSGhJU3U4bWRoN29jNHRMVk9TSm5sVnR5U09DVmlCZGJ2VDNveXVIQ25GaXNSdXpPSmZyQ3o3UlVVbGl0MFdJOUxYZWJfbF9PMWxoQXh2QUNwc2piUmhkUUJuRXZZcTRXMDVOcFJIQzVndG5nN1NyOFBEVS1kQ1BDUTlQY24zT0xSaGJfbWxxblUx?oc=5",
+      "date": "2025-04-01T07:00:00.000Z"
+    },
+    {
+      "source": "Google: platform law",
+      "category": "actu",
       "tag": "Numerique",
       "title": "A Policymaker’s Guide to Digital Antitrust Regulation | Reports & Briefings | Mar 31, 2025 - Information Technology and Innovation Foundation (ITIF)",
       "description": "A Policymaker’s Guide to Digital Antitrust Regulation | Reports & Briefings | Mar 31, 2025  Information Technology and Innovation Foundation (ITIF)",
@@ -19807,6 +20087,16 @@
       "date": "2020-12-17T08:00:00.000Z"
     },
     {
+      "source": "Google: ECHR digital",
+      "category": "europe-decisions",
+      "tag": "Donnees personnelles",
+      "title": "Why Schrems II requires US-EU agreement on surveillance and privacy - brookings.edu",
+      "description": "Why Schrems II requires US-EU agreement on surveillance and privacy  brookings.edu",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaU5DcHhUdEE5U1dLbF9XSkxpY1VJZ1NuVnN5cUt4d0RxUG5zWjVlVVgwMnVRck1vNHhfQ0ExVVZTOGhJaUM4RTJLS0tNZXJYQmJjSjVYRkxveE5tSWNqUlNFVzN0elQ0N3dHMXQzQnJONjUwWXFMai10NG41Q2hCdHppcmg2d1RlWElNTXcwbjdocGlpaWg0aU9VV1dhRXdLU2ZsZDln?oc=5|europe-decisions",
+      "originalLink": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaU5DcHhUdEE5U1dLbF9XSkxpY1VJZ1NuVnN5cUt4d0RxUG5zWjVlVVgwMnVRck1vNHhfQ0ExVVZTOGhJaUM4RTJLS0tNZXJYQmJjSjVYRkxveE5tSWNqUlNFVzN0elQ0N3dHMXQzQnJONjUwWXFMai10NG41Q2hCdHppcmg2d1RlWElNTXcwbjdocGlpaWg0aU9VV1dhRXdLU2ZsZDln?oc=5",
+      "date": "2020-12-08T08:00:00.000Z"
+    },
+    {
       "source": "Google: UK court tech",
       "category": "monde-uk-actu",
       "tag": "Jurisprudence UK",
@@ -19902,6 +20192,16 @@
       "description": "The UK's mass surveillance regime has broken the law (again)  WIRED",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40TDg4dDNDNDN0VUNaV3NBY25INTRnbjBWRDVvekVWMklUSVhmeS1MQ2k4WW9yLUtPY296Y0RDWnFIcUtMYklFS0FpWV9kWmkzcE5SZUZCNGNObVNFVzR5X0pGU1d3LUlEOUFnRWxR?oc=5|europe-decisions",
       "originalLink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40TDg4dDNDNDN0VUNaV3NBY25INTRnbjBWRDVvekVWMklUSVhmeS1MQ2k4WW9yLUtPY296Y0RDWnFIcUtMYklFS0FpWV9kWmkzcE5SZUZCNGNObVNFVzR5X0pGU1d3LUlEOUFnRWxR?oc=5",
+      "date": "2018-09-13T07:00:00.000Z"
+    },
+    {
+      "source": "Google: ECHR digital",
+      "category": "europe-decisions",
+      "tag": "Donnees personnelles",
+      "title": "UK loses 'Big Brother' mass surveillance case - dw.com",
+      "description": "UK loses 'Big Brother' mass surveillance case  dw.com",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYnhEeGZQdUs1QnhxalZxMGYxT2V5WlhfSmlsSDR0cVZtUV9iNTdlaEx0MDN6YzhSNUR4MmwxaHBoVEFMZXNtaW85T192dUNrRmhUNk9hMmh4RXl2SzhPbkpiemthQWxMTGo0RU5PU0Y2OXcxUWpPX05DVTN2b0VmeHlaMlFrd1RtSlY1V3g0ZUVtN2UwTURLTDFFX3BSYjNXdmfSAaIBQVVfeXFMT3lRZ3hEZmVYSnZ2ZW9NbnJnMzljempLS2dJcXFlUjFRaGpCZGtpbFhNcWcyUXpNQjZJdkctNG00MmRtck9ha0FMS2VVS3RpRVVZbk9DRTQ1UDh3dkxZRHRtNXgwR2lzU2lhRW8zSkJOdVlwMEZBTHVwQ0ZjSDJRcVdFWHh2bm5hRUR0YW56ZUtUVC1Uc0RBNVR0Q1JTZE9reWdB?oc=5|europe-decisions",
+      "originalLink": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYnhEeGZQdUs1QnhxalZxMGYxT2V5WlhfSmlsSDR0cVZtUV9iNTdlaEx0MDN6YzhSNUR4MmwxaHBoVEFMZXNtaW85T192dUNrRmhUNk9hMmh4RXl2SzhPbkpiemthQWxMTGo0RU5PU0Y2OXcxUWpPX05DVTN2b0VmeHlaMlFrd1RtSlY1V3g0ZUVtN2UwTURLTDFFX3BSYjNXdmfSAaIBQVVfeXFMT3lRZ3hEZmVYSnZ2ZW9NbnJnMzljempLS2dJcXFlUjFRaGpCZGtpbFhNcWcyUXpNQjZJdkctNG00MmRtck9ha0FMS2VVS3RpRVVZbk9DRTQ1UDh3dkxZRHRtNXgwR2lzU2lhRW8zSkJOdVlwMEZBTHVwQ0ZjSDJRcVdFWHh2bm5hRUR0YW56ZUtUVC1Uc0RBNVR0Q1JTZE9reWdB?oc=5",
       "date": "2018-09-13T07:00:00.000Z"
     },
     {
