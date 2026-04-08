@@ -164,8 +164,6 @@ var SOURCES = [].concat(
   src("EDPB", "https://www.edpb.europa.eu/feed/news_en", ["actu", "europe-actu"], "RGPD", false),
   src("Parlement EU", "https://www.europarl.europa.eu/rss/doc/top-stories/fr.xml", ["actu", "europe-actu"], "Parlement", true),
   src("Legalis", "https://www.legalis.net/feed/", ["actu", "monde-france-actu"], "Donnees personnelles", false),
-  src("Legifrss: numerique", "https://legifrss.org/latest?q=num%C3%A9rique", ["actu", "monde-france-actu"], "Contrats IT", false),
-  src("Legifrss: IA", "https://legifrss.org/latest?q=intelligence+artificielle", ["actu", "monde-france-actu"], "IA", false),
   src("Conseil d'Etat", "https://www.conseil-etat.fr/outils/flux-rss/actualites-rss", ["actu", "monde-france-actu"], "Contrats IT", true),
   src("FTC", "https://www.ftc.gov/feeds/press-release.xml", ["actu", "monde-usa-actu"], "Plateformes", true),
   src("The Block", "https://www.theblockcrypto.com/rss.xml", ["actu"], "Blockchain", false),
