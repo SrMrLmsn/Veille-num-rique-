@@ -1605,7 +1605,7 @@ function renderArticles(category, gridId, emptyId, loadingId, filterKey, filterV
 
 async function loadData() {
   try {
-    var res = await fetch('./data/articles.json');
+    var res = await fetch('./data/articles.json?t=' + Date.now());
     if (!res.ok) throw new Error('no data');
     var data = await res.json();
     allArticles = data.articles || [];
