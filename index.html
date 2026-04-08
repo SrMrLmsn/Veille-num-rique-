@@ -664,8 +664,31 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 <div class="search-bar">
   <input class="search-input" id="search-input" type="text" placeholder="Rechercher dans la veille..." />
   <button class="search-btn secondary" onclick="searchInternal()">🔍 Recherche interne</button>
-  <button class="search-btn claude-btn" onclick="searchClaude()">✦ Recherche Claude</button>
-  <span class="search-price">Claude : ~0,003$/requête · Nécessite une clé API</span>
+  <button class="search-btn claude-btn" onclick="toggleClaudePanel()">✦ Recherche Claude</button>
+</div>
+
+<!-- PANNEAU RECHERCHE CLAUDE -->
+
+<div id="claude-panel" style="display:none; padding:1rem 3rem; border-bottom:1.5px solid var(--border); background:var(--cream);">
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:600px;">
+    <div style="font-family:'DM Mono',monospace; font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em;">
+      Recherche Claude · Droit du numérique
+    </div>
+    <div style="font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--ink);">
+      Posez une question en droit du numérique. Claude analyse et répond en s'appuyant sur sa connaissance du droit européen, français et international.
+    </div>
+    <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+      <input id="claude-key-input" type="password" class="search-input" placeholder="Clé API Anthropic (sk-ant-...)" style="flex:1; min-width:200px;" />
+      <button class="search-btn secondary" style="font-size:0.65rem;" onclick="forgetKey()">Oublier la clé</button>
+    </div>
+    <div style="font-family:'DM Mono',monospace; font-size:0.65rem; color:var(--muted);">
+      Obtenez votre clé sur <a href="https://console.anthropic.com" target="_blank" style="color:var(--accent2);">console.anthropic.com</a> · Coût estimé : ~0,003$ par recherche · La clé est stockée uniquement dans votre navigateur
+    </div>
+    <div style="display:flex; gap:0.5rem;">
+      <button class="search-btn claude-btn" onclick="searchClaude()">✦ Lancer la recherche</button>
+      <button class="search-btn secondary" onclick="document.getElementById('claude-panel').style.display='none'">Annuler</button>
+    </div>
+  </div>
 </div>
 
 <!-- RESULTATS DE RECHERCHE -->
@@ -1249,16 +1272,47 @@ function searchInternal() {
 // ════════════════════════════════════════════════════
 // RECHERCHE CLAUDE (API)
 // ════════════════════════════════════════════════════
+function toggleClaudePanel() {
+  var panel = document.getElementById("claude-panel");
+  var isVisible = panel.style.display !== "none";
+  panel.style.display = isVisible ? "none" : "block";
+  if (!isVisible) {
+    // Pre-remplir la cle si deja sauvegardee
+    var saved = localStorage.getItem("claude_api_key");
+    if (saved) {
+      document.getElementById("claude-key-input").value = saved;
+    }
+    document.getElementById("claude-key-input").focus();
+  }
+}
+
+function forgetKey() {
+  localStorage.removeItem("claude_api_key");
+  document.getElementById("claude-key-input").value = "";
+}
+
 async function searchClaude() {
   var query = document.getElementById("search-input").value.trim();
-  if (!query) return;
-
-  var apiKey = localStorage.getItem("claude_api_key");
-  if (!apiKey) {
-    apiKey = prompt("Entrez votre cle API Anthropic (claude.ai/settings > API Keys) :\n\nCout estimé : ~0,003$ par recherche");
-    if (!apiKey) return;
-    localStorage.setItem("claude_api_key", apiKey);
+  if (!query) {
+    alert("Entrez une question dans le champ de recherche.");
+    return;
   }
+
+  var keyInput = document.getElementById("claude-key-input");
+  var apiKey = keyInput.value.trim() || localStorage.getItem("claude_api_key");
+
+  if (!apiKey) {
+    keyInput.style.borderColor = "var(--accent)";
+    keyInput.placeholder = "Clé API requise !";
+    return;
+  }
+
+  // Sauvegarder la cle
+  localStorage.setItem("claude_api_key", apiKey);
+  keyInput.style.borderColor = "";
+
+  // Fermer le panneau et afficher les resultats
+  document.getElementById("claude-panel").style.display = "none";
 
   var resultsDiv = document.getElementById("search-results");
   var titleDiv = document.getElementById("search-results-title");
@@ -1274,7 +1328,8 @@ async function searchClaude() {
       headers: {
         "Content-Type": "application/json",
         "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01"
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
@@ -1287,20 +1342,23 @@ async function searchClaude() {
     if (!response.ok) {
       if (response.status === 401) {
         localStorage.removeItem("claude_api_key");
-        contentDiv.innerHTML = "<div class='claude-answer'>Cle API invalide. Rechargez et reessayez.</div>";
+        titleDiv.textContent = "Erreur d'authentification";
+        contentDiv.innerHTML = "<div class='claude-answer'>Cle API invalide ou expiree. Cliquez sur Recherche Claude et entrez une nouvelle cle.</div>";
         return;
       }
-      throw new Error("Erreur API: " + response.status);
+      throw new Error("Erreur API : " + response.status);
     }
 
     var data = await response.json();
     var answer = data.content && data.content[0] ? data.content[0].text : "Pas de reponse.";
 
     titleDiv.textContent = "Reponse Claude — " + query;
-    contentDiv.innerHTML = "<div class='claude-answer'>" + answer.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>") + "</div>" +
-      "<div class='search-price' style='margin-top:0.5rem'>✦ Propulsé par Claude Sonnet · Coût estimé : ~0,003$</div>";
+    contentDiv.innerHTML = "<div class='claude-answer'>" +
+      answer.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\n/g,"<br>") +
+      "</div><div class='search-price' style='margin-top:0.5rem'>✦ Claude Sonnet · ~0,003$ · Clé stockée dans votre navigateur</div>";
 
   } catch(e) {
+    titleDiv.textContent = "Erreur";
     contentDiv.innerHTML = "<div class='claude-answer'>Erreur : " + e.message + "</div>";
   }
 }
@@ -1308,6 +1366,9 @@ async function searchClaude() {
 // Recherche au clavier (Entree)
 document.getElementById("search-input").addEventListener("keydown", function(e) {
   if (e.key === "Enter") searchInternal();
+});
+document.getElementById("claude-key-input").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") searchClaude();
 });
 
 // ════════════════════════════════════════════════════
