@@ -305,6 +305,7 @@ async function collect() {
   existing.forEach(function(a) { if (a.link) existingLinks[a.link] = true; });
   var newOnes = articles.filter(function(a) { return a.link && !existingLinks[a.link]; });
   var merged = existing.concat(newOnes);
+    if (merged.length > 2000) merged = merged.slice(0, 2000);
   merged.sort(function(a, b) {
     if (!a.date) return 1;
     if (!b.date) return -1;
