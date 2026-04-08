@@ -6,97 +6,542 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veille Juridique — Droit du Numérique</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --ink: #0f0e0c;
-      --paper: #f5f0e8;
-      --cream: #ede7d8;
-      --accent: #c8391a;
-      --accent2: #1a4fc8;
-      --muted: #7a7060;
-      --border: #d4ccc0;
-      --tag-bg: #e8e0d0;
+      --bg: #f4f4f0;
+      --surface: #ffffff;
+      --surface2: #eeede9;
+      --ink: #0a0a0a;
+      --ink2: #2a2a2a;
+      --muted: #888884;
+      --border: #e0dfd9;
+      --accent: #0040ff;
+      --accent-light: #e6ecff;
+      --accent2: #ff3300;
+      --green: #00a86b;
+      --radius: 8px;
+      --shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.1), 0 12px 32px rgba(0,0,0,0.07);
     }
 
 ```
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--paper);
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg);
   color: var(--ink);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LOADING OVERLAY ── */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+
+.loading-overlay.hidden { opacity: 0; pointer-events: none; }
+
+.loading-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.loading-logo span { color: var(--accent); }
+
+.loading-bar-wrap {
+  width: 240px;
+  height: 2px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  animation: loadbar 1.8s ease-in-out forwards;
+}
+
+@keyframes loadbar { from { width: 0; } to { width: 100%; } }
+
+.loading-status {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 /* ── HEADER ── */
 header {
-  border-bottom: 2px solid var(--ink);
-  padding: 2rem 3rem 1.5rem;
+  background: var(--ink);
+  padding: 0 2.5rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.header-top {
-  display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.logo span { color: var(--accent); }
+
+.header-nav {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
-h1 em {
-  font-style: italic;
-  font-weight: 400;
-  color: var(--accent);
-}
+.header-nav::-webkit-scrollbar { display: none; }
 
-.subtitle {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.7rem;
-  color: var(--muted);
+.header-nav a {
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.header-nav a:hover { color: rgba(255,255,255,0.8); }
+.header-nav a.active { color: white; border-bottom-color: var(--accent); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.live-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.05em;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+#clock {
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.35);
+}
+
+/* ── TICKER ── */
+.ticker-wrap {
+  background: var(--accent);
+  overflow: hidden;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  animation: ticker 60s linear infinite;
+}
+
+.ticker-inner:hover { animation-play-state: paused; }
+
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.ticker-item {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  color: white;
+  letter-spacing: 0.06em;
+  padding: 0 2rem;
   text-transform: uppercase;
 }
 
-.meta-bar {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+.ticker-item::after {
+  content: " ·";
+  opacity: 0.5;
+  margin-left: 2rem;
 }
 
-#last-update {
-  font-family: 'DM Mono', monospace;
+/* ── HERO ── */
+.hero {
+  background: var(--ink);
+  padding: 4rem 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(0,64,255,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-grid-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.hero-tag {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  color: white;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.hero h1 span { color: var(--accent); }
+
+.hero-sub {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.45);
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  position: relative;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.stat-item { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.stat-num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  color: white;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.stat-num span { font-size: 1.2rem; color: var(--accent); }
+
+.stat-label {
+  font-family: "DM Mono", monospace;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── MAIN LAYOUT ── */
+.main-wrap {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 0;
+  min-height: calc(100vh - 200px);
+}
+
+.feed-panel {
+  border-right: 1px solid var(--border);
+  min-width: 0;
+}
+
+/* ── SEARCH SECTION ── */
+.search-section {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+}
+
+.search-section-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.search-mode-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.search-mode-card.paid {
+  grid-column: 1 / -1;
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.search-mode-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.search-mode-title {
+  font-family: "DM Mono", monospace;
   font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mode-badge {
+  font-family: "DM Mono", monospace;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.free-badge { background: #dcfce7; color: #166534; }
+.paid-badge { background: #fee2e2; color: #991b1b; }
+
+.search-mode-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.paid-warning {
+  background: white;
+  border: 1px solid rgba(0,64,255,0.2);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.paid-warning-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: var(--radius);
+  flex: 1;
+  min-width: 0;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+  background: white;
+}
+
+.search-btn {
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: all 0.15s;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.free-btn { background: var(--ink); color: white; }
+.free-btn:hover { background: var(--ink2); }
+.paid-btn { background: var(--accent); color: white; }
+.paid-btn:hover { background: #0032cc; }
+.paid-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.neutral-btn { background: var(--surface2); color: var(--ink); border: 1px solid var(--border); }
+.neutral-btn:hover { border-color: var(--ink); }
+
+.search-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  cursor: pointer;
+  color: var(--muted);
+  transition: all 0.15s;
+  letter-spacing: 0.03em;
+}
+
+.chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+
+.api-key-row { display: flex; gap: 0.5rem; }
+.api-key-status { font-family: "DM Mono", monospace; font-size: 0.68rem; color: var(--green); min-height: 1rem; }
+
+/* ── SEARCH RESULTS ── */
+.search-results-wrap {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+}
+
+.search-results-inner { max-width: 100%; }
+
+.search-results-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.search-results-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.search-results-meta {
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.close-btn {
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.close-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ── PANEL HEADER ── */
+.panel-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  position: sticky;
+  top: 56px;
+  z-index: 80;
+}
+
+.panel-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+}
+
+.refresh-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
   color: var(--muted);
 }
 
-#last-update span { color: var(--accent); font-weight: 500; }
-
-.count-badge {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  background: var(--ink);
-  color: var(--paper);
-  padding: 0.15rem 0.5rem;
-  border-radius: 2px;
-}
-
-/* ── MAIN TABS ── */
+/* ── TABS ── */
 nav.tabs {
-  border-bottom: 1.5px solid var(--border);
-  padding: 0 3rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
   display: flex;
-  gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -104,31 +549,30 @@ nav.tabs {
 nav.tabs::-webkit-scrollbar { display: none; }
 
 .tab-btn {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   background: none;
   border: none;
-  border-bottom: 2.5px solid transparent;
-  margin-bottom: -1.5px;
-  padding: 1rem 1.2rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.85rem 1.1rem;
   cursor: pointer;
   color: var(--muted);
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
 
 .tab-btn:hover { color: var(--ink); }
 .tab-btn.active { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
 
-/* ── SUB TABS ── */
+/* ── SUBTABS ── */
 nav.subtabs {
   border-bottom: 1px solid var(--border);
-  padding: 0 3rem;
+  padding: 0 2rem;
   display: flex;
-  gap: 0;
-  background: var(--cream);
+  background: var(--bg);
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -136,59 +580,71 @@ nav.subtabs {
 nav.subtabs::-webkit-scrollbar { display: none; }
 
 .subtab-btn {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
-  padding: 0.7rem 1.1rem;
+  padding: 0.6rem 0.9rem;
   cursor: pointer;
   color: var(--muted);
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
 
 .subtab-btn:hover { color: var(--ink); }
-.subtab-btn.active { color: var(--ink); border-bottom-color: var(--accent2); font-weight: 500; }
+.subtab-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 500; }
 
-/* ── FILTERS ── */
-.filter-bar {
-  padding: 0.9rem 3rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+.subsubpanel { display: none; }
+.subsubpanel.active { display: block; }
+
+.subsub-tabs {
+  background: var(--surface2);
   border-bottom: 1px solid var(--border);
 }
 
+.subsub-tabs .subtab-btn {
+  font-size: 0.62rem;
+  padding: 0.45rem 0.8rem;
+}
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  padding: 0.65rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
 .filter-label {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.62rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.07em;
-  margin-right: 0.25rem;
+  letter-spacing: 0.08em;
+  margin-right: 0.2rem;
 }
 
 .filter-chip {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  padding: 0.22rem 0.65rem;
-  border: 1.5px solid var(--border);
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--border);
   border-radius: 20px;
-  background: var(--paper);
+  background: var(--surface);
   cursor: pointer;
   color: var(--muted);
   transition: all 0.15s;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
-.filter-chip:hover, .filter-chip.active {
-  border-color: var(--ink);
-  color: var(--ink);
-  background: var(--cream);
-}
+.filter-chip:hover { border-color: var(--accent); color: var(--accent); }
+.filter-chip.active { border-color: var(--accent); color: var(--accent); background: var(--accent-light); font-weight: 500; }
 
 /* ── PANELS ── */
 .panel { display: none; }
@@ -198,33 +654,37 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 
 /* ── ARTICLE GRID ── */
 .articles-grid {
-  padding: 2rem 3rem;
+  padding: 1.25rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.5px;
-  border-top: 1.5px solid var(--border);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.85rem;
 }
 
 .article-card {
-  background: var(--paper);
-  border: 1.5px solid var(--border);
-  padding: 1.4rem 1.4rem 1.2rem;
-  transition: background 0.15s;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  transition: all 0.2s;
   position: relative;
-  margin: -1px;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.45rem;
+  box-shadow: var(--shadow);
 }
 
-.article-card:hover { background: var(--cream); z-index: 1; }
+.article-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
 
 .card-source {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--accent);
@@ -232,20 +692,21 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 }
 
 .card-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  font-weight: 500;
+  color: var(--ink);
 }
 
 .card-desc {
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.5;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-weight: 300;
 }
 
 .card-footer {
@@ -253,394 +714,228 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--border);
 }
 
-.card-date {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--muted);
-}
+.card-date { font-family: "DM Mono", monospace; font-size: 0.6rem; color: var(--muted); }
 
 .card-tag {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  background: var(--tag-bg);
-  color: var(--ink);
-  padding: 0.15rem 0.5rem;
-  border-radius: 2px;
-  letter-spacing: 0.05em;
+  font-family: "DM Mono", monospace;
+  font-size: 0.58rem;
+  font-weight: 500;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.12rem 0.45rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
 }
 
-.card-new::before {
-  content: 'NEW';
+.card-new::after {
+  content: "NEW";
   position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.58rem;
-  background: var(--accent);
+  top: 0.65rem;
+  right: 0.65rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.52rem;
+  font-weight: 500;
+  background: var(--accent2);
   color: white;
-  padding: 0.1rem 0.4rem;
-  border-radius: 2px;
+  padding: 0.1rem 0.35rem;
+  border-radius: 20px;
   letter-spacing: 0.08em;
 }
 
 /* ── TEXTES GRID ── */
 .textes-grid {
-  padding: 2rem 3rem;
+  padding: 1.25rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.85rem;
 }
 
 .texte-card {
-  border: 2px solid var(--ink);
-  padding: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  transition: background 0.15s;
+  gap: 0.45rem;
+  box-shadow: var(--shadow);
+  transition: all 0.2s;
 }
 
-.texte-card:hover { background: var(--cream); }
+.texte-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
 
-.texte-ref {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.texte-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.texte-desc {
-  font-size: 0.8rem;
-  color: var(--muted);
-  line-height: 1.5;
-}
+.texte-ref { font-family: "DM Mono", monospace; font-size: 0.6rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.texte-title { font-size: 0.95rem; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.texte-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.5; font-weight: 300; }
+.texte-pays { font-family: "DM Mono", monospace; font-size: 0.6rem; color: var(--accent); font-weight: 500; letter-spacing: 0.05em; }
 
 .texte-status {
   display: inline-block;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
-  margin-top: 0.2rem;
-  align-self: flex-start;
-}
-
-.status-vigueur { background: #d4edd9; color: #1a5c28; }
-.status-transitoire { background: #fff0cc; color: #7a5c00; }
-.status-projet { background: #e0e8ff; color: #1a3c8c; }
-
-.texte-pays {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  color: var(--accent2);
+  font-family: "DM Mono", monospace;
+  font-size: 0.58rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  align-self: flex-start;
+  letter-spacing: 0.03em;
 }
 
-.texte-link {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  color: var(--accent2);
-  text-decoration: none;
-  margin-top: auto;
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--border);
-}
+.status-vigueur { background: #dcfce7; color: #166534; }
+.status-transitoire { background: #fef9c3; color: #854d0e; }
+.status-projet { background: #dbeafe; color: #1e40af; }
 
-.texte-link:hover { text-decoration: underline; }
+.texte-link { font-family: "DM Mono", monospace; font-size: 0.65rem; font-weight: 500; color: var(--accent); text-decoration: none; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); transition: opacity 0.15s; }
+.texte-link:hover { opacity: 0.7; }
 
-/* ── ARBITRAGE GRID ── */
+/* ── ARBITRAGE ── */
 .arbitrage-grid {
-  padding: 2rem 3rem;
+  padding: 1.25rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.85rem;
 }
 
-.arbitrage-card {
-  border: 2px solid var(--ink);
-  padding: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  transition: background 0.15s;
+.arbitrage-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; display: flex; flex-direction: column; gap: 0.45rem; box-shadow: var(--shadow); transition: all 0.2s; }
+.arbitrage-card:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+.arbitrage-org { font-family: "DM Mono", monospace; font-size: 0.6rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+.arbitrage-title { font-size: 0.88rem; font-weight: 600; line-height: 1.35; color: var(--ink); }
+.arbitrage-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.5; font-weight: 300; }
+.arbitrage-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.arbitrage-tag { font-family: "DM Mono", monospace; font-size: 0.58rem; font-weight: 500; background: var(--accent-light); color: var(--accent); padding: 0.12rem 0.45rem; border-radius: 20px; }
+.arbitrage-link { font-family: "DM Mono", monospace; font-size: 0.65rem; font-weight: 500; color: var(--accent); text-decoration: none; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.arbitrage-link:hover { opacity: 0.7; }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  padding: 0;
+  position: sticky;
+  top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
-.arbitrage-card:hover { background: var(--cream); }
+.sidebar-section {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
 
-.arbitrage-org {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--accent);
+.sidebar-title {
+  font-family: "DM Mono", monospace;
+  font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 500;
-}
-
-.arbitrage-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.arbitrage-desc {
-  font-size: 0.8rem;
   color: var(--muted);
-  line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
-.arbitrage-tags {
+.source-item {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.75rem;
 }
 
-.arbitrage-tag {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.6rem;
-  background: var(--tag-bg);
-  padding: 0.15rem 0.45rem;
-  border-radius: 2px;
+.source-item:last-child { border-bottom: none; }
+.source-name { color: var(--ink2); font-weight: 400; }
+.source-count { font-family: "DM Mono", monospace; font-size: 0.65rem; color: var(--accent); font-weight: 500; }
+
+.source-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
 }
 
-.arbitrage-link {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  color: var(--accent2);
-  text-decoration: none;
-  margin-top: auto;
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--border);
-}
-
-.arbitrage-link:hover { text-decoration: underline; }
-
-/* ── SECTION TITLE ── */
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1.5rem 3rem 0.5rem;
-  color: var(--muted);
-  font-style: italic;
-  border-top: 1px solid var(--border);
-}
-
-.section-title:first-child { border-top: none; }
+.source-dot.inactive { background: var(--muted); }
 
 /* ── LOADING / EMPTY ── */
 .loading {
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
   text-align: center;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.8rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 
 .loading::after {
-  content: '';
+  content: "";
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border: 2px solid var(--border);
   border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
-  margin: 1rem auto 0;
+  margin: 0.75rem auto 0;
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
-/* ── SEARCH ── */
-.search-bar {
-  padding: 1rem 3rem;
-  border-bottom: 1.5px solid var(--border);
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  flex-wrap: wrap;
-  background: var(--cream);
-}
 
-.search-input {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.78rem;
-  padding: 0.5rem 0.9rem;
-  border: 1.5px solid var(--border);
-  background: var(--paper);
-  color: var(--ink);
-  border-radius: 3px;
-  flex: 1;
-  min-width: 200px;
-  outline: none;
-  transition: border-color 0.15s;
-}
-
-.search-input:focus { border-color: var(--ink); }
-
-.search-btn {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  padding: 0.5rem 1rem;
-  border: 1.5px solid var(--ink);
-  background: var(--ink);
-  color: var(--paper);
-  cursor: pointer;
-  border-radius: 3px;
-  letter-spacing: 0.05em;
-  transition: opacity 0.15s;
-  white-space: nowrap;
-}
-
-.search-btn:hover { opacity: 0.85; }
-
-.search-btn.secondary {
-  background: var(--paper);
-  color: var(--ink);
-}
-
-.search-btn.claude-btn {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
-}
-
-.search-price {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  color: var(--muted);
-}
+.empty { padding: 3rem 2rem; text-align: center; font-family: "DM Mono", monospace; font-size: 0.75rem; color: var(--muted); }
 
 /* ── SEARCH RESULTS ── */
-#search-results {
-  display: none;
-  padding: 1.5rem 3rem;
-  border-bottom: 1.5px solid var(--border);
-  background: var(--cream);
-}
-
-.search-results-title {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  color: var(--muted);
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
 .claude-answer {
-  font-size: 0.85rem;
-  line-height: 1.65;
-  color: var(--ink);
-  background: var(--paper);
-  border: 1.5px solid var(--border);
+  font-size: 0.83rem;
+  line-height: 1.7;
+  color: var(--ink2);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
-  padding: 1rem 1.2rem;
-  margin-bottom: 1rem;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
   white-space: pre-wrap;
 }
 
-.claude-loading {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  color: var(--muted);
+.claude-loading { font-family: "DM Mono", monospace; font-size: 0.72rem; color: var(--muted); display: flex; align-items: center; gap: 0.75rem; }
+
+.spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
+
+.search-hit { border: 1px solid var(--border); padding: 0.85rem 1rem; margin-bottom: 0.4rem; background: var(--surface); cursor: pointer; text-decoration: none; color: inherit; display: block; transition: all 0.15s; border-radius: var(--radius); }
+.search-hit:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-1px); }
+.search-hit-source { font-family: "DM Mono", monospace; font-size: 0.6rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem; font-weight: 500; }
+.search-hit-title { font-size: 0.88rem; font-weight: 500; line-height: 1.4; }
+.search-hit-desc { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.5; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.35);
+  padding: 1.5rem 2.5rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  flex-shrink: 0;
-}
-
-.search-hit {
-  border: 1.5px solid var(--border);
-  padding: 0.9rem 1rem;
-  margin-bottom: 0.5rem;
-  background: var(--paper);
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: background 0.15s;
-}
-
-.search-hit:hover { background: var(--cream); }
-
-.search-hit-source {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.3rem;
-}
-
-.search-hit-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.search-hit-desc {
-  font-size: 0.78rem;
-  color: var(--muted);
-  margin-top: 0.25rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-@media (max-width: 600px) {
-  .search-bar { padding-left: 1.25rem; padding-right: 1.25rem; }
-  #search-results { padding-left: 1.25rem; padding-right: 1.25rem; }
-}
-
-
-.subsubpanel { display: none; }
-.subsubpanel.active { display: block; }
-
-.subsub-tabs {
-  background: var(--paper);
-  border-bottom: 1px dashed var(--border);
-}
-.subsub-tabs .subtab-btn {
-  font-size: 0.72rem;
-  padding: 0.5rem 1rem;
-}
-
-.empty {
-  padding: 4rem 3rem;
-  text-align: center;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.8rem;
-  color: var(--muted);
+  gap: 2rem;
+  flex-wrap: wrap;
+  letter-spacing: 0.04em;
 }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .main-wrap { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .search-section-inner { grid-template-columns: 1fr; }
+  .search-mode-card.paid { grid-column: 1; }
+}
+
 @media (max-width: 600px) {
-  header, nav.tabs, nav.subtabs, .filter-bar,
-  .articles-grid, .textes-grid, .arbitrage-grid { padding-left: 1.25rem; padding-right: 1.25rem; }
+  header { padding: 0 1rem; }
+  .hero { padding: 2.5rem 1.25rem 2rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero-stats { gap: 1.5rem; }
+  nav.tabs, nav.subtabs, .filter-bar, .articles-grid, .textes-grid, .arbitrage-grid, .search-section, .search-results-wrap { padding-left: 1rem; padding-right: 1rem; }
   .articles-grid, .textes-grid, .arbitrage-grid { grid-template-columns: 1fr; }
-  .tab-btn { padding: 0.8rem 0.7rem; font-size: 0.65rem; }
+  .panel-header { padding: 0.75rem 1rem; top: 56px; }
 }
 ```
 
@@ -648,58 +943,179 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 </head>
 <body>
 
+<!-- ── LOADING OVERLAY ── -->
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-logo">Veille <span>Juridique</span></div>
+  <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+  <div class="loading-status" id="loadingStatus">INITIALISATION DE LA VEILLE JURIDIQUE…</div>
+</div>
+
+<!-- ── HEADER ── -->
+
 <header>
-  <div class="header-top">
-    <h1>Veille Juridique — <em>Droit du Numérique</em></h1>
-  </div>
-  <p class="subtitle">Protection des données · IA · Cybersécurité · Plateformes · Arbitrage international</p>
-  <div class="meta-bar">
-    <span id="last-update">Dernière collecte : <span>—</span></span>
-    <span class="count-badge" id="article-count">0 articles</span>
+  <div class="logo">Veille <span>Juridique</span></div>
+  <nav class="header-nav">
+    <a href="#hero" class="active">Accueil</a>
+    <a href="#search">Recherche</a>
+    <a href="#feed">Veille</a>
+  </nav>
+  <div class="header-right">
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      <span id="article-count-header">—</span>
+    </div>
+    <div id="clock"></div>
   </div>
 </header>
 
-<!-- BARRE DE RECHERCHE -->
+<!-- ── HERO ── -->
 
-<div class="search-bar">
-  <input class="search-input" id="search-input" type="text" placeholder="Rechercher dans la veille..." />
-  <button class="search-btn secondary" onclick="searchInternal()">🔍 Recherche interne</button>
-  <button class="search-btn claude-btn" onclick="toggleClaudePanel()">✦ Recherche Claude</button>
-</div>
+<section class="hero" id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-tag">⚡ Veille automatisée — mise à jour quotidienne</div>
+  <h1>VEILLE<br><span>JURIDIQUE</span><br>NUMÉRIQUE</h1>
+  <p class="hero-sub">Décisions, législation et actualités en droit du numérique — collectées automatiquement depuis les meilleures sources mondiales.</p>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num" id="hero-articles">—</div>
+      <div class="stat-label">Articles collectés</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">30<span>+</span></div>
+      <div class="stat-label">Sources actives</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5<span> onglets</span></div>
+      <div class="stat-label">Thématiques</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" id="hero-lastupdate">—</div>
+      <div class="stat-label">Dernière collecte</div>
+    </div>
+  </div>
+</section>
 
-<!-- PANNEAU RECHERCHE CLAUDE -->
+<!-- ── TICKER ── -->
 
-<div id="claude-panel" style="display:none; padding:1rem 3rem; border-bottom:1.5px solid var(--border); background:var(--cream);">
-  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:600px;">
-    <div style="font-family:'DM Mono',monospace; font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em;">
-      Recherche Claude · Droit du numérique
-    </div>
-    <div style="font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--ink);">
-      Posez une question en droit du numérique. Claude analyse et répond en s'appuyant sur sa connaissance du droit européen, français et international.
-    </div>
-    <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-      <input id="claude-key-input" type="password" class="search-input" placeholder="Clé API Anthropic (sk-ant-...)" style="flex:1; min-width:200px;" />
-      <button class="search-btn secondary" style="font-size:0.65rem;" onclick="forgetKey()">Oublier la clé</button>
-    </div>
-    <div style="font-family:'DM Mono',monospace; font-size:0.65rem; color:var(--muted);">
-      Obtenez votre clé sur <a href="https://console.anthropic.com" target="_blank" style="color:var(--accent2);">console.anthropic.com</a> · Coût estimé : ~0,003$ par recherche · La clé est stockée uniquement dans votre navigateur
-    </div>
-    <div style="display:flex; gap:0.5rem;">
-      <button class="search-btn claude-btn" onclick="searchClaude()">✦ Lancer la recherche</button>
-      <button class="search-btn secondary" onclick="document.getElementById('claude-panel').style.display='none'">Annuler</button>
-    </div>
+<div class="ticker-wrap">
+  <div class="ticker-inner" id="ticker">
+    <div class="ticker-item">INITIALISATION DU FLUX…</div>
   </div>
 </div>
 
-<!-- RESULTATS DE RECHERCHE -->
+<!-- ── SEARCH SECTION ── -->
 
-<div id="search-results">
-  <div class="search-results-title" id="search-results-title"></div>
-  <div id="search-results-content"></div>
+<section class="search-section" id="search">
+  <div class="search-section-inner">
+
+```
+<div class="search-mode-card free">
+  <div class="search-mode-header">
+    <div class="search-mode-title"><span class="mode-icon">📡</span> Recherche interne</div>
+    <span class="mode-badge free-badge">✓ Gratuit</span>
+  </div>
+  <p class="search-mode-desc">Cherche par mots-clés dans tous les articles collectés depuis les sources juridiques spécialisées.</p>
+  <div class="search-row">
+    <input class="search-input" id="search-input" placeholder="Ex: RGPD, IA, blockchain, CJUE…" type="text" />
+    <button class="search-btn free-btn" onclick="searchInternal()">Rechercher</button>
+  </div>
+  <div class="search-chips">
+    <button class="chip" onclick="quickSearch('RGPD')">RGPD</button>
+    <button class="chip" onclick="quickSearch('IA')">IA</button>
+    <button class="chip" onclick="quickSearch('cybersécurité')">Cybersécurité</button>
+    <button class="chip" onclick="quickSearch('CJUE')">CJUE</button>
+    <button class="chip" onclick="quickSearch('blockchain')">Blockchain</button>
+    <button class="chip" onclick="quickSearch('données personnelles')">Données personnelles</button>
+    <button class="chip" onclick="quickSearch('DSA')">DSA</button>
+    <button class="chip" onclick="quickSearch('AI Act')">AI Act</button>
+  </div>
+</div>
+
+<div class="search-mode-card free">
+  <div class="search-mode-header">
+    <div class="search-mode-title"><span class="mode-icon">🌐</span> Recherche Google News</div>
+    <span class="mode-badge free-badge">✓ Gratuit</span>
+  </div>
+  <p class="search-mode-desc">Ouvre une recherche Google News ciblée sur le droit du numérique — couvre toutes les sources mondiales.</p>
+  <div class="search-row">
+    <input class="search-input" id="google-search-input" placeholder="Ex: GDPR enforcement 2025, droit IA France…" type="text" />
+    <button class="search-btn free-btn" onclick="searchGoogle()">Ouvrir Google News</button>
+  </div>
+  <div class="search-chips">
+    <button class="chip" onclick="quickGoogle('GDPR enforcement 2025')">GDPR 2025</button>
+    <button class="chip" onclick="quickGoogle('AI Act implementation Europe')">AI Act EU</button>
+    <button class="chip" onclick="quickGoogle('digital law ruling court 2025')">Décisions 2025</button>
+    <button class="chip" onclick="quickGoogle('cybersecurity regulation 2025')">Cyber</button>
+    <button class="chip" onclick="quickGoogle('data protection fine 2025')">Sanctions</button>
+    <button class="chip" onclick="quickGoogle('droit numérique France 2025')">Droit FR</button>
+  </div>
+</div>
+
+<div class="search-mode-card paid">
+  <div class="search-mode-header">
+    <div class="search-mode-title"><span class="mode-icon">⚡</span> Recherche IA — Claude</div>
+    <span class="mode-badge paid-badge">⚠ Payant</span>
+  </div>
+  <p class="search-mode-desc">Claude analyse votre question et répond avec une synthèse juridique structurée. Nécessite une clé API Anthropic.</p>
+  <div class="paid-warning">
+    <div class="paid-warning-icon">💳</div>
+    <div>
+      <strong>Fonction payante</strong> — Chaque recherche coûte environ <strong>0,003 $</strong>.
+      Obtenez votre clé sur <a href="https://console.anthropic.com" target="_blank" style="color:var(--accent)">console.anthropic.com</a>.
+    </div>
+  </div>
+  <div class="api-key-row">
+    <input class="search-input api-key-input" id="apiKeyInput" type="password" placeholder="Clé API Anthropic — sk-ant-…" />
+    <button class="search-btn neutral-btn" onclick="saveApiKey()">Enregistrer</button>
+    <button class="search-btn neutral-btn" onclick="forgetKey()">Oublier</button>
+  </div>
+  <div class="api-key-status" id="apiKeyStatus"></div>
+  <div class="search-row" style="margin-top:0.5rem">
+    <input class="search-input" id="ai-search-input" placeholder="Ex: Quelle est la responsabilité d'un hébergeur sous le DSA ?" type="text" />
+    <button class="search-btn paid-btn" id="aiSearchBtn" onclick="searchClaude()" disabled>Recherche IA</button>
+  </div>
+  <div class="search-chips">
+    <button class="chip" onclick="quickAI('Quelles sont les obligations des plateformes sous le DSA en 2025 ?')">Obligations DSA</button>
+    <button class="chip" onclick="quickAI('Comment s'applique l'AI Act aux systèmes d'IA à haut risque ?')">AI Act risques</button>
+    <button class="chip" onclick="quickAI('Quelles sont les dernières sanctions RGPD en Europe ?')">Sanctions RGPD</button>
+    <button class="chip" onclick="quickAI('Quel est le cadre juridique de l'arbitrage en matière de données ?')">Arbitrage data</button>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ── SEARCH RESULTS ── -->
+
+<div class="search-results-wrap" id="search-results" style="display:none">
+  <div class="search-results-inner">
+    <div class="search-results-header">
+      <div>
+        <div class="search-results-title" id="search-results-title">Résultats</div>
+        <div class="search-results-meta" id="search-results-meta"></div>
+      </div>
+      <button class="close-btn" onclick="document.getElementById('search-results').style.display='none'">✕ Fermer</button>
+    </div>
+    <div id="search-results-content"></div>
+  </div>
+</div>
+
+<!-- ── MAIN LAYOUT ── -->
+
+<div class="main-wrap" id="feed">
+  <div class="feed-panel">
+
+```
+<div class="panel-header">
+  <div class="panel-title">Fil de veille juridique</div>
+  <div class="refresh-status">
+    <span id="lastUpdateText">Chargement…</span>
+  </div>
 </div>
 
 <!-- ONGLETS PRINCIPAUX -->
-
 <nav class="tabs">
   <button class="tab-btn active" data-tab="actu">📰 Actualités</button>
   <button class="tab-btn" data-tab="tech">💡 Technologies</button>
@@ -708,8 +1124,7 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <button class="tab-btn" data-tab="arbitrage">🏛️ Arbitrage</button>
 </nav>
 
-<!-- FILTRE THÉMATIQUE (droit) -->
-
+<!-- FILTRE THÉMATIQUE -->
 <div class="filter-bar" id="filter-actu">
   <span class="filter-label">Thème :</span>
   <button class="filter-chip active" data-filter="all">Tous</button>
@@ -721,8 +1136,7 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <button class="filter-chip" data-filter="Blockchain">Blockchain</button>
 </div>
 
-<!-- FILTRE SOURCE (tech) -->
-
+<!-- FILTRE TECH -->
 <div class="filter-bar" id="filter-tech" style="display:none">
   <span class="filter-label">Source :</span>
   <button class="filter-chip active" data-filter-tech="all">Toutes</button>
@@ -734,7 +1148,6 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 </div>
 
 <!-- SOUS-ONGLETS EUROPE -->
-
 <nav class="subtabs" id="subtabs-europe" style="display:none">
   <button class="subtab-btn active" data-subtab-eu="legislation">📜 Législation</button>
   <button class="subtab-btn" data-subtab-eu="decisions">⚖️ Décisions</button>
@@ -742,7 +1155,6 @@ nav.subtabs::-webkit-scrollbar { display: none; }
 </nav>
 
 <!-- SOUS-ONGLETS MONDE -->
-
 <nav class="subtabs" id="subtabs-intl" style="display:none">
   <button class="subtab-btn active" data-subtab="france">🇫🇷 France</button>
   <button class="subtab-btn" data-subtab="usa">🇺🇸 États-Unis</button>
@@ -751,43 +1163,34 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <button class="subtab-btn" data-subtab="autres">🌐 Autres pays</button>
   <button class="subtab-btn" data-subtab="projets">🔭 Projets en cours</button>
 </nav>
-<!-- SOUS-SOUS-ONGLETS MONDE (legislation / actu) -->
+
+<!-- SOUS-SOUS-ONGLETS MONDE -->
 <nav class="subtabs subsub-tabs" id="subsub-monde" style="display:none">
   <button class="subtab-btn active" data-subsubtab="leg">📜 Législation</button>
   <button class="subtab-btn" data-subsubtab="actu">📰 Actualités & décisions</button>
 </nav>
 
 <!-- SOUS-ONGLETS ARBITRAGE -->
-
 <nav class="subtabs" id="subtabs-arbitrage" style="display:none">
   <button class="subtab-btn active" data-subtab-arb="organismes">📌 Organismes & Guidelines</button>
   <button class="subtab-btn" data-subtab-arb="actu">📰 Actualités arbitrage</button>
 </nav>
 
-<!-- ════════════════════════════════════════════════════
-     PANEL : DROIT & TECHNOLOGIES
-════════════════════════════════════════════════════ -->
-
+<!-- PANEL ACTUALITES -->
 <div class="panel active" id="panel-actu">
   <div class="loading" id="loading-actu">Chargement…</div>
   <div class="articles-grid" id="grid-actu" style="display:none"></div>
   <div class="empty" id="empty-actu" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
 </div>
 
-<!-- ════════════════════════════════════════════════════
-     PANEL : TECHNOLOGIES
-════════════════════════════════════════════════════ -->
-
+<!-- PANEL TECH -->
 <div class="panel" id="panel-tech">
   <div class="loading" id="loading-tech">Chargement…</div>
   <div class="articles-grid" id="grid-tech" style="display:none"></div>
-  <div class="empty" id="empty-tech" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
+  <div class="empty" id="empty-tech" style="display:none">Aucun article.</div>
 </div>
 
-<!-- ════════════════════════════════════════════════════
-     PANEL : EUROPE
-════════════════════════════════════════════════════ -->
-
+<!-- PANEL EUROPE -->
 <div class="panel" id="panel-europe">
   <div class="subpanel active" id="subpanel-eu-legislation">
     <div class="textes-grid" id="grid-textes-ue"></div>
@@ -795,101 +1198,205 @@ nav.subtabs::-webkit-scrollbar { display: none; }
   <div class="subpanel" id="subpanel-eu-decisions">
     <div class="loading" id="loading-eu-decisions">Chargement…</div>
     <div class="articles-grid" id="grid-eu-decisions" style="display:none"></div>
-    <div class="empty" id="empty-eu-decisions" style="display:none">Aucune décision. Lance la collecte depuis GitHub Actions.</div>
+    <div class="empty" id="empty-eu-decisions" style="display:none">Aucune décision.</div>
   </div>
   <div class="subpanel" id="subpanel-eu-actu">
     <div class="loading" id="loading-eu-actu">Chargement…</div>
     <div class="articles-grid" id="grid-eu-actu" style="display:none"></div>
-    <div class="empty" id="empty-eu-actu" style="display:none">Aucun article. Lance la collecte depuis GitHub Actions.</div>
+    <div class="empty" id="empty-eu-actu" style="display:none">Aucun article.</div>
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════════════
-     PANEL : TEXTES FR & INTERNATIONAL
-════════════════════════════════════════════════════ -->
-
+<!-- PANEL MONDE -->
 <div class="panel" id="panel-intl">
-
   <div class="subpanel active" id="subpanel-france">
-    <div class="subsubpanel active" id="subsubpanel-france-leg">
-      <div class="textes-grid" id="grid-france"></div>
-    </div>
+    <div class="subsubpanel active" id="subsubpanel-france-leg"><div class="textes-grid" id="grid-france"></div></div>
     <div class="subsubpanel" id="subsubpanel-france-actu">
-      <div class="loading" id="loading-france">Chargement...</div>
+      <div class="loading" id="loading-france">Chargement…</div>
       <div class="articles-grid" id="grid-france-actu" style="display:none"></div>
       <div class="empty" id="empty-france-actu" style="display:none">Aucun article.</div>
     </div>
   </div>
-
   <div class="subpanel" id="subpanel-usa">
-    <div class="subsubpanel active" id="subsubpanel-usa-leg">
-      <div class="textes-grid" id="grid-usa"></div>
-    </div>
+    <div class="subsubpanel active" id="subsubpanel-usa-leg"><div class="textes-grid" id="grid-usa"></div></div>
     <div class="subsubpanel" id="subsubpanel-usa-actu">
-      <div class="loading" id="loading-usa">Chargement...</div>
+      <div class="loading" id="loading-usa">Chargement…</div>
       <div class="articles-grid" id="grid-usa-actu" style="display:none"></div>
       <div class="empty" id="empty-usa-actu" style="display:none">Aucun article.</div>
     </div>
   </div>
-
   <div class="subpanel" id="subpanel-uk">
-    <div class="subsubpanel active" id="subsubpanel-uk-leg">
-      <div class="textes-grid" id="grid-uk"></div>
-    </div>
+    <div class="subsubpanel active" id="subsubpanel-uk-leg"><div class="textes-grid" id="grid-uk"></div></div>
     <div class="subsubpanel" id="subsubpanel-uk-actu">
-      <div class="loading" id="loading-uk">Chargement...</div>
+      <div class="loading" id="loading-uk">Chargement…</div>
       <div class="articles-grid" id="grid-uk-actu" style="display:none"></div>
       <div class="empty" id="empty-uk-actu" style="display:none">Aucun article.</div>
     </div>
   </div>
-
   <div class="subpanel" id="subpanel-asie">
-    <div class="subsubpanel active" id="subsubpanel-asie-leg">
-      <div class="textes-grid" id="grid-asie"></div>
-    </div>
+    <div class="subsubpanel active" id="subsubpanel-asie-leg"><div class="textes-grid" id="grid-asie"></div></div>
     <div class="subsubpanel" id="subsubpanel-asie-actu">
-      <div class="loading" id="loading-asie">Chargement...</div>
+      <div class="loading" id="loading-asie">Chargement…</div>
       <div class="articles-grid" id="grid-asie-actu" style="display:none"></div>
       <div class="empty" id="empty-asie-actu" style="display:none">Aucun article.</div>
     </div>
   </div>
-
   <div class="subpanel" id="subpanel-autres">
-    <div class="subsubpanel active" id="subsubpanel-autres-leg">
-      <div class="textes-grid" id="grid-autres"></div>
-    </div>
+    <div class="subsubpanel active" id="subsubpanel-autres-leg"><div class="textes-grid" id="grid-autres"></div></div>
     <div class="subsubpanel" id="subsubpanel-autres-actu">
-      <div class="loading" id="loading-autres">Chargement...</div>
+      <div class="loading" id="loading-autres">Chargement…</div>
       <div class="articles-grid" id="grid-autres-actu" style="display:none"></div>
       <div class="empty" id="empty-autres-actu" style="display:none">Aucun article.</div>
     </div>
   </div>
-
   <div class="subpanel" id="subpanel-projets">
     <div class="textes-grid" id="grid-projets"></div>
   </div>
-
 </div>
 
-<!-- ════════════════════════════════════════════════════
-     PANEL : ARBITRAGE
-════════════════════════════════════════════════════ -->
-
+<!-- PANEL ARBITRAGE -->
 <div class="panel" id="panel-arbitrage">
-
   <div class="subpanel active" id="subpanel-organismes">
     <div class="arbitrage-grid" id="grid-organismes"></div>
   </div>
-
   <div class="subpanel" id="subpanel-actu">
     <div class="loading" id="loading-arb">Chargement…</div>
     <div class="articles-grid" id="grid-actu-arb" style="display:none"></div>
-    <div class="empty" id="empty-arb" style="display:none">Aucun article d'arbitrage collecté.</div>
+    <div class="empty" id="empty-arb" style="display:none">Aucun article d'arbitrage.</div>
+  </div>
+</div>
+```
+
   </div>
 
+  <!-- ── SIDEBAR ── -->
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Sources actives</div>
+      <div id="sourcesList"></div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Répartition thématique</div>
+      <div id="themeStats"></div>
+    </div>
+  </aside>
 </div>
 
+<footer>
+  <div>© 2025 Veille Juridique — Droit du Numérique</div>
+  <div>Sources : CNIL · ANSSI · EDPB · ENISA · Legalis · FTC · GAR · Google News</div>
+  <div>Hébergé sur GitHub Pages · <span style="color:var(--accent)">Mise à jour quotidienne</span></div>
+</footer>
+
 <script>
+// ── LOADING OVERLAY
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    var overlay = document.getElementById("loadingOverlay");
+    overlay.classList.add("hidden");
+    setTimeout(function() { overlay.style.display = "none"; }, 500);
+  }, 1800);
+});
+
+// ── CLOCK
+function updateClock() {
+  var now = new Date();
+  document.getElementById("clock").textContent =
+    now.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── TICKER
+function buildTicker(articles) {
+  var ticker = document.getElementById("ticker");
+  if (!articles || articles.length === 0) return;
+  var items = articles.slice(0, 20);
+  var html = items.map(function(a) {
+    return "<span class=\"ticker-item\">" + a.title + "</span>";
+  }).join("");
+  ticker.innerHTML = html + html; // double pour boucle infinie
+}
+
+// ── SIDEBAR
+function buildSidebar(articles) {
+  // Sources actives
+  var sources = {};
+  articles.forEach(function(a) {
+    var base = a.source.replace(/Google: .*/, "Google News");
+    sources[base] = (sources[base] || 0) + 1;
+  });
+  var sorted = Object.keys(sources).sort(function(a,b) { return sources[b]-sources[a]; }).slice(0, 12);
+  document.getElementById("sourcesList").innerHTML = sorted.map(function(s) {
+    return "<div class=\"source-item\">" +
+      "<div class=\"source-dot\"></div>" +
+      "<span class=\"source-name\">" + s + "</span>" +
+      "<span class=\"source-count\">" + sources[s] + "</span>" +
+      "</div>";
+  }).join("");
+
+  // Themes
+  var themes = {};
+  articles.forEach(function(a) { if (a.tag) themes[a.tag] = (themes[a.tag] || 0) + 1; });
+  var thSorted = Object.keys(themes).sort(function(a,b) { return themes[b]-themes[a]; });
+  document.getElementById("themeStats").innerHTML = thSorted.map(function(t) {
+    return "<div class=\"source-item\">" +
+      "<span class=\"source-name\">" + t + "</span>" +
+      "<span class=\"source-count\">" + themes[t] + "</span>" +
+      "</div>";
+  }).join("");
+}
+
+// ── QUICK SEARCH HELPERS
+function quickSearch(q) {
+  document.getElementById("search-input").value = q;
+  searchInternal();
+  document.getElementById("feed").scrollIntoView({ behavior: "smooth" });
+}
+
+function quickGoogle(q) {
+  document.getElementById("google-search-input").value = q;
+  searchGoogle();
+}
+
+function quickAI(q) {
+  document.getElementById("ai-search-input").value = q;
+}
+
+function searchGoogle() {
+  var q = document.getElementById("google-search-input").value.trim();
+  if (!q) return;
+  window.open("https://news.google.com/search?q=" + encodeURIComponent(q) + "&hl=fr", "_blank");
+}
+
+// ── API KEY MANAGEMENT
+function saveApiKey() {
+  var key = document.getElementById("apiKeyInput").value.trim();
+  if (!key) return;
+  localStorage.setItem("claude_api_key", key);
+  document.getElementById("apiKeyStatus").textContent = "✓ Clé enregistrée";
+  document.getElementById("aiSearchBtn").disabled = false;
+}
+
+function forgetKey() {
+  localStorage.removeItem("claude_api_key");
+  document.getElementById("apiKeyInput").value = "";
+  document.getElementById("apiKeyStatus").textContent = "";
+  document.getElementById("aiSearchBtn").disabled = true;
+}
+
+// Restore key on load
+window.addEventListener("DOMContentLoaded", function() {
+  var saved = localStorage.getItem("claude_api_key");
+  if (saved) {
+    document.getElementById("apiKeyInput").value = saved;
+    document.getElementById("apiKeyStatus").textContent = "✓ Clé enregistrée";
+    document.getElementById("aiSearchBtn").disabled = false;
+  }
+});
+
+
 // ════════════════════════════════════════════════════
 // DONNÉES STATIQUES
 // ════════════════════════════════════════════════════
@@ -1106,7 +1613,16 @@ async function loadData() {
     if (data.lastUpdate) {
       document.querySelector('#last-update span').textContent = new Date(data.lastUpdate).toLocaleString('fr-FR');
     }
-    document.getElementById('article-count').textContent = allArticles.length + ' articles';
+    document.getElementById('article-count') && (document.getElementById('article-count').textContent = allArticles.length + ' articles');
+    document.getElementById('article-count-header') && (document.getElementById('article-count-header').textContent = allArticles.length + ' articles collectés');
+    document.getElementById('hero-articles') && (document.getElementById('hero-articles').textContent = allArticles.length);
+    if (data.lastUpdate) {
+      var d = new Date(data.lastUpdate);
+      document.getElementById('hero-lastupdate') && (document.getElementById('hero-lastupdate').textContent = d.toLocaleDateString('fr-FR'));
+      document.getElementById('lastUpdateText') && (document.getElementById('lastUpdateText').textContent = 'Collecte : ' + d.toLocaleString('fr-FR'));
+    }
+    buildTicker(allArticles);
+    buildSidebar(allArticles);
 
     renderArticles('actu', 'grid-actu', 'empty-actu', 'loading-actu', 'tag', activeFilter);
     renderArticles('tech', 'grid-tech', 'empty-tech', 'loading-tech', 'source', activeFilterTech);
@@ -1292,7 +1808,7 @@ function forgetKey() {
 }
 
 async function searchClaude() {
-  var query = document.getElementById("search-input").value.trim();
+  var query = document.getElementById("ai-search-input") ? document.getElementById("ai-search-input").value.trim() : document.getElementById("search-input").value.trim();
   if (!query) {
     alert("Entrez une question dans le champ de recherche.");
     return;
@@ -1383,6 +1899,11 @@ renderTextes('grid-autres', TEXTES_AUTRES);
 renderTextes('grid-projets', TEXTES_PROJETS);
 renderArbitrage();
 loadData();
+
+// ── ENTER KEY for search inputs
+document.getElementById("search-input").addEventListener("keydown", function(e) { if (e.key === "Enter") searchInternal(); });
+document.getElementById("google-search-input").addEventListener("keydown", function(e) { if (e.key === "Enter") searchGoogle(); });
+document.getElementById("ai-search-input").addEventListener("keydown", function(e) { if (e.key === "Enter") searchClaude(); });
 </script>
 
 </body>
